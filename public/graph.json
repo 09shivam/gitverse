@@ -1,0 +1,2602 @@
+{
+  "nodes": [
+    {
+      "id": "r-pytorch-pytorch",
+      "label": "pytorch",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 102,
+      "pagerank": 0.01,
+      "momentum": 0.27,
+      "activity": 4700,
+      "contributors": 6689,
+      "createdAt": 2016,
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
+    },
+    {
+      "id": "r-tensorflow-tensorflow",
+      "label": "tensorflow",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 196,
+      "pagerank": 0.01,
+      "momentum": 0.48,
+      "activity": 3347,
+      "contributors": 5147,
+      "createdAt": 2015,
+      "description": "An Open Source Machine Learning Framework for Everyone"
+    },
+    {
+      "id": "r-huggingface-transformers",
+      "label": "transformers",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 162,
+      "pagerank": 0,
+      "momentum": 0.56,
+      "activity": 928,
+      "contributors": 4008,
+      "createdAt": 2018,
+      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. "
+    },
+    {
+      "id": "r-vllm-project-vllm",
+      "label": "vllm",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 85,
+      "pagerank": 0,
+      "momentum": 0.66,
+      "activity": 4028,
+      "contributors": 2947,
+      "createdAt": 2023,
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs"
+    },
+    {
+      "id": "r-langchain-ai-langchain",
+      "label": "langchain",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 141,
+      "pagerank": 0,
+      "momentum": 1,
+      "activity": 769,
+      "contributors": 3694,
+      "createdAt": 2022,
+      "description": "The agent engineering platform."
+    },
+    {
+      "id": "r-facebook-react",
+      "label": "react",
+      "kind": "repo",
+      "domain": "web",
+      "stars": 246,
+      "pagerank": 0.01,
+      "momentum": 0.49,
+      "activity": 119,
+      "contributors": 1992,
+      "createdAt": 2013,
+      "description": "The library for web and native user interfaces."
+    },
+    {
+      "id": "r-vuejs-core",
+      "label": "core",
+      "kind": "repo",
+      "domain": "web",
+      "stars": 54,
+      "pagerank": 0,
+      "momentum": 0.18,
+      "activity": 100,
+      "contributors": 627,
+      "createdAt": 2018,
+      "description": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+    },
+    {
+      "id": "r-vercel-next-js",
+      "label": "next.js",
+      "kind": "repo",
+      "domain": "web",
+      "stars": 140,
+      "pagerank": 0,
+      "momentum": 0.38,
+      "activity": 1133,
+      "contributors": 4110,
+      "createdAt": 2016,
+      "description": "The React Framework"
+    },
+    {
+      "id": "r-nodejs-node",
+      "label": "node",
+      "kind": "repo",
+      "domain": "web",
+      "stars": 118,
+      "pagerank": 0.01,
+      "momentum": 0.27,
+      "activity": 798,
+      "contributors": 4381,
+      "createdAt": 2014,
+      "description": "Node.js JavaScript runtime ✨🐢🚀✨"
+    },
+    {
+      "id": "r-expressjs-express",
+      "label": "express",
+      "kind": "repo",
+      "domain": "web",
+      "stars": 69,
+      "pagerank": 0,
+      "momentum": 0.11,
+      "activity": 16,
+      "contributors": 384,
+      "createdAt": 2009,
+      "description": "Fast, unopinionated, minimalist web framework for node."
+    },
+    {
+      "id": "r-kubernetes-kubernetes",
+      "label": "kubernetes",
+      "kind": "repo",
+      "domain": "devops",
+      "stars": 123,
+      "pagerank": 0,
+      "momentum": 0.27,
+      "activity": 1787,
+      "contributors": 5780,
+      "createdAt": 2014,
+      "description": "Production-Grade Container Scheduling and Management"
+    },
+    {
+      "id": "r-moby-moby",
+      "label": "moby",
+      "kind": "repo",
+      "domain": "devops",
+      "stars": 72,
+      "pagerank": 0,
+      "momentum": 0.14,
+      "activity": 691,
+      "contributors": 2585,
+      "createdAt": 2013,
+      "description": "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems"
+    },
+    {
+      "id": "r-hashicorp-terraform",
+      "label": "terraform",
+      "kind": "repo",
+      "domain": "devops",
+      "stars": 49,
+      "pagerank": 0,
+      "momentum": 0.1,
+      "activity": 314,
+      "contributors": 2330,
+      "createdAt": 2014,
+      "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned."
+    },
+    {
+      "id": "r-postgres-postgres",
+      "label": "postgres",
+      "kind": "repo",
+      "domain": "databases",
+      "stars": 21,
+      "pagerank": 0,
+      "momentum": 0.04,
+      "activity": 559,
+      "contributors": 58,
+      "createdAt": 2010,
+      "description": "Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch"
+    },
+    {
+      "id": "r-redis-redis",
+      "label": "redis",
+      "kind": "repo",
+      "domain": "databases",
+      "stars": 75,
+      "pagerank": 0.01,
+      "momentum": 0.11,
+      "activity": 190,
+      "contributors": 929,
+      "createdAt": 2009,
+      "description": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine."
+    },
+    {
+      "id": "r-duckdb-duckdb",
+      "label": "duckdb",
+      "kind": "repo",
+      "domain": "databases",
+      "stars": 39,
+      "pagerank": 0,
+      "momentum": 0.13,
+      "activity": 5383,
+      "contributors": 778,
+      "createdAt": 2018,
+      "description": "DuckDB is an analytical in-process SQL database management system"
+    },
+    {
+      "id": "r-pgvector-pgvector",
+      "label": "pgvector",
+      "kind": "repo",
+      "domain": "databases",
+      "stars": 22,
+      "pagerank": 0,
+      "momentum": 0.11,
+      "activity": 77,
+      "contributors": 24,
+      "createdAt": 2021,
+      "description": "Open-source vector similarity search for Postgres"
+    },
+    {
+      "id": "r-aquasecurity-trivy",
+      "label": "trivy",
+      "kind": "repo",
+      "domain": "security",
+      "stars": 37,
+      "pagerank": 0,
+      "momentum": 0.13,
+      "activity": 129,
+      "contributors": 536,
+      "createdAt": 2019,
+      "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more"
+    },
+    {
+      "id": "r-semgrep-semgrep",
+      "label": "semgrep",
+      "kind": "repo",
+      "domain": "security",
+      "stars": 16,
+      "pagerank": 0,
+      "momentum": 0.06,
+      "activity": 219,
+      "contributors": 240,
+      "createdAt": 2019,
+      "description": "Lightweight static analysis for many languages. Find bug variants with patterns that look like source code."
+    },
+    {
+      "id": "r-pypa-setuptools",
+      "label": "setuptools",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 3,
+      "pagerank": 1,
+      "momentum": 0.01,
+      "activity": 77,
+      "contributors": 647,
+      "createdAt": 2016,
+      "description": "Official project repository for the Setuptools build system"
+    },
+    {
+      "id": "r-hypothesisworks-hypothesis",
+      "label": "hypothesis",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 9,
+      "pagerank": 0.02,
+      "momentum": 0.02,
+      "activity": 318,
+      "contributors": 369,
+      "createdAt": 2013,
+      "description": "The property-based testing library for Python"
+    },
+    {
+      "id": "r-dofuuz-python-soxr",
+      "label": "python-soxr",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 0,
+      "pagerank": 0,
+      "momentum": 0,
+      "activity": 9,
+      "contributors": 1,
+      "createdAt": 2021,
+      "description": "Fast and high quality sample-rate conversion library for Python"
+    },
+    {
+      "id": "r-pypa-pip",
+      "label": "pip",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 10,
+      "pagerank": 0.47,
+      "momentum": 0.02,
+      "activity": 245,
+      "contributors": 893,
+      "createdAt": 2011,
+      "description": "The Python package installer"
+    },
+    {
+      "id": "r-matplotlib-matplotlib",
+      "label": "matplotlib",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 23,
+      "pagerank": 0.09,
+      "momentum": 0.04,
+      "activity": 636,
+      "contributors": 1883,
+      "createdAt": 2011,
+      "description": "matplotlib: plotting with Python"
+    },
+    {
+      "id": "r-lxml-lxml",
+      "label": "lxml",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 3,
+      "pagerank": 0.02,
+      "momentum": 0.01,
+      "activity": 151,
+      "contributors": 179,
+      "createdAt": 2011,
+      "description": "The lxml XML toolkit for Python"
+    },
+    {
+      "id": "r-ipython-ipython",
+      "label": "ipython",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 17,
+      "pagerank": 0.09,
+      "momentum": 0.03,
+      "activity": 114,
+      "contributors": 1081,
+      "createdAt": 2010,
+      "description": "Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc."
+    },
+    {
+      "id": "r-aio-libs-aiohttp",
+      "label": "aiohttp",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 16,
+      "pagerank": 0,
+      "momentum": 0.03,
+      "activity": 608,
+      "contributors": 852,
+      "createdAt": 2013,
+      "description": "Asynchronous HTTP client/server framework for asyncio and Python"
+    },
+    {
+      "id": "r-executablebooks-sphinx-design",
+      "label": "sphinx-design",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 0,
+      "pagerank": 0.06,
+      "momentum": 0,
+      "activity": 0,
+      "contributors": 23,
+      "createdAt": 2021,
+      "description": "A sphinx extension for designing beautiful, screen-size responsive web components."
+    },
+    {
+      "id": "r-xmlrunner-unittest-xml-reporting",
+      "label": "unittest-xml-reporting",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 0,
+      "pagerank": 0,
+      "momentum": 0,
+      "activity": 0,
+      "contributors": 51,
+      "createdAt": 2008,
+      "description": "unittest-based test runner with Ant/JUnit like XML reporting."
+    },
+    {
+      "id": "r-patrick-kidger-jaxtyping",
+      "label": "jaxtyping",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 2,
+      "pagerank": 0,
+      "momentum": 0.01,
+      "activity": 6,
+      "contributors": 37,
+      "createdAt": 2022,
+      "description": "Type annotations and runtime checking for shape and dtype of JAX/NumPy/PyTorch/etc. arrays. https://docs.kidger.site/jaxtyping/"
+    },
+    {
+      "id": "r-scipy-scipy",
+      "label": "scipy",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 15,
+      "pagerank": 0.06,
+      "momentum": 0.03,
+      "activity": 530,
+      "contributors": 1931,
+      "createdAt": 2011,
+      "description": "SciPy library main repository"
+    },
+    {
+      "id": "r-sympy-sympy",
+      "label": "sympy",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 15,
+      "pagerank": 0,
+      "momentum": 0.02,
+      "activity": 318,
+      "contributors": 1500,
+      "createdAt": 2010,
+      "description": "A computer algebra system written in pure Python"
+    },
+    {
+      "id": "r-boto-boto3",
+      "label": "boto3",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 10,
+      "pagerank": 0.01,
+      "momentum": 0.02,
+      "activity": 129,
+      "contributors": 172,
+      "createdAt": 2014,
+      "description": "Boto3, an AWS SDK for Python"
+    },
+    {
+      "id": "r-ezyang-tlparse",
+      "label": "tlparse",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 0,
+      "pagerank": 0,
+      "momentum": 0,
+      "activity": 1,
+      "contributors": 22,
+      "createdAt": 2024,
+      "description": "TORCH_TRACE parser for PT2"
+    },
+    {
+      "id": "r-scikit-build-cmake-python-distributions",
+      "label": "cmake-python-distributions",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 0,
+      "pagerank": 0,
+      "momentum": 0,
+      "activity": 14,
+      "contributors": 20,
+      "createdAt": 2016,
+      "description": "This project provides the infrastructure to build CMake Python wheels."
+    },
+    {
+      "id": "r-numpy-numpy",
+      "label": "numpy",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 32,
+      "pagerank": 0.12,
+      "momentum": 0.05,
+      "activity": 402,
+      "contributors": 2098,
+      "createdAt": 2010,
+      "description": "The fundamental package for scientific computing with Python."
+    },
+    {
+      "id": "r-suo-lintrunner",
+      "label": "lintrunner",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 0,
+      "pagerank": 0,
+      "momentum": 0,
+      "activity": 2,
+      "contributors": 15,
+      "createdAt": 2021,
+      "description": ""
+    },
+    {
+      "id": "r-psf-requests",
+      "label": "requests",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 54,
+      "pagerank": 0.05,
+      "momentum": 0.09,
+      "activity": 51,
+      "contributors": 795,
+      "createdAt": 2011,
+      "description": "A simple, yet elegant, HTTP library."
+    },
+    {
+      "id": "r-ionelmc-python-tblib",
+      "label": "python-tblib",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 0,
+      "pagerank": 0,
+      "momentum": 0,
+      "activity": 0,
+      "contributors": 19,
+      "createdAt": 2013,
+      "description": "Serialization library for Exceptions and Tracebacks."
+    },
+    {
+      "id": "r-uqfoundation-dill",
+      "label": "dill",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 2,
+      "pagerank": 0.01,
+      "momentum": 0,
+      "activity": 7,
+      "contributors": 49,
+      "createdAt": 2013,
+      "description": "serialize all of Python"
+    },
+    {
+      "id": "r-abseil-abseil-py",
+      "label": "abseil-py",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 2,
+      "pagerank": 0.01,
+      "momentum": 0.01,
+      "activity": 3,
+      "contributors": 53,
+      "createdAt": 2017,
+      "description": "Abseil Common Libraries (Python)"
+    },
+    {
+      "id": "r-jawah-charset-normalizer",
+      "label": "charset_normalizer",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 1,
+      "pagerank": 0.06,
+      "momentum": 0,
+      "activity": 10,
+      "contributors": 28,
+      "createdAt": 2019,
+      "description": "Truly universal encoding detector in pure Python."
+    },
+    {
+      "id": "r-grahamdumpleton-wrapt",
+      "label": "wrapt",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 2,
+      "pagerank": 0,
+      "momentum": 0,
+      "activity": 113,
+      "contributors": 38,
+      "createdAt": 2013,
+      "description": "A Python module for decorators, wrappers and monkey patching."
+    },
+    {
+      "id": "r-giampaolo-psutil",
+      "label": "psutil",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 11,
+      "pagerank": 0.03,
+      "momentum": 0.02,
+      "activity": 37,
+      "contributors": 233,
+      "createdAt": 2014,
+      "description": "Cross-platform lib for process and system monitoring in Python"
+    },
+    {
+      "id": "r-python-typing-extensions",
+      "label": "typing_extensions",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 1,
+      "pagerank": 0.09,
+      "momentum": 0,
+      "activity": 27,
+      "contributors": 82,
+      "createdAt": 2022,
+      "description": "Backported and experimental type hints for Python"
+    },
+    {
+      "id": "r-pallets-markupsafe",
+      "label": "markupsafe",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 1,
+      "pagerank": 0.03,
+      "momentum": 0,
+      "activity": 0,
+      "contributors": 49,
+      "createdAt": 2010,
+      "description": "Safely add untrusted strings to HTML/XML markup."
+    },
+    {
+      "id": "r-metaopt-optree",
+      "label": "optree",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 0,
+      "pagerank": 0,
+      "momentum": 0,
+      "activity": 10,
+      "contributors": 11,
+      "createdAt": 2022,
+      "description": "OpTree: Optimized PyTree Utilities"
+    },
+    {
+      "id": "r-pypa-wheel",
+      "label": "wheel",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 1,
+      "pagerank": 0.47,
+      "momentum": 0,
+      "activity": 5,
+      "contributors": 89,
+      "createdAt": 2017,
+      "description": "The official binary distribution format for Python"
+    },
+    {
+      "id": "r-executablebooks-markdown-it-py",
+      "label": "markdown-it-py",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 1,
+      "pagerank": 0,
+      "momentum": 0.01,
+      "activity": 8,
+      "contributors": 34,
+      "createdAt": 2020,
+      "description": "Markdown parser, done right. 100% CommonMark support, extensions, syntax plugins & high speed. Now in Python!"
+    },
+    {
+      "id": "r-pallets-werkzeug",
+      "label": "werkzeug",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 7,
+      "pagerank": 0.01,
+      "momentum": 0.01,
+      "contributors": 514,
+      "createdAt": 2010,
+      "description": "The comprehensive WSGI web application library."
+    },
+    {
+      "id": "r-tensorflow-tensorboard",
+      "label": "tensorboard",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 7,
+      "pagerank": 0,
+      "momentum": 0.02,
+      "activity": 19,
+      "contributors": 335,
+      "createdAt": 2017,
+      "description": "TensorFlow's Visualization Toolkit"
+    },
+    {
+      "id": "r-certifi-python-certifi",
+      "label": "python-certifi",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 1,
+      "pagerank": 0.03,
+      "momentum": 0,
+      "activity": 11,
+      "contributors": 40,
+      "createdAt": 2011,
+      "description": "(Python Distribution) A carefully curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts."
+    },
+    {
+      "id": "r-executablebooks-mdurl",
+      "label": "mdurl",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 0,
+      "pagerank": 0.02,
+      "momentum": 0,
+      "activity": 0,
+      "contributors": 4,
+      "createdAt": 2021,
+      "description": "URL utilities for markdown-it (a Python port)"
+    },
+    {
+      "id": "r-pygments-pygments",
+      "label": "pygments",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 2,
+      "pagerank": 0.11,
+      "momentum": 0.01,
+      "activity": 57,
+      "contributors": 945,
+      "createdAt": 2019,
+      "description": "Pygments is a generic syntax highlighter written in Python"
+    },
+    {
+      "id": "r-eliben-pyelftools",
+      "label": "pyelftools",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 2,
+      "pagerank": 0,
+      "momentum": 0,
+      "activity": 39,
+      "contributors": 111,
+      "createdAt": 2013,
+      "description": "Parsing ELF and DWARF in Python"
+    },
+    {
+      "id": "r-huggingface-huggingface-hub",
+      "label": "huggingface_hub",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 4,
+      "pagerank": 0.01,
+      "momentum": 0.02,
+      "activity": 243,
+      "contributors": 347,
+      "createdAt": 2020,
+      "description": "The official Python client for the Hugging Face Hub."
+    },
+    {
+      "id": "r-radeonopencompute-amdsmi",
+      "label": "amdsmi",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 0,
+      "pagerank": 0,
+      "momentum": 0,
+      "activity": 4,
+      "contributors": 100,
+      "createdAt": 2023,
+      "description": "AMD SMI"
+    },
+    {
+      "id": "r-huggingface-datasets",
+      "label": "datasets",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 22,
+      "pagerank": 0,
+      "momentum": 0.09,
+      "activity": 52,
+      "contributors": 677,
+      "createdAt": 2020,
+      "description": "🤗 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools"
+    },
+    {
+      "id": "r-psycopg-psycopg2",
+      "label": "psycopg2",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 4,
+      "pagerank": 0.03,
+      "momentum": 0.01,
+      "activity": 5,
+      "contributors": 144,
+      "createdAt": 2013,
+      "description": "PostgreSQL database adapter for the Python programming language"
+    },
+    {
+      "id": "r-pandas-dev-pandas",
+      "label": "pandas",
+      "kind": "repo",
+      "domain": "ai",
+      "stars": 49,
+      "pagerank": 0.06,
+      "momentum": 0.08,
+      "activity": 781,
+      "contributors": 4237,
+      "createdAt": 2010,
+      "description": "Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more"
+    },
+    {
+      "id": "d-ai",
+      "label": "Artificial",
+      "kind": "domain",
+      "domain": "ai",
+      "pagerank": 1,
+      "stars": 900,
+      "createdAt": 2008,
+      "description": "Artificial Intelligence"
+    },
+    {
+      "id": "d-web",
+      "label": "Web",
+      "kind": "domain",
+      "domain": "web",
+      "pagerank": 1,
+      "stars": 900,
+      "createdAt": 2009,
+      "description": "Web Development"
+    },
+    {
+      "id": "d-devops",
+      "label": "DevOps",
+      "kind": "domain",
+      "domain": "devops",
+      "pagerank": 1,
+      "stars": 900,
+      "createdAt": 2013,
+      "description": "DevOps & Cloud"
+    },
+    {
+      "id": "d-databases",
+      "label": "Databases",
+      "kind": "domain",
+      "domain": "databases",
+      "pagerank": 1,
+      "stars": 900,
+      "createdAt": 2009,
+      "description": "Databases"
+    },
+    {
+      "id": "d-security",
+      "label": "Security",
+      "kind": "domain",
+      "domain": "security",
+      "pagerank": 1,
+      "stars": 900,
+      "createdAt": 2019,
+      "description": "Security"
+    },
+    {
+      "id": "e-ai-deep-learning-frameworks",
+      "label": "Deep Learning Frameworks",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2015
+    },
+    {
+      "id": "e-ai-large-language-models",
+      "label": "Large Language Models",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2018
+    },
+    {
+      "id": "e-web-frontend-frameworks",
+      "label": "Frontend Frameworks",
+      "kind": "ecosystem",
+      "domain": "web",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2013
+    },
+    {
+      "id": "e-web-node-js-backend",
+      "label": "Node.js Backend",
+      "kind": "ecosystem",
+      "domain": "web",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2009
+    },
+    {
+      "id": "e-devops-containers-orchestration",
+      "label": "Containers & Orchestration",
+      "kind": "ecosystem",
+      "domain": "devops",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2013
+    },
+    {
+      "id": "e-devops-infrastructure-as-code",
+      "label": "Infrastructure as Code",
+      "kind": "ecosystem",
+      "domain": "devops",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2014
+    },
+    {
+      "id": "e-databases-relational-analytical",
+      "label": "Relational & Analytical",
+      "kind": "ecosystem",
+      "domain": "databases",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2009
+    },
+    {
+      "id": "e-databases-vector-databases",
+      "label": "Vector Databases",
+      "kind": "ecosystem",
+      "domain": "databases",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2021
+    },
+    {
+      "id": "e-security-scanning-sast",
+      "label": "Scanning & SAST",
+      "kind": "ecosystem",
+      "domain": "security",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2019
+    },
+    {
+      "id": "e-ai-artificial-libraries",
+      "label": "Artificial Libraries",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2011
+    },
+    {
+      "id": "e-ai-property-based-testing",
+      "label": "Property Based Testing",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2013
+    },
+    {
+      "id": "e-ai-audio-processing",
+      "label": "Audio Processing",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2021
+    },
+    {
+      "id": "e-ai-packaging",
+      "label": "Packaging",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2011
+    },
+    {
+      "id": "e-ai-data-science",
+      "label": "Data Science",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2010
+    },
+    {
+      "id": "e-ai-http-client",
+      "label": "Http Client",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2013
+    },
+    {
+      "id": "e-ai-sphinx-extension",
+      "label": "Sphinx Extension",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2021
+    },
+    {
+      "id": "e-ai-junit-xml",
+      "label": "Junit Xml",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2008
+    },
+    {
+      "id": "e-ai-python-typing",
+      "label": "Python Typing",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2022
+    },
+    {
+      "id": "e-ai-scientific-computing",
+      "label": "Scientific Computing",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2011
+    },
+    {
+      "id": "e-ai-computer-algebra",
+      "label": "Computer Algebra",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2010
+    },
+    {
+      "id": "e-ai-aws-sdk",
+      "label": "Aws Sdk",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2014
+    },
+    {
+      "id": "e-ai-build-system",
+      "label": "Build System",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2016
+    },
+    {
+      "id": "e-ai-numpy",
+      "label": "Numpy",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2010
+    },
+    {
+      "id": "e-ai-python-requests",
+      "label": "Python Requests",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2011
+    },
+    {
+      "id": "e-ai-charset-conversion",
+      "label": "Charset Conversion",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2019
+    },
+    {
+      "id": "e-ai-cross-platform",
+      "label": "Cross Platform",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2014
+    },
+    {
+      "id": "e-ai-html-escape",
+      "label": "Html Escape",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2010
+    },
+    {
+      "id": "e-ai-tree-flatten",
+      "label": "Tree Flatten",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2022
+    },
+    {
+      "id": "e-ai-markdown-it",
+      "label": "Markdown It",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2020
+    },
+    {
+      "id": "e-ai-http",
+      "label": "Http",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2010
+    },
+    {
+      "id": "e-ai-syntax-highlighting",
+      "label": "Syntax Highlighting",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2019
+    },
+    {
+      "id": "e-ai-elf-binaries",
+      "label": "Elf Binaries",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2013
+    },
+    {
+      "id": "e-ai-deep-learning",
+      "label": "Deep Learning",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2020
+    },
+    {
+      "id": "e-ai-sysadmin",
+      "label": "Sysadmin",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2023
+    },
+    {
+      "id": "e-ai-artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2020
+    },
+    {
+      "id": "e-ai-database",
+      "label": "Database",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2013
+    },
+    {
+      "id": "e-ai-data-analysis",
+      "label": "Data Analysis",
+      "kind": "ecosystem",
+      "domain": "ai",
+      "pagerank": 0.9,
+      "stars": 400,
+      "createdAt": 2010
+    }
+  ],
+  "links": [
+    {
+      "source": "e-ai-deep-learning-frameworks",
+      "target": "r-pytorch-pytorch",
+      "kind": "contains",
+      "createdAt": 2016
+    },
+    {
+      "source": "e-ai-deep-learning-frameworks",
+      "target": "r-tensorflow-tensorflow",
+      "kind": "contains",
+      "createdAt": 2015
+    },
+    {
+      "source": "e-ai-large-language-models",
+      "target": "r-huggingface-transformers",
+      "kind": "contains",
+      "createdAt": 2018
+    },
+    {
+      "source": "e-ai-large-language-models",
+      "target": "r-vllm-project-vllm",
+      "kind": "contains",
+      "createdAt": 2023
+    },
+    {
+      "source": "e-ai-large-language-models",
+      "target": "r-langchain-ai-langchain",
+      "kind": "contains",
+      "createdAt": 2022
+    },
+    {
+      "source": "e-web-frontend-frameworks",
+      "target": "r-facebook-react",
+      "kind": "contains",
+      "createdAt": 2013
+    },
+    {
+      "source": "e-web-frontend-frameworks",
+      "target": "r-vuejs-core",
+      "kind": "contains",
+      "createdAt": 2018
+    },
+    {
+      "source": "e-web-frontend-frameworks",
+      "target": "r-vercel-next-js",
+      "kind": "contains",
+      "createdAt": 2016
+    },
+    {
+      "source": "e-web-node-js-backend",
+      "target": "r-nodejs-node",
+      "kind": "contains",
+      "createdAt": 2014
+    },
+    {
+      "source": "e-web-node-js-backend",
+      "target": "r-expressjs-express",
+      "kind": "contains",
+      "createdAt": 2009
+    },
+    {
+      "source": "e-devops-containers-orchestration",
+      "target": "r-kubernetes-kubernetes",
+      "kind": "contains",
+      "createdAt": 2014
+    },
+    {
+      "source": "e-devops-containers-orchestration",
+      "target": "r-moby-moby",
+      "kind": "contains",
+      "createdAt": 2013
+    },
+    {
+      "source": "e-devops-infrastructure-as-code",
+      "target": "r-hashicorp-terraform",
+      "kind": "contains",
+      "createdAt": 2014
+    },
+    {
+      "source": "e-databases-relational-analytical",
+      "target": "r-postgres-postgres",
+      "kind": "contains",
+      "createdAt": 2010
+    },
+    {
+      "source": "e-databases-relational-analytical",
+      "target": "r-redis-redis",
+      "kind": "contains",
+      "createdAt": 2009
+    },
+    {
+      "source": "e-databases-relational-analytical",
+      "target": "r-duckdb-duckdb",
+      "kind": "contains",
+      "createdAt": 2018
+    },
+    {
+      "source": "e-databases-vector-databases",
+      "target": "r-pgvector-pgvector",
+      "kind": "contains",
+      "createdAt": 2021
+    },
+    {
+      "source": "e-security-scanning-sast",
+      "target": "r-aquasecurity-trivy",
+      "kind": "contains",
+      "createdAt": 2019
+    },
+    {
+      "source": "e-security-scanning-sast",
+      "target": "r-semgrep-semgrep",
+      "kind": "contains",
+      "createdAt": 2019
+    },
+    {
+      "source": "e-ai-artificial-libraries",
+      "target": "r-pypa-setuptools",
+      "kind": "contains",
+      "createdAt": 2016
+    },
+    {
+      "source": "e-ai-property-based-testing",
+      "target": "r-hypothesisworks-hypothesis",
+      "kind": "contains",
+      "createdAt": 2013
+    },
+    {
+      "source": "e-ai-audio-processing",
+      "target": "r-dofuuz-python-soxr",
+      "kind": "contains",
+      "createdAt": 2021
+    },
+    {
+      "source": "e-ai-packaging",
+      "target": "r-pypa-pip",
+      "kind": "contains",
+      "createdAt": 2011
+    },
+    {
+      "source": "e-ai-data-science",
+      "target": "r-matplotlib-matplotlib",
+      "kind": "contains",
+      "createdAt": 2011
+    },
+    {
+      "source": "e-ai-artificial-libraries",
+      "target": "r-lxml-lxml",
+      "kind": "contains",
+      "createdAt": 2011
+    },
+    {
+      "source": "e-ai-data-science",
+      "target": "r-ipython-ipython",
+      "kind": "contains",
+      "createdAt": 2010
+    },
+    {
+      "source": "e-ai-http-client",
+      "target": "r-aio-libs-aiohttp",
+      "kind": "contains",
+      "createdAt": 2013
+    },
+    {
+      "source": "e-ai-sphinx-extension",
+      "target": "r-executablebooks-sphinx-design",
+      "kind": "contains",
+      "createdAt": 2021
+    },
+    {
+      "source": "e-ai-junit-xml",
+      "target": "r-xmlrunner-unittest-xml-reporting",
+      "kind": "contains",
+      "createdAt": 2008
+    },
+    {
+      "source": "e-ai-python-typing",
+      "target": "r-patrick-kidger-jaxtyping",
+      "kind": "contains",
+      "createdAt": 2022
+    },
+    {
+      "source": "e-ai-scientific-computing",
+      "target": "r-scipy-scipy",
+      "kind": "contains",
+      "createdAt": 2011
+    },
+    {
+      "source": "e-ai-computer-algebra",
+      "target": "r-sympy-sympy",
+      "kind": "contains",
+      "createdAt": 2010
+    },
+    {
+      "source": "e-ai-aws-sdk",
+      "target": "r-boto-boto3",
+      "kind": "contains",
+      "createdAt": 2014
+    },
+    {
+      "source": "e-ai-artificial-libraries",
+      "target": "r-ezyang-tlparse",
+      "kind": "contains",
+      "createdAt": 2024
+    },
+    {
+      "source": "e-ai-build-system",
+      "target": "r-scikit-build-cmake-python-distributions",
+      "kind": "contains",
+      "createdAt": 2016
+    },
+    {
+      "source": "e-ai-numpy",
+      "target": "r-numpy-numpy",
+      "kind": "contains",
+      "createdAt": 2010
+    },
+    {
+      "source": "e-ai-artificial-libraries",
+      "target": "r-suo-lintrunner",
+      "kind": "contains",
+      "createdAt": 2021
+    },
+    {
+      "source": "e-ai-python-requests",
+      "target": "r-psf-requests",
+      "kind": "contains",
+      "createdAt": 2011
+    },
+    {
+      "source": "e-ai-artificial-libraries",
+      "target": "r-ionelmc-python-tblib",
+      "kind": "contains",
+      "createdAt": 2013
+    },
+    {
+      "source": "e-ai-artificial-libraries",
+      "target": "r-uqfoundation-dill",
+      "kind": "contains",
+      "createdAt": 2013
+    },
+    {
+      "source": "e-ai-artificial-libraries",
+      "target": "r-abseil-abseil-py",
+      "kind": "contains",
+      "createdAt": 2017
+    },
+    {
+      "source": "e-ai-charset-conversion",
+      "target": "r-jawah-charset-normalizer",
+      "kind": "contains",
+      "createdAt": 2019
+    },
+    {
+      "source": "e-ai-artificial-libraries",
+      "target": "r-grahamdumpleton-wrapt",
+      "kind": "contains",
+      "createdAt": 2013
+    },
+    {
+      "source": "e-ai-cross-platform",
+      "target": "r-giampaolo-psutil",
+      "kind": "contains",
+      "createdAt": 2014
+    },
+    {
+      "source": "e-ai-artificial-libraries",
+      "target": "r-python-typing-extensions",
+      "kind": "contains",
+      "createdAt": 2022
+    },
+    {
+      "source": "e-ai-html-escape",
+      "target": "r-pallets-markupsafe",
+      "kind": "contains",
+      "createdAt": 2010
+    },
+    {
+      "source": "e-ai-tree-flatten",
+      "target": "r-metaopt-optree",
+      "kind": "contains",
+      "createdAt": 2022
+    },
+    {
+      "source": "e-ai-artificial-libraries",
+      "target": "r-pypa-wheel",
+      "kind": "contains",
+      "createdAt": 2017
+    },
+    {
+      "source": "e-ai-markdown-it",
+      "target": "r-executablebooks-markdown-it-py",
+      "kind": "contains",
+      "createdAt": 2020
+    },
+    {
+      "source": "e-ai-http",
+      "target": "r-pallets-werkzeug",
+      "kind": "contains",
+      "createdAt": 2010
+    },
+    {
+      "source": "e-ai-artificial-libraries",
+      "target": "r-tensorflow-tensorboard",
+      "kind": "contains",
+      "createdAt": 2017
+    },
+    {
+      "source": "e-ai-artificial-libraries",
+      "target": "r-certifi-python-certifi",
+      "kind": "contains",
+      "createdAt": 2011
+    },
+    {
+      "source": "e-ai-markdown-it",
+      "target": "r-executablebooks-mdurl",
+      "kind": "contains",
+      "createdAt": 2021
+    },
+    {
+      "source": "e-ai-syntax-highlighting",
+      "target": "r-pygments-pygments",
+      "kind": "contains",
+      "createdAt": 2019
+    },
+    {
+      "source": "e-ai-elf-binaries",
+      "target": "r-eliben-pyelftools",
+      "kind": "contains",
+      "createdAt": 2013
+    },
+    {
+      "source": "e-ai-deep-learning",
+      "target": "r-huggingface-huggingface-hub",
+      "kind": "contains",
+      "createdAt": 2020
+    },
+    {
+      "source": "e-ai-sysadmin",
+      "target": "r-radeonopencompute-amdsmi",
+      "kind": "contains",
+      "createdAt": 2023
+    },
+    {
+      "source": "e-ai-artificial-intelligence",
+      "target": "r-huggingface-datasets",
+      "kind": "contains",
+      "createdAt": 2020
+    },
+    {
+      "source": "e-ai-database",
+      "target": "r-psycopg-psycopg2",
+      "kind": "contains",
+      "createdAt": 2013
+    },
+    {
+      "source": "e-ai-data-analysis",
+      "target": "r-pandas-dev-pandas",
+      "kind": "contains",
+      "createdAt": 2010
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-deep-learning-frameworks",
+      "kind": "contains",
+      "createdAt": 2015
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-large-language-models",
+      "kind": "contains",
+      "createdAt": 2018
+    },
+    {
+      "source": "d-web",
+      "target": "e-web-frontend-frameworks",
+      "kind": "contains",
+      "createdAt": 2013
+    },
+    {
+      "source": "d-web",
+      "target": "e-web-node-js-backend",
+      "kind": "contains",
+      "createdAt": 2009
+    },
+    {
+      "source": "d-devops",
+      "target": "e-devops-containers-orchestration",
+      "kind": "contains",
+      "createdAt": 2013
+    },
+    {
+      "source": "d-devops",
+      "target": "e-devops-infrastructure-as-code",
+      "kind": "contains",
+      "createdAt": 2014
+    },
+    {
+      "source": "d-databases",
+      "target": "e-databases-relational-analytical",
+      "kind": "contains",
+      "createdAt": 2009
+    },
+    {
+      "source": "d-databases",
+      "target": "e-databases-vector-databases",
+      "kind": "contains",
+      "createdAt": 2021
+    },
+    {
+      "source": "d-security",
+      "target": "e-security-scanning-sast",
+      "kind": "contains",
+      "createdAt": 2019
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-artificial-libraries",
+      "kind": "contains",
+      "createdAt": 2011
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-property-based-testing",
+      "kind": "contains",
+      "createdAt": 2013
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-audio-processing",
+      "kind": "contains",
+      "createdAt": 2021
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-packaging",
+      "kind": "contains",
+      "createdAt": 2011
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-data-science",
+      "kind": "contains",
+      "createdAt": 2010
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-http-client",
+      "kind": "contains",
+      "createdAt": 2013
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-sphinx-extension",
+      "kind": "contains",
+      "createdAt": 2021
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-junit-xml",
+      "kind": "contains",
+      "createdAt": 2008
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-python-typing",
+      "kind": "contains",
+      "createdAt": 2022
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-scientific-computing",
+      "kind": "contains",
+      "createdAt": 2011
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-computer-algebra",
+      "kind": "contains",
+      "createdAt": 2010
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-aws-sdk",
+      "kind": "contains",
+      "createdAt": 2014
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-build-system",
+      "kind": "contains",
+      "createdAt": 2016
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-numpy",
+      "kind": "contains",
+      "createdAt": 2010
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-python-requests",
+      "kind": "contains",
+      "createdAt": 2011
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-charset-conversion",
+      "kind": "contains",
+      "createdAt": 2019
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-cross-platform",
+      "kind": "contains",
+      "createdAt": 2014
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-html-escape",
+      "kind": "contains",
+      "createdAt": 2010
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-tree-flatten",
+      "kind": "contains",
+      "createdAt": 2022
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-markdown-it",
+      "kind": "contains",
+      "createdAt": 2020
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-http",
+      "kind": "contains",
+      "createdAt": 2010
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-syntax-highlighting",
+      "kind": "contains",
+      "createdAt": 2019
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-elf-binaries",
+      "kind": "contains",
+      "createdAt": 2013
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-deep-learning",
+      "kind": "contains",
+      "createdAt": 2020
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-sysadmin",
+      "kind": "contains",
+      "createdAt": 2023
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-artificial-intelligence",
+      "kind": "contains",
+      "createdAt": 2020
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-database",
+      "kind": "contains",
+      "createdAt": 2013
+    },
+    {
+      "source": "d-ai",
+      "target": "e-ai-data-analysis",
+      "kind": "contains",
+      "createdAt": 2010
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-pypa-setuptools",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-hypothesisworks-hypothesis",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-dofuuz-python-soxr",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-pypa-pip",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-matplotlib-matplotlib",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-lxml-lxml",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-ipython-ipython",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-aio-libs-aiohttp",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-executablebooks-sphinx-design",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-xmlrunner-unittest-xml-reporting",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-patrick-kidger-jaxtyping",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-scipy-scipy",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-sympy-sympy",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-boto-boto3",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-ezyang-tlparse",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-scikit-build-cmake-python-distributions",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-numpy-numpy",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-suo-lintrunner",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-psf-requests",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-ionelmc-python-tblib",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-uqfoundation-dill",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-abseil-abseil-py",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-jawah-charset-normalizer",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-grahamdumpleton-wrapt",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-giampaolo-psutil",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-python-typing-extensions",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-pallets-markupsafe",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-metaopt-optree",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-pypa-wheel",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-executablebooks-markdown-it-py",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-pallets-werkzeug",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-tensorflow-tensorboard",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-certifi-python-certifi",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-executablebooks-mdurl",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-pygments-pygments",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-eliben-pyelftools",
+      "kind": "depends_on",
+      "createdAt": 2015
+    },
+    {
+      "source": "r-huggingface-transformers",
+      "target": "r-huggingface-huggingface-hub",
+      "kind": "depends_on",
+      "createdAt": 2018
+    },
+    {
+      "source": "r-huggingface-transformers",
+      "target": "r-radeonopencompute-amdsmi",
+      "kind": "depends_on",
+      "createdAt": 2018
+    },
+    {
+      "source": "r-huggingface-transformers",
+      "target": "r-huggingface-datasets",
+      "kind": "depends_on",
+      "createdAt": 2018
+    },
+    {
+      "source": "r-huggingface-transformers",
+      "target": "r-psycopg-psycopg2",
+      "kind": "depends_on",
+      "createdAt": 2018
+    },
+    {
+      "source": "r-huggingface-transformers",
+      "target": "r-pytorch-pytorch",
+      "kind": "depends_on",
+      "createdAt": 2018
+    },
+    {
+      "source": "r-huggingface-transformers",
+      "target": "r-numpy-numpy",
+      "kind": "depends_on",
+      "createdAt": 2018
+    },
+    {
+      "source": "r-huggingface-transformers",
+      "target": "r-pandas-dev-pandas",
+      "kind": "depends_on",
+      "createdAt": 2018
+    },
+    {
+      "source": "r-huggingface-transformers",
+      "target": "r-giampaolo-psutil",
+      "kind": "depends_on",
+      "createdAt": 2018
+    },
+    {
+      "source": "r-huggingface-transformers",
+      "target": "r-scipy-scipy",
+      "kind": "depends_on",
+      "createdAt": 2018
+    },
+    {
+      "source": "r-vllm-project-vllm",
+      "target": "r-pypa-setuptools",
+      "kind": "depends_on",
+      "createdAt": 2023
+    },
+    {
+      "source": "r-vllm-project-vllm",
+      "target": "r-redis-redis",
+      "kind": "depends_on",
+      "createdAt": 2023
+    },
+    {
+      "source": "r-langchain-ai-langchain",
+      "target": "r-jawah-charset-normalizer",
+      "kind": "depends_on",
+      "createdAt": 2022
+    },
+    {
+      "source": "r-langchain-ai-langchain",
+      "target": "r-psf-requests",
+      "kind": "depends_on",
+      "createdAt": 2022
+    },
+    {
+      "source": "r-langchain-ai-langchain",
+      "target": "r-numpy-numpy",
+      "kind": "depends_on",
+      "createdAt": 2022
+    },
+    {
+      "source": "r-vercel-next-js",
+      "target": "r-facebook-react",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-vercel-next-js",
+      "target": "r-nodejs-node",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-nodejs-node",
+      "target": "r-pypa-setuptools",
+      "kind": "depends_on",
+      "createdAt": 2014
+    },
+    {
+      "source": "r-pypa-setuptools",
+      "target": "r-pypa-wheel",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pypa-setuptools",
+      "target": "r-pypa-pip",
+      "kind": "depends_on",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-hypothesisworks-hypothesis",
+      "target": "r-pygments-pygments",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-dofuuz-python-soxr",
+      "target": "r-pypa-setuptools",
+      "kind": "depends_on",
+      "createdAt": 2021
+    },
+    {
+      "source": "r-pypa-pip",
+      "target": "r-pypa-setuptools",
+      "kind": "depends_on",
+      "createdAt": 2011
+    },
+    {
+      "source": "r-matplotlib-matplotlib",
+      "target": "r-numpy-numpy",
+      "kind": "depends_on",
+      "createdAt": 2011
+    },
+    {
+      "source": "r-matplotlib-matplotlib",
+      "target": "r-ipython-ipython",
+      "kind": "depends_on",
+      "createdAt": 2011
+    },
+    {
+      "source": "r-ipython-ipython",
+      "target": "r-numpy-numpy",
+      "kind": "depends_on",
+      "createdAt": 2010
+    },
+    {
+      "source": "r-ipython-ipython",
+      "target": "r-giampaolo-psutil",
+      "kind": "depends_on",
+      "createdAt": 2010
+    },
+    {
+      "source": "r-ipython-ipython",
+      "target": "r-pandas-dev-pandas",
+      "kind": "depends_on",
+      "createdAt": 2010
+    },
+    {
+      "source": "r-ipython-ipython",
+      "target": "r-matplotlib-matplotlib",
+      "kind": "depends_on",
+      "createdAt": 2010
+    },
+    {
+      "source": "r-aio-libs-aiohttp",
+      "target": "r-python-typing-extensions",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-aio-libs-aiohttp",
+      "target": "r-pypa-wheel",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-aio-libs-aiohttp",
+      "target": "r-pallets-markupsafe",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-aio-libs-aiohttp",
+      "target": "r-psf-requests",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-xmlrunner-unittest-xml-reporting",
+      "target": "r-lxml-lxml",
+      "kind": "depends_on",
+      "createdAt": 2008
+    },
+    {
+      "source": "r-patrick-kidger-jaxtyping",
+      "target": "r-ipython-ipython",
+      "kind": "depends_on",
+      "createdAt": 2022
+    },
+    {
+      "source": "r-patrick-kidger-jaxtyping",
+      "target": "r-pygments-pygments",
+      "kind": "depends_on",
+      "createdAt": 2022
+    },
+    {
+      "source": "r-scipy-scipy",
+      "target": "r-hypothesisworks-hypothesis",
+      "kind": "depends_on",
+      "createdAt": 2011
+    },
+    {
+      "source": "r-scipy-scipy",
+      "target": "r-matplotlib-matplotlib",
+      "kind": "depends_on",
+      "createdAt": 2011
+    },
+    {
+      "source": "r-scipy-scipy",
+      "target": "r-executablebooks-sphinx-design",
+      "kind": "depends_on",
+      "createdAt": 2011
+    },
+    {
+      "source": "r-scipy-scipy",
+      "target": "r-numpy-numpy",
+      "kind": "depends_on",
+      "createdAt": 2011
+    },
+    {
+      "source": "r-scipy-scipy",
+      "target": "r-pypa-wheel",
+      "kind": "depends_on",
+      "createdAt": 2011
+    },
+    {
+      "source": "r-sympy-sympy",
+      "target": "r-matplotlib-matplotlib",
+      "kind": "depends_on",
+      "createdAt": 2010
+    },
+    {
+      "source": "r-sympy-sympy",
+      "target": "r-scipy-scipy",
+      "kind": "depends_on",
+      "createdAt": 2010
+    },
+    {
+      "source": "r-boto-boto3",
+      "target": "r-jawah-charset-normalizer",
+      "kind": "depends_on",
+      "createdAt": 2014
+    },
+    {
+      "source": "r-boto-boto3",
+      "target": "r-pallets-markupsafe",
+      "kind": "depends_on",
+      "createdAt": 2014
+    },
+    {
+      "source": "r-numpy-numpy",
+      "target": "r-executablebooks-sphinx-design",
+      "kind": "depends_on",
+      "createdAt": 2010
+    },
+    {
+      "source": "r-numpy-numpy",
+      "target": "r-scipy-scipy",
+      "kind": "depends_on",
+      "createdAt": 2010
+    },
+    {
+      "source": "r-numpy-numpy",
+      "target": "r-pandas-dev-pandas",
+      "kind": "depends_on",
+      "createdAt": 2010
+    },
+    {
+      "source": "r-numpy-numpy",
+      "target": "r-ipython-ipython",
+      "kind": "depends_on",
+      "createdAt": 2010
+    },
+    {
+      "source": "r-numpy-numpy",
+      "target": "r-matplotlib-matplotlib",
+      "kind": "depends_on",
+      "createdAt": 2010
+    },
+    {
+      "source": "r-psf-requests",
+      "target": "r-pypa-wheel",
+      "kind": "depends_on",
+      "createdAt": 2011
+    },
+    {
+      "source": "r-psf-requests",
+      "target": "r-certifi-python-certifi",
+      "kind": "depends_on",
+      "createdAt": 2011
+    },
+    {
+      "source": "r-psf-requests",
+      "target": "r-jawah-charset-normalizer",
+      "kind": "depends_on",
+      "createdAt": 2011
+    },
+    {
+      "source": "r-psf-requests",
+      "target": "r-pypa-setuptools",
+      "kind": "depends_on",
+      "createdAt": 2011
+    },
+    {
+      "source": "r-ionelmc-python-tblib",
+      "target": "r-pypa-setuptools",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-ionelmc-python-tblib",
+      "target": "r-pypa-pip",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-uqfoundation-dill",
+      "target": "r-pygments-pygments",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-uqfoundation-dill",
+      "target": "r-jawah-charset-normalizer",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-uqfoundation-dill",
+      "target": "r-python-typing-extensions",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-jawah-charset-normalizer",
+      "target": "r-python-typing-extensions",
+      "kind": "depends_on",
+      "createdAt": 2019
+    },
+    {
+      "source": "r-jawah-charset-normalizer",
+      "target": "r-pygments-pygments",
+      "kind": "depends_on",
+      "createdAt": 2019
+    },
+    {
+      "source": "r-grahamdumpleton-wrapt",
+      "target": "r-pypa-setuptools",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-grahamdumpleton-wrapt",
+      "target": "r-python-typing-extensions",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-grahamdumpleton-wrapt",
+      "target": "r-pygments-pygments",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-giampaolo-psutil",
+      "target": "r-matplotlib-matplotlib",
+      "kind": "depends_on",
+      "createdAt": 2014
+    },
+    {
+      "source": "r-giampaolo-psutil",
+      "target": "r-pypa-setuptools",
+      "kind": "depends_on",
+      "createdAt": 2014
+    },
+    {
+      "source": "r-giampaolo-psutil",
+      "target": "r-executablebooks-sphinx-design",
+      "kind": "depends_on",
+      "createdAt": 2014
+    },
+    {
+      "source": "r-metaopt-optree",
+      "target": "r-numpy-numpy",
+      "kind": "depends_on",
+      "createdAt": 2022
+    },
+    {
+      "source": "r-metaopt-optree",
+      "target": "r-python-typing-extensions",
+      "kind": "depends_on",
+      "createdAt": 2022
+    },
+    {
+      "source": "r-metaopt-optree",
+      "target": "r-pypa-setuptools",
+      "kind": "depends_on",
+      "createdAt": 2022
+    },
+    {
+      "source": "r-pypa-wheel",
+      "target": "r-pypa-setuptools",
+      "kind": "depends_on",
+      "createdAt": 2017
+    },
+    {
+      "source": "r-executablebooks-markdown-it-py",
+      "target": "r-executablebooks-mdurl",
+      "kind": "depends_on",
+      "createdAt": 2020
+    },
+    {
+      "source": "r-tensorflow-tensorboard",
+      "target": "r-numpy-numpy",
+      "kind": "depends_on",
+      "createdAt": 2017
+    },
+    {
+      "source": "r-tensorflow-tensorboard",
+      "target": "r-pallets-werkzeug",
+      "kind": "depends_on",
+      "createdAt": 2017
+    },
+    {
+      "source": "r-tensorflow-tensorboard",
+      "target": "r-boto-boto3",
+      "kind": "depends_on",
+      "createdAt": 2017
+    },
+    {
+      "source": "r-tensorflow-tensorboard",
+      "target": "r-pypa-setuptools",
+      "kind": "depends_on",
+      "createdAt": 2017
+    },
+    {
+      "source": "r-tensorflow-tensorboard",
+      "target": "r-abseil-abseil-py",
+      "kind": "depends_on",
+      "createdAt": 2017
+    },
+    {
+      "source": "r-tensorflow-tensorboard",
+      "target": "r-pandas-dev-pandas",
+      "kind": "depends_on",
+      "createdAt": 2017
+    },
+    {
+      "source": "r-eliben-pyelftools",
+      "target": "r-pypa-setuptools",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-huggingface-huggingface-hub",
+      "target": "r-psf-requests",
+      "kind": "depends_on",
+      "createdAt": 2020
+    },
+    {
+      "source": "r-huggingface-huggingface-hub",
+      "target": "r-numpy-numpy",
+      "kind": "depends_on",
+      "createdAt": 2020
+    },
+    {
+      "source": "r-huggingface-huggingface-hub",
+      "target": "r-python-typing-extensions",
+      "kind": "depends_on",
+      "createdAt": 2020
+    },
+    {
+      "source": "r-radeonopencompute-amdsmi",
+      "target": "r-psf-requests",
+      "kind": "depends_on",
+      "createdAt": 2023
+    },
+    {
+      "source": "r-radeonopencompute-amdsmi",
+      "target": "r-python-typing-extensions",
+      "kind": "depends_on",
+      "createdAt": 2023
+    },
+    {
+      "source": "r-huggingface-datasets",
+      "target": "r-pytorch-pytorch",
+      "kind": "depends_on",
+      "createdAt": 2020
+    },
+    {
+      "source": "r-huggingface-datasets",
+      "target": "r-uqfoundation-dill",
+      "kind": "depends_on",
+      "createdAt": 2020
+    },
+    {
+      "source": "r-huggingface-datasets",
+      "target": "r-huggingface-huggingface-hub",
+      "kind": "depends_on",
+      "createdAt": 2020
+    },
+    {
+      "source": "r-huggingface-datasets",
+      "target": "r-tensorflow-tensorflow",
+      "kind": "depends_on",
+      "createdAt": 2020
+    },
+    {
+      "source": "r-psycopg-psycopg2",
+      "target": "r-jawah-charset-normalizer",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-psycopg-psycopg2",
+      "target": "r-certifi-python-certifi",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-psycopg-psycopg2",
+      "target": "r-psf-requests",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-psycopg-psycopg2",
+      "target": "r-pygments-pygments",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-psycopg-psycopg2",
+      "target": "r-pallets-markupsafe",
+      "kind": "depends_on",
+      "createdAt": 2013
+    },
+    {
+      "source": "r-pandas-dev-pandas",
+      "target": "r-pypa-pip",
+      "kind": "depends_on",
+      "createdAt": 2010
+    },
+    {
+      "source": "r-pandas-dev-pandas",
+      "target": "r-scipy-scipy",
+      "kind": "depends_on",
+      "createdAt": 2010
+    },
+    {
+      "source": "r-pandas-dev-pandas",
+      "target": "r-psycopg-psycopg2",
+      "kind": "depends_on",
+      "createdAt": 2010
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-tensorflow-tensorflow",
+      "kind": "similar_to",
+      "createdAt": 2016
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-huggingface-transformers",
+      "kind": "similar_to",
+      "createdAt": 2018
+    },
+    {
+      "source": "r-pytorch-pytorch",
+      "target": "r-huggingface-datasets",
+      "kind": "similar_to",
+      "createdAt": 2020
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-huggingface-transformers",
+      "kind": "similar_to",
+      "createdAt": 2018
+    },
+    {
+      "source": "r-tensorflow-tensorflow",
+      "target": "r-huggingface-datasets",
+      "kind": "similar_to",
+      "createdAt": 2020
+    },
+    {
+      "source": "r-huggingface-transformers",
+      "target": "r-vllm-project-vllm",
+      "kind": "similar_to",
+      "createdAt": 2023
+    },
+    {
+      "source": "r-huggingface-transformers",
+      "target": "r-huggingface-huggingface-hub",
+      "kind": "similar_to",
+      "createdAt": 2020
+    },
+    {
+      "source": "r-huggingface-transformers",
+      "target": "r-huggingface-datasets",
+      "kind": "similar_to",
+      "createdAt": 2020
+    },
+    {
+      "source": "r-kubernetes-kubernetes",
+      "target": "r-aquasecurity-trivy",
+      "kind": "similar_to",
+      "createdAt": 2019
+    },
+    {
+      "source": "r-moby-moby",
+      "target": "r-aquasecurity-trivy",
+      "kind": "similar_to",
+      "createdAt": 2019
+    },
+    {
+      "source": "r-huggingface-huggingface-hub",
+      "target": "r-huggingface-datasets",
+      "kind": "similar_to",
+      "createdAt": 2020
+    }
+  ]
+}
