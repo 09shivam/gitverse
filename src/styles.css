@@ -29,6 +29,19 @@ body,
   height: 100vh;
 }
 
+/* deep-space vignette — darkens the edges so the eye falls into the center */
+.vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 78% 82% at 50% 46%,
+    transparent 52%,
+    rgba(2, 3, 8, 0.6) 100%
+  );
+}
+
 /* ---- Header ---- */
 .header {
   position: absolute;
@@ -272,6 +285,312 @@ body,
   color: var(--text-dim);
   text-transform: uppercase;
   letter-spacing: 0.4px;
+}
+
+/* ---- Meta tags (repo detail) ---- */
+.detail .meta {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.detail .tag {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--panel-border);
+  color: var(--text-dim);
+  text-decoration: none;
+}
+.detail .tag.link {
+  color: var(--accent);
+}
+.detail .tag.link:hover {
+  background: rgba(124, 92, 255, 0.16);
+}
+
+/* ---- Distribution bars (cluster panel) ---- */
+.drow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 0;
+  font-size: 12px;
+}
+.drow .dname {
+  width: 92px;
+  flex-shrink: 0;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.drow .dbar {
+  flex: 1;
+  height: 7px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+.drow .dfill {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  opacity: 0.85;
+}
+.drow .dcount {
+  width: 20px;
+  text-align: right;
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- Search ---- */
+.searchbar {
+  position: absolute;
+  top: 74px;
+  left: 22px;
+  z-index: 12;
+  width: 320px;
+}
+.searchbar input {
+  width: 100%;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  padding: 9px 12px;
+  color: var(--text);
+  font-size: 13px;
+  backdrop-filter: blur(10px);
+  outline: none;
+}
+.searchbar input:focus {
+  border-color: var(--accent);
+}
+.suggest {
+  margin-top: 6px;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+.suggest button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: none;
+  background: none;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 13px;
+  text-align: left;
+}
+.suggest button:hover {
+  background: rgba(124, 92, 255, 0.16);
+}
+.suggest .sdot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.suggest .slabel {
+  flex: 1;
+  font-weight: 500;
+}
+.suggest .ssub {
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+.suggest .empty,
+.modal .empty {
+  padding: 10px 12px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+/* ---- Search modal ---- */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  background: rgba(3, 4, 10, 0.72);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: fadein 0.15s ease;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.modal {
+  position: relative;
+  width: min(880px, 94vw);
+  max-height: 88vh;
+  overflow-y: auto;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 16px;
+  padding: 22px 24px 24px;
+  backdrop-filter: blur(14px);
+}
+.modal .close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  border: none;
+  background: none;
+  color: var(--text-dim);
+  font-size: 17px;
+  cursor: pointer;
+}
+.modal .close:hover {
+  color: var(--text);
+}
+.modal .kind {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-dim);
+}
+.modal h2 {
+  margin: 4px 0 16px;
+  font-size: 24px;
+}
+.modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.mcard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.mcard.wide {
+  grid-column: 1 / -1;
+}
+.mcard h4 {
+  margin: 0 0 12px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-dim);
+}
+@media (max-width: 680px) {
+  .modal-grid { grid-template-columns: 1fr; }
+}
+
+/* pie + legend */
+.pierow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.pie {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+}
+.pielegend {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.plrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 13px;
+  text-align: left;
+}
+.plrow:hover,
+.plrow.on {
+  background: rgba(124, 92, 255, 0.16);
+}
+.plrow .sdot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+.pieinfo {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-top: 1px solid var(--panel-border);
+  padding-top: 10px;
+}
+.pieinfo strong {
+  font-size: 14px;
+}
+.pieinfo .oneliner {
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--text);
+}
+.pieinfo .ostats {
+  font-size: 11px;
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+}
+
+/* bar chart */
+.barwrap {
+  overflow-x: auto;
+}
+.bars {
+  height: 156px;
+  display: block;
+}
+.bars .baraxis {
+  fill: var(--text-dim);
+  font-size: 9px;
+  font-family: inherit;
+}
+.bars .barval {
+  fill: var(--text);
+  font-size: 10px;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+/* summary list */
+.summary {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.summary li {
+  display: flex;
+  gap: 9px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text);
+}
+.summary .sicon {
+  flex-shrink: 0;
 }
 
 .hint {

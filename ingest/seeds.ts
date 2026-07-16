@@ -50,4 +50,17 @@ export const SEEDS: Seed[] = [
   // Security
   { repo: "aquasecurity/trivy", domain: "security", ecosystem: "Scanning & SAST", provides: ["trivy"] },
   { repo: "semgrep/semgrep", domain: "security", ecosystem: "Scanning & SAST", provides: ["semgrep"] },
+
+  // Recent / trending (2024–2025) — extend the timeline to the present.
+  // These are genuinely recently-created repos; GitHub is the source of truth
+  // for their real createdAt, so the timeline axis grows to include them.
+  { repo: "deepseek-ai/DeepSeek-R1", domain: "ai", ecosystem: "Large Language Models", provides: ["deepseek-r1"] },
+  { repo: "deepseek-ai/DeepSeek-V3", domain: "ai", ecosystem: "Large Language Models", provides: ["deepseek-v3"] },
+  { repo: "openai/codex", domain: "ai", ecosystem: "AI Coding Agents", provides: ["codex"] },
+  { repo: "anthropics/claude-code", domain: "ai", ecosystem: "AI Coding Agents", provides: ["@anthropic-ai/claude-code", "claude-code"] },
+  { repo: "browser-use/browser-use", domain: "ai", ecosystem: "LLM Agents", provides: ["browser-use"] },
+  { repo: "microsoft/markitdown", domain: "ai", ecosystem: "LLM Tooling", provides: ["markitdown"] },
+  { repo: "huggingface/smolagents", domain: "ai", ecosystem: "LLM Agents", provides: ["smolagents"] },
+  { repo: "opentofu/opentofu", domain: "devops", ecosystem: "Infrastructure as Code", provides: ["opentofu"] },
+  { repo: "electric-sql/pglite", domain: "databases", ecosystem: "Embedded Databases", provides: ["@electric-sql/pglite", "pglite"] },
 ];

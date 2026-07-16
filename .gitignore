@@ -1,0 +1,22 @@
+# Dependencies (regenerate with `npm install`)
+node_modules/
+
+# Build output
+dist/
+
+# Ingest cache (AI classification results)
+ingest/.cache/
+
+# Env / secrets
+.env
+.env.local
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor cruft
+.DS_Store
+.vscode/
+.idea/

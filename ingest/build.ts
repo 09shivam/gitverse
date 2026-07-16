@@ -88,6 +88,12 @@ interface RepoData {
   description: string;
   language: string | null;
   starsPerDay: number;
+  forks: number;
+  openIssues: number;
+  license: string | null;
+  owner: string;
+  url: string;
+  lastPush: number;
   activity?: number;
   contributors?: number;
   depRepos: string[]; // resolved dependency repo full-names
@@ -104,6 +110,7 @@ async function fetchCore(full: string): Promise<Omit<RepoData, "domain" | "ecosy
   const d = res.data;
   const created = d.created_at as string;
   const ageDays = Math.max(1, (Date.now() - new Date(created).getTime()) / 86_400_000);
+  const spdx = d.license?.spdx_id as string | undefined;
   return {
     full,
     id: repoIdOf(full),
@@ -114,6 +121,12 @@ async function fetchCore(full: string): Promise<Omit<RepoData, "domain" | "ecosy
     description: d.description ?? "",
     language: d.language ?? null,
     starsPerDay: (d.stargazers_count ?? 0) / ageDays,
+    forks: d.forks_count ?? 0,
+    openIssues: d.open_issues_count ?? 0,
+    license: spdx && spdx !== "NOASSERTION" ? spdx : null,
+    owner: d.owner?.login ?? full.split("/")[0],
+    url: d.homepage || d.html_url || `https://github.com/${full}`,
+    lastPush: year(d.pushed_at ?? created),
     depRepos: [],
   };
 }
@@ -321,6 +334,13 @@ async function main() {
       momentum: Number(clamp01(norm(r.starsPerDay, spdMin, spdMax)).toFixed(2)),
       activity: r.activity,
       contributors: r.contributors,
+      forks: Math.round(r.forks / 1000),
+      openIssues: r.openIssues,
+      license: r.license ?? undefined,
+      language: r.language ?? undefined,
+      owner: r.owner,
+      url: r.url,
+      lastPush: r.lastPush,
       createdAt: r.createdAt,
       description: r.description,
     });

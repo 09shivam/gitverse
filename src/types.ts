@@ -22,6 +22,20 @@ export interface GVNode {
   activity?: number;
   /** distinct contributors */
   contributors?: number;
+  /** total forks */
+  forks?: number;
+  /** open issues + PRs */
+  openIssues?: number;
+  /** SPDX license id, e.g. "MIT", "Apache-2.0" */
+  license?: string;
+  /** primary language, e.g. "Python", "TypeScript" */
+  language?: string;
+  /** owner login (org or user) */
+  owner?: string;
+  /** project homepage or repo URL */
+  url?: string;
+  /** year of the most recent push — "still alive?" vs createdAt */
+  lastPush?: number;
   /** year the project/ecosystem appeared — drives the timeline */
   createdAt: number;
   description?: string;
