@@ -1,0 +1,10 @@
+# Python deps for ingest/serve_qwen.py — the local Qwen classifier server.
+# Install into a venv:  python3 -m venv .venv && source .venv/bin/activate
+#                       pip install -r ingest/requirements.txt
+torch>=2.2
+transformers>=4.43
+# Fast tokenizer + safetensors loading (usually pulled in by transformers,
+# pinned here so a clean env has them).
+tokenizers>=0.19
+safetensors>=0.4
+accelerate>=0.30

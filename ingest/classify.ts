@@ -8,21 +8,26 @@ import type { DomainId } from "../src/types.ts";
 // (architecture §9) without changing anything downstream.
 
 const KEYWORDS: Record<DomainId, string[]> = {
-  ai: ["ml", "ai", "machine", "learning", "deep", "llm", "llms", "nlp", "neural", "transformer", "transformers", "model", "models", "inference", "pytorch", "tensorflow", "cuda", "gpu", "embedding", "embeddings", "diffusion", "dataset", "datasets", "tensor", "quantization"],
+  ai: ["ml", "ai", "machine", "learning", "deep", "llm", "llms", "nlp", "neural", "transformer", "transformers", "model", "models", "inference", "pytorch", "tensorflow", "cuda", "gpu", "embedding", "embeddings", "diffusion", "dataset", "datasets", "tensor", "quantization", "science"],
   web: ["web", "frontend", "browser", "react", "vue", "svelte", "css", "html", "ui", "http", "server", "express", "node", "nodejs", "framework", "javascript", "typescript", "bundler", "rendering", "dom", "api", "rest"],
-  devops: ["devops", "kubernetes", "k8s", "docker", "container", "containers", "cloud", "ci", "cd", "infrastructure", "terraform", "deployment", "orchestration", "helm", "observability", "serverless", "aws", "gcp", "azure", "build"],
-  databases: ["database", "databases", "sql", "postgres", "postgresql", "mysql", "sqlite", "redis", "storage", "query", "cache", "vector", "index", "olap", "oltp", "columnar", "data", "dataframe", "analytics", "warehouse"],
-  security: ["security", "vulnerability", "scanner", "sast", "dast", "secrets", "auth", "authentication", "crypto", "cryptography", "cve", "exploit", "pentest", "firewall", "compliance", "encryption"],
+  cloud: ["cloud", "cloudnative", "native", "kubernetes", "k8s", "docker", "container", "containers", "orchestration", "helm", "service", "mesh", "istio", "envoy", "serverless", "aws", "gcp", "azure", "lambda"],
+  devops: ["devops", "ci", "cd", "pipeline", "pipelines", "infrastructure", "terraform", "opentofu", "deployment", "deploy", "automation", "ansible", "jenkins", "build", "observability", "monitoring", "prometheus", "grafana"],
+  data_engineering: ["etl", "elt", "pipeline", "pipelines", "spark", "airflow", "kafka", "flink", "streaming", "batch", "warehouse", "lakehouse", "orchestration", "dbt", "analytics", "dataflow", "dag"],
+  databases: ["database", "databases", "sql", "postgres", "postgresql", "mysql", "sqlite", "redis", "storage", "query", "cache", "vector", "index", "olap", "oltp", "columnar"],
+  blockchain: ["blockchain", "bitcoin", "ethereum", "web3", "crypto", "cryptocurrency", "wallet", "defi", "solidity", "smart", "contract", "contracts", "ledger", "consensus", "evm"],
+  security: ["security", "cybersecurity", "vulnerability", "scanner", "sast", "dast", "secrets", "auth", "authentication", "cryptography", "cve", "exploit", "pentest", "firewall", "compliance", "encryption"],
+  game_dev: ["game", "games", "gamedev", "engine", "engines", "graphics", "rendering", "renderer", "unity", "unreal", "godot", "bevy", "cocos", "sdl", "simulation"],
 };
 
 const LANG_HINT: Record<string, DomainId> = {
   hcl: "devops",
-  dockerfile: "devops",
-  go: "devops",
+  dockerfile: "cloud",
   vue: "web",
   svelte: "web",
   sql: "databases",
   plpgsql: "databases",
+  solidity: "blockchain",
+  gdscript: "game_dev",
 };
 
 const tokenize = (s: string) =>
@@ -35,9 +40,10 @@ export function classifyDomain(
 ): DomainId {
   const topicTokens = tokenize(topics.join(" "));
   const descTokens = tokenize(description);
-  const score: Record<DomainId, number> = { ai: 0, web: 0, devops: 0, databases: 0, security: 0 };
+  const domains = Object.keys(KEYWORDS) as DomainId[];
+  const score = Object.fromEntries(domains.map((d) => [d, 0])) as Record<DomainId, number>;
 
-  for (const d of Object.keys(KEYWORDS) as DomainId[]) {
+  for (const d of domains) {
     for (const kw of KEYWORDS[d]) {
       if (topicTokens.has(kw)) score[d] += 2; // topics are the strongest signal
       else if (descTokens.has(kw)) score[d] += 1;
@@ -48,7 +54,7 @@ export function classifyDomain(
 
   let best: DomainId = langHint ?? "web";
   let bestScore = -1;
-  for (const d of Object.keys(score) as DomainId[]) {
+  for (const d of domains) {
     if (score[d] > bestScore) {
       best = d;
       bestScore = score[d];

@@ -4,6 +4,12 @@ node_modules/
 # Build output
 dist/
 
+# Local graph snapshots/backups
+public/*.backup.json
+
+# Local model weights (multi-GB — never commit)
+models/
+
 # Ingest cache (AI classification results)
 ingest/.cache/
 

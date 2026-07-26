@@ -1,11 +1,19 @@
 export type NodeKind = "domain" | "ecosystem" | "repo";
 
+export type DiscoverySource = "seed" | "search" | "dependency";
+
+export type RepoBadge = "new" | "trending" | "active";
+
 export type DomainId =
   | "ai"
   | "web"
+  | "cloud"
   | "devops"
+  | "data_engineering"
   | "databases"
-  | "security";
+  | "blockchain"
+  | "security"
+  | "game_dev";
 
 export interface GVNode {
   id: string;
@@ -18,6 +26,26 @@ export interface GVNode {
   pagerank?: number;
   /** trending score 0..1 — recent star/attention velocity */
   momentum?: number;
+  /** explicit trend score 0..1 — current GitHub attention/activity */
+  trendScore?: number;
+  /** explicit newness score 0..1 — favors recently-created repos with traction */
+  newScore?: number;
+  /** explicit contribution score 0..1 — recent commit + contributor activity */
+  contributionScore?: number;
+  /** stars per day since creation, preserved from ingest scoring */
+  starsPerDay?: number;
+  /** recent commits in the last 90 days */
+  recentCommits?: number;
+  /** where this repo entered the ingest frontier */
+  discoveredBy?: DiscoverySource;
+  /** search modes that found this repo, e.g. new/active/popular */
+  discoverySignals?: string[];
+  /** top-level ranks used by the "now" UI */
+  trendRank?: number;
+  newRank?: number;
+  contributionRank?: number;
+  /** visual highlight categories */
+  badges?: RepoBadge[];
   /** recent development activity — commits in the last 90 days */
   activity?: number;
   /** distinct contributors */
@@ -34,6 +62,8 @@ export interface GVNode {
   owner?: string;
   /** project homepage or repo URL */
   url?: string;
+  /** canonical github.com/owner/repo URL */
+  github?: string;
   /** year of the most recent push — "still alive?" vs createdAt */
   lastPush?: number;
   /** year the project/ecosystem appeared — drives the timeline */
@@ -63,4 +93,10 @@ export interface GVEdge {
 export interface GVGraph {
   nodes: GVNode[];
   links: GVEdge[];
+  generatedAt?: string;
+  summary?: {
+    repoCount: number;
+    searchEnabled?: boolean;
+    classifier?: string;
+  };
 }

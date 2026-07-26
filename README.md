@@ -3,15 +3,16 @@
 **A software observatory — explore GitHub as one connected universe.**
 
 GitVerse maps open-source repositories into a living galaxy: projects cluster into
-domains (AI, Web, DevOps, Databases, Security), sized by popularity and linked by
-their real dependencies. A timeline lets you replay how the ecosystem grew from
-2008 to today.
+domains (AI, Web, Cloud Native, DevOps, Data Engineering, Databases, Blockchain,
+Cybersecurity, Game Development), sized by popularity and linked by their real
+dependencies. A timeline lets you replay how the ecosystem grew from 2008 to
+today.
 
 ![GitVerse galaxy view](docs/galaxy.png)
 
 ## What it is
 
-Each **star** is a repository. Stars pull into five **galaxies** (domains), and
+Each **star** is a repository. Stars pull into topic **galaxies** (domains), and
 within them into **ecosystems** (e.g. *Large Language Models*, *Frontend
 Frameworks*). Edges are real relationships pulled from GitHub — dependencies,
 shared technology, and semantic similarity.
@@ -43,17 +44,22 @@ a one-domain snapshot of what's happening on GitHub:
 A small ingestion pipeline (`ingest/`) builds the graph from the **GitHub REST
 API**:
 
-1. Starts from a curated **seed set** of well-known repos across the five domains
-   (`ingest/seeds.ts`).
-2. **BFS-expands** outward by reading each repo's dependency graph (SBOM) and
-   resolving packages → source repos via npm / PyPI / crates.io / Go.
-3. Computes **PageRank** (foundational-ness) and **momentum** (stars/day).
-4. **Classifies** discovered repos with a three-tier hybrid: graph
-   label-propagation → keyword heuristic cross-check → **Claude** for the
-   genuinely ambiguous cases.
+1. Runs **GitHub Search discovery** for recent, active, and high-star repos in
+   each domain/topic.
+2. Adds a curated **seed set** of well-known repos (`ingest/seeds.ts`) so the
+   graph still has stable anchors.
+3. Optionally **BFS-expands** outward by reading each repo's dependency graph
+   (SBOM) and resolving packages → source repos via npm / PyPI / crates.io / Go.
+4. Computes PageRank plus explicit **new**, **trending**, and **contribution**
+   scores.
+5. **Classifies** fetched repos with a model when configured: **Claude** via
+   `ANTHROPIC_API_KEY`, or an OpenAI-compatible local/hosted model via
+   `GV_LOCAL_URL`. Without a model, it falls back to graph label-propagation +
+   keyword heuristics.
 
 The result is written to `public/graph.json`; the React app (`src/`) renders it.
-If no snapshot exists, it falls back to curated sample data.
+Every ingest also writes a daily metric snapshot under `public/history/`. If no
+graph snapshot exists, the app falls back to curated sample data.
 
 ## Getting started
 
@@ -66,12 +72,43 @@ npm run dev          # → http://localhost:5173
 
 ```bash
 npm run ingest                                   # seeds only (unauthenticated)
-GITHUB_TOKEN=… npm run ingest                    # BFS-expand (~60+ repos)
-GITHUB_TOKEN=… ANTHROPIC_API_KEY=… npm run ingest # + Claude classification
+GITHUB_TOKEN=… npm run ingest                     # Search + BFS enrichment
+GITHUB_TOKEN=… ANTHROPIC_API_KEY=… GV_CLASSIFIER=claude npm run ingest
 ```
 
 A GitHub token (no scopes needed) raises rate limits and unlocks SBOM,
 contributor, and activity data. Tune breadth with `GV_DEPTH` and `GV_BUDGET`.
+Set `GV_SEARCH=0` to disable GitHub Search and return to seed/dependency-only
+ingestion.
+
+### Classify with Qwen instead of Claude
+
+The ingest can classify against a Qwen model rather than Claude — anything that
+speaks the OpenAI-compatible `/chat/completions` API works. Set
+`GV_CLASSIFIER=local` with `GV_LOCAL_URL` to use it.
+
+**Hosted (recommended — no install, no weights).** Use Hugging Face's inference
+router; you only need a free [HF token](https://huggingface.co/settings/tokens):
+
+```bash
+GITHUB_TOKEN=… \
+GV_CLASSIFIER=local \
+GV_LOCAL_URL=https://router.huggingface.co/v1 \
+GV_LOCAL_MODEL=Qwen/Qwen2.5-3B-Instruct \
+GV_LOCAL_KEY=hf_xxx \
+npm run ingest
+```
+
+(Or just fill `GV_LOCAL_KEY` in `.env`, where these are pre-configured.)
+
+**Fully offline (optional).** Run the weights yourself: `ingest/serve_qwen.py`
+loads a local Qwen once and exposes the same endpoint. Requires
+`pip install -r ingest/requirements.txt` (torch + transformers):
+
+```bash
+python3 ingest/serve_qwen.py                        # serves :8080, model stays warm
+GITHUB_TOKEN=… GV_CLASSIFIER=local GV_LOCAL_URL=http://localhost:8080/v1 npm run ingest
+```
 
 ## Tech
 

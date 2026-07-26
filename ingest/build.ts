@@ -1,31 +1,67 @@
-// GitVerse ingestion — BFS frontier expansion from the seed set.
+// GitVerse ingestion — GitHub Search discovery + BFS dependency expansion.
 //
-// Starting at the curated seeds, we fetch each repo, resolve its real
-// dependencies (SBOM) to their GitHub repos, and enqueue newly-discovered ones
-// up to a depth/budget. Discovered repos are classified into a galaxy by
-// heuristic. Output is public/graph.json in the GVGraph shape.
+// Search finds recent/active/popular repos across the product domains. Seeds
+// still provide stable anchors, then authenticated runs can BFS outward through
+// real dependency edges. When a model is configured, every fetched repo is
+// classified from GitHub metadata; otherwise we fall back to graph + heuristic
+// labels. Output is public/graph.json in the GVGraph shape.
 //
-// Run:  npm run ingest                          (unauth: seeds only)
-//       GITHUB_TOKEN=… npm run ingest           (auth: expands 1 hop, ~60 repos)
-//       GV_DEPTH=2 GV_BUDGET=120 … npm run ingest
+// Run:  npm run ingest                                   (unauth: seeds only)
+//       GITHUB_TOKEN=… npm run ingest                    (search + BFS)
+//       GITHUB_TOKEN=… ANTHROPIC_API_KEY=… npm run ingest (Claude labels)
 
-import { mkdirSync, writeFileSync } from "node:fs";
+import "./loadenv.ts"; // must be first — populates process.env before github/classify load
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve as pathResolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import type { GVGraph, GVNode, GVEdge, DomainId } from "../src/types.ts";
-import { SEEDS, DOMAIN_LABEL, type Seed } from "./seeds.ts";
+import type {
+  GVGraph,
+  GVNode,
+  GVEdge,
+  DomainId,
+  DiscoverySource,
+  RepoBadge,
+} from "../src/types.ts";
+import { SEEDS, DOMAIN_LABEL } from "./seeds.ts";
 import { gh, AUTHED } from "./github.ts";
 import { parsePurl, resolveToRepo } from "./resolve.ts";
 import { classifyDomain } from "./classify.ts";
 import { classifyReposAI, AI_ENABLED } from "./classify-ai.ts";
+import { classifyReposLocal, LOCAL_ENABLED, LOCAL_LABEL } from "./classify-local.ts";
 import { classifyGraph, type AffinityEdge } from "./classify-graph.ts";
+import { discoverSearchRepos } from "./search.ts";
+
+const CLASSIFIER = (process.env.GV_CLASSIFIER ?? (AI_ENABLED ? "claude" : "auto")).toLowerCase();
+const LLM =
+  CLASSIFIER === "none"
+    ? null
+    : CLASSIFIER === "claude"
+    ? AI_ENABLED
+      ? { run: classifyReposAI, label: "AI (Claude)" }
+      : null
+    : CLASSIFIER === "local"
+    ? LOCAL_ENABLED
+      ? { run: classifyReposLocal, label: LOCAL_LABEL }
+      : null
+    : AI_ENABLED
+    ? { run: classifyReposAI, label: "AI (Claude)" }
+    : LOCAL_ENABLED
+    ? { run: classifyReposLocal, label: LOCAL_LABEL }
+    : null;
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const OUT = pathResolve(__dir, "../public/graph.json");
+const HISTORY_DIR = pathResolve(__dir, "../public/history");
+const HISTORY_INDEX = pathResolve(HISTORY_DIR, "index.json");
 
 const MAX_DEPTH = Number(process.env.GV_DEPTH ?? (AUTHED ? 1 : 0));
-const BUDGET = Number(process.env.GV_BUDGET ?? (AUTHED ? 60 : SEEDS.length));
+const BUDGET = Number(process.env.GV_BUDGET ?? (AUTHED ? 240 : SEEDS.length));
+const SEARCH_ENABLED = process.env.GV_SEARCH === "1" || (AUTHED && process.env.GV_SEARCH !== "0");
 const MAX_DEPS_PER_REPO = 25;
+const NEW_WINDOW_DAYS = Number(process.env.GV_NEW_WINDOW_DAYS ?? 365);
+const ACTIVE_WINDOW_DAYS = Number(process.env.GV_ACTIVE_WINDOW_DAYS ?? 90);
+const GLOBAL_BADGE_TOP = Number(process.env.GV_BADGE_TOP ?? 18);
+const DOMAIN_BADGE_TOP = Number(process.env.GV_DOMAIN_BADGE_TOP ?? 3);
 // dependency ecosystems we follow (real software deps, not CI tooling)
 const FOLLOW_TYPES = new Set(["npm", "pypi", "cargo", "golang"]);
 
@@ -34,6 +70,7 @@ const clamp01 = (n: number) => Math.max(0, Math.min(1, n));
 const year = (iso: string) => new Date(iso).getFullYear();
 const norm = (v: number, min: number, max: number) => (max > min ? (v - min) / (max - min) : 0.5);
 const repoIdOf = (full: string) => "r-" + slug(full);
+const daysSince = (iso: string) => Math.max(0, (Date.now() - new Date(iso).getTime()) / 86_400_000);
 
 // Derive a readable ecosystem label from a repo's topics (fallback: domain bucket).
 const GENERIC_TOPICS = new Set([
@@ -49,6 +86,15 @@ function topicEcosystem(topics: string[], domain: DomainId): string {
   const pick = cand.find((t) => t.includes("-")) ?? cand[0]; // prefer descriptive multi-word topics
   if (pick) return titleCase(pick.replace(/-/g, " "));
   return DOMAIN_LABEL[domain].split(" ")[0] + " Libraries";
+}
+
+function heuristicLabel(r: RepoData) {
+  r.domain = classifyDomain(r.topics, r.language, r.description);
+  r.ecosystem = topicEcosystem(r.topics, r.domain);
+}
+
+function addBadge(r: RepoData, badge: RepoBadge) {
+  if (!r.badges.includes(badge)) r.badges.push(badge);
 }
 
 /** Real PageRank over the dependency graph — measures foundational-ness. */
@@ -82,12 +128,24 @@ interface RepoData {
   label: string;
   domain: DomainId;
   ecosystem: string;
+  discoveredBy: DiscoverySource;
+  discoverySignals: string[];
   stars: number;
   createdAt: number;
+  createdAtIso: string;
+  pushedAtIso: string;
+  updatedAtIso: string;
   topics: string[];
   description: string;
   language: string | null;
   starsPerDay: number;
+  trendScore: number;
+  newScore: number;
+  contributionScore: number;
+  trendRank?: number;
+  newRank?: number;
+  contributionRank?: number;
+  badges: RepoBadge[];
   forks: number;
   openIssues: number;
   license: string | null;
@@ -100,15 +158,41 @@ interface RepoData {
   depth: number;
 }
 
+interface FrontierItem {
+  full: string;
+  depth: number;
+  discoveredBy: DiscoverySource;
+  hintedDomain?: DomainId;
+  fallbackEcosystem?: string;
+  signals: string[];
+}
+
 // fast path: known seed package names -> repo full name (skips registry calls)
 const pkgKnown = new Map<string, string>();
 for (const s of SEEDS) for (const p of s.provides ?? []) pkgKnown.set(p.toLowerCase(), s.repo);
 
-async function fetchCore(full: string): Promise<Omit<RepoData, "domain" | "ecosystem" | "depth"> | null> {
+async function fetchCore(
+  full: string
+): Promise<
+  Omit<
+    RepoData,
+    | "domain"
+    | "ecosystem"
+    | "depth"
+    | "discoveredBy"
+    | "discoverySignals"
+    | "trendScore"
+    | "newScore"
+    | "contributionScore"
+    | "badges"
+  > | null
+> {
   const res = await gh<any>(`/repos/${full}`);
   if (!res.ok || !res.data) return null;
   const d = res.data;
   const created = d.created_at as string;
+  const pushed = (d.pushed_at ?? created) as string;
+  const updated = (d.updated_at ?? pushed) as string;
   const ageDays = Math.max(1, (Date.now() - new Date(created).getTime()) / 86_400_000);
   const spdx = d.license?.spdx_id as string | undefined;
   return {
@@ -117,6 +201,9 @@ async function fetchCore(full: string): Promise<Omit<RepoData, "domain" | "ecosy
     label: d.name,
     stars: d.stargazers_count ?? 0,
     createdAt: year(created),
+    createdAtIso: created,
+    pushedAtIso: pushed,
+    updatedAtIso: updated,
     topics: (d.topics ?? []).map((t: string) => t.toLowerCase()),
     description: d.description ?? "",
     language: d.language ?? null,
@@ -126,7 +213,7 @@ async function fetchCore(full: string): Promise<Omit<RepoData, "domain" | "ecosy
     license: spdx && spdx !== "NOASSERTION" ? spdx : null,
     owner: d.owner?.login ?? full.split("/")[0],
     url: d.homepage || d.html_url || `https://github.com/${full}`,
-    lastPush: year(d.pushed_at ?? created),
+    lastPush: year(pushed),
     depRepos: [],
   };
 }
@@ -167,20 +254,165 @@ async function enrich(rd: RepoData) {
   rd.depRepos = [...targets];
 }
 
+function scoreRepos(repos: RepoData[]) {
+  const stars = repos.map((r) => r.stars);
+  const forks = repos.map((r) => r.forks);
+  const spd = repos.map((r) => r.starsPerDay);
+  const activity = repos.map((r) => r.activity ?? 0);
+  const contributors = repos.map((r) => r.contributors ?? 0);
+  const minMax = (xs: number[]) => [Math.min(...xs), Math.max(...xs)] as const;
+  const [starsMin, starsMax] = minMax(stars);
+  const [forksMin, forksMax] = minMax(forks);
+  const [spdMin, spdMax] = minMax(spd);
+  const [actMin, actMax] = minMax(activity);
+  const [conMin, conMax] = minMax(contributors);
+
+  for (const r of repos) {
+    const ageScore = clamp01(1 - daysSince(r.createdAtIso) / NEW_WINDOW_DAYS);
+    const pushedScore = clamp01(1 - daysSince(r.pushedAtIso) / ACTIVE_WINDOW_DAYS);
+    const starsScore = norm(r.stars, starsMin, starsMax);
+    const forksScore = norm(r.forks, forksMin, forksMax);
+    const speedScore = norm(r.starsPerDay, spdMin, spdMax);
+    const activityScore = norm(r.activity ?? 0, actMin, actMax);
+    const contributorScore = norm(r.contributors ?? 0, conMin, conMax);
+
+    r.newScore = Number(
+      clamp01(ageScore * 0.55 + starsScore * 0.25 + speedScore * 0.2).toFixed(3)
+    );
+    r.trendScore = Number(
+      clamp01(speedScore * 0.4 + activityScore * 0.25 + pushedScore * 0.25 + forksScore * 0.1).toFixed(3)
+    );
+    r.contributionScore = Number(
+      clamp01(activityScore * 0.65 + contributorScore * 0.25 + pushedScore * 0.1).toFixed(3)
+    );
+  }
+
+  const rank = (
+    key: "trendScore" | "newScore" | "contributionScore",
+    rankKey: "trendRank" | "newRank" | "contributionRank",
+    badge: RepoBadge
+  ) => {
+    const ranked = [...repos].sort((a, b) => b[key] - a[key]);
+    ranked.forEach((r, i) => {
+      r[rankKey] = i + 1;
+      if (i < GLOBAL_BADGE_TOP) addBadge(r, badge);
+    });
+    for (const domain of Object.keys(DOMAIN_LABEL) as DomainId[]) {
+      ranked
+        .filter((r) => r.domain === domain)
+        .slice(0, DOMAIN_BADGE_TOP)
+        .forEach((r) => addBadge(r, badge));
+    }
+  };
+
+  rank("trendScore", "trendRank", "trending");
+  rank("newScore", "newRank", "new");
+  rank("contributionScore", "contributionRank", "active");
+}
+
+function writeHistorySnapshot(graph: GVGraph, repos: RepoData[], generatedAt: string) {
+  const day = generatedAt.slice(0, 10);
+  mkdirSync(HISTORY_DIR, { recursive: true });
+  writeFileSync(
+    pathResolve(HISTORY_DIR, `${day}.json`),
+    JSON.stringify(
+      {
+        generatedAt,
+        repoCount: repos.length,
+        repos: repos.map((r) => ({
+          full: r.full,
+          domain: r.domain,
+          ecosystem: r.ecosystem,
+          stars: r.stars,
+          forks: r.forks,
+          contributors: r.contributors,
+          recentCommits: r.activity ?? 0,
+          trendScore: r.trendScore,
+          newScore: r.newScore,
+          contributionScore: r.contributionScore,
+          createdAt: r.createdAtIso,
+          pushedAt: r.pushedAtIso,
+          discoverySignals: r.discoverySignals,
+        })),
+        summary: graph.summary,
+      },
+      null,
+      2
+    )
+  );
+
+  let existing: { snapshots?: string[] } = {};
+  try {
+    existing = JSON.parse(readFileSync(HISTORY_INDEX, "utf8"));
+  } catch {
+    existing = {};
+  }
+  const snapshots = new Set(existing.snapshots ?? []);
+  snapshots.add(`${day}.json`);
+  writeFileSync(
+    HISTORY_INDEX,
+    JSON.stringify({ generatedAt, snapshots: [...snapshots].sort() }, null, 2)
+  );
+}
+
 async function main() {
   console.log(
     `GitVerse ingest — ${AUTHED ? "authenticated" : "UNAUTHENTICATED"} · ` +
       `depth ${MAX_DEPTH}, budget ${BUDGET} · ` +
-      `classifier: ${AI_ENABLED ? "AI (Claude)" : "heuristic"}\n`
+      `search ${SEARCH_ENABLED ? "on" : "off"} · classifier: ${LLM ? LLM.label : "heuristic"}\n`
   );
 
   const seedByFull = new Map(SEEDS.map((s) => [s.repo.toLowerCase(), s]));
+  const frontier = new Map<string, FrontierItem>();
+  const addFrontier = (item: FrontierItem) => {
+    const key = item.full.toLowerCase();
+    const existing = frontier.get(key);
+    if (!existing) {
+      frontier.set(key, item);
+      return;
+    }
+    existing.depth = Math.min(existing.depth, item.depth);
+    existing.signals = [...new Set([...existing.signals, ...item.signals])];
+    existing.hintedDomain ??= item.hintedDomain;
+    existing.fallbackEcosystem ??= item.fallbackEcosystem;
+    if (existing.discoveredBy !== "seed") existing.discoveredBy = item.discoveredBy;
+  };
+
+  for (const s of SEEDS) {
+    addFrontier({
+      full: s.repo,
+      depth: 0,
+      discoveredBy: "seed",
+      hintedDomain: s.domain,
+      fallbackEcosystem: s.ecosystem,
+      signals: ["seed"],
+    });
+  }
+
+  if (SEARCH_ENABLED) {
+    const found = await discoverSearchRepos();
+    for (const c of found) {
+      addFrontier({
+        full: c.full,
+        depth: 0,
+        discoveredBy: c.discoveredBy,
+        hintedDomain: c.hintedDomain,
+        signals: c.signals,
+      });
+    }
+  }
+
   const visited = new Map<string, RepoData>();
-  const queued = new Set<string>(SEEDS.map((s) => s.repo.toLowerCase()));
-  const queue: { full: string; depth: number }[] = SEEDS.map((s) => ({ full: s.repo, depth: 0 }));
+  const queued = new Set<string>();
+  const queue: FrontierItem[] = [];
+  for (const item of frontier.values()) {
+    queued.add(item.full.toLowerCase());
+    queue.push(item);
+  }
 
   while (queue.length && visited.size < BUDGET) {
-    const { full, depth } = queue.shift()!;
+    const item = queue.shift()!;
+    const { full, depth } = item;
     const low = full.toLowerCase();
     if (visited.has(low)) continue;
 
@@ -191,14 +423,27 @@ async function main() {
     }
 
     const seed = seedByFull.get(low);
-    const domain: DomainId = seed ? seed.domain : classifyDomain(core.topics, core.language, core.description);
-    const ecosystem = seed ? seed.ecosystem : `${DOMAIN_LABEL[domain]} Libraries`;
-    const rd: RepoData = { ...core, domain, ecosystem, depth };
+    const domain: DomainId =
+      seed?.domain ?? item.hintedDomain ?? classifyDomain(core.topics, core.language, core.description);
+    const ecosystem = seed?.ecosystem ?? item.fallbackEcosystem ?? `${DOMAIN_LABEL[domain]} Libraries`;
+    const rd: RepoData = {
+      ...core,
+      domain,
+      ecosystem,
+      depth,
+      discoveredBy: item.discoveredBy,
+      discoverySignals: item.signals,
+      trendScore: 0,
+      newScore: 0,
+      contributionScore: 0,
+      badges: [],
+    };
 
     if (AUTHED) await enrich(rd);
     visited.set(low, rd);
+    const labelPreview = LLM ? "" : ` · ${DOMAIN_LABEL[domain]}`;
     console.log(
-      `  ✓ [d${depth}] ${full} — ${rd.stars.toLocaleString()}★ · ${DOMAIN_LABEL[domain]}` +
+      `  ✓ [d${depth}] ${full} — ${rd.stars.toLocaleString()}★${labelPreview}` +
         (rd.depRepos.length ? ` · ${rd.depRepos.length} deps` : "")
     );
 
@@ -207,7 +452,12 @@ async function main() {
         const dlow = dep.toLowerCase();
         if (!queued.has(dlow) && visited.size + queued.size < BUDGET * 2) {
           queued.add(dlow);
-          queue.push({ full: dep, depth: depth + 1 });
+          queue.push({
+            full: dep,
+            depth: depth + 1,
+            discoveredBy: "dependency",
+            signals: [`dependency:${rd.full}`],
+          });
         }
       }
     }
@@ -216,7 +466,7 @@ async function main() {
   const repos = [...visited.values()];
   if (repos.length === 0) throw new Error("No repos fetched — check network / rate limit / token.");
 
-  // ---- edges among included repos (also feed the classifier) ----
+  // ---- edges among included repos (also feed the offline classifier) ----
   const includedId = new Map(repos.map((r) => [r.full.toLowerCase(), r.id]));
   const yearById = new Map(repos.map((r) => [r.id, r.createdAt]));
   const depEdges: [string, string][] = [];
@@ -237,74 +487,80 @@ async function main() {
     }
   }
 
-  // ---- hybrid classification of discovered repos ----
-  // 1) graph label-propagation (free) — spread the seeds' known domains.
-  const seedLabels = new Map<string, DomainId>();
-  for (const r of repos) if (r.depth === 0) seedLabels.set(r.id, r.domain);
-  const affinity: AffinityEdge[] = [
-    ...depEdges.map(([a, b]) => ({ a, b, w: 1 })),
-    ...simPairs.map(([a, b]) => ({ a, b, w: 3 })), // shared-topic ties are strong
-  ];
-  const graphCls = classifyGraph(repos.map((r) => r.id), seedLabels, affinity);
-
-  // Trust the graph only when it AGREES with the repo's own text signal — this
-  // guards against the AI-seeds' dense fan-out pulling every shared lib into AI.
-  // Disagreements are the genuinely ambiguous cases → LLM (or heuristic).
-  const discovered = repos.filter((r) => r.depth > 0);
-  const CONF = 0.6;
-  const uncertain: RepoData[] = [];
-  let byGraph = 0;
-  for (const r of discovered) {
-    const gc = graphCls.get(r.id);
-    const textDom = classifyDomain(r.topics, r.language, r.description);
-    if (gc && gc.confidence >= CONF && gc.domain === textDom) {
-      r.domain = gc.domain;
-      r.ecosystem = topicEcosystem(r.topics, gc.domain);
-      byGraph++;
-    } else {
-      uncertain.push(r); // 2) send ambiguous ones to the LLM (or heuristic)
-    }
-  }
-
-  let byLLM = 0;
-  let llmFailed = false;
-  if (uncertain.length && AI_ENABLED) {
+  // ---- categorization ----
+  // Preferred path: the configured model classifies every repo, including seeds.
+  // Seed domains remain only as crawl-root hints and offline fallback labels.
+  let classifierUsed = LLM?.label ?? "heuristic";
+  if (LLM) {
+    let byModel = 0;
+    let byFallback = 0;
     try {
-      const cls = await classifyReposAI(
-        uncertain.map((r) => ({ full: r.full, description: r.description, topics: r.topics, language: r.language }))
+      const cls = await LLM.run(
+        repos.map((r) => ({
+          full: r.full,
+          description: r.description,
+          topics: r.topics,
+          language: r.language,
+        }))
       );
-      for (const r of uncertain) {
+      for (const r of repos) {
         const c = cls.get(r.full.toLowerCase());
         if (c) {
           r.domain = c.domain;
           r.ecosystem = c.ecosystem;
-          byLLM++;
+          byModel++;
         } else {
-          r.ecosystem = topicEcosystem(r.topics, r.domain);
+          heuristicLabel(r);
+          byFallback++;
         }
       }
     } catch (e: any) {
-      llmFailed = true;
-      console.warn(`  ! LLM classification failed (${e.message}) — using heuristic fallback`);
+      byFallback = repos.length;
+      classifierUsed = "heuristic fallback";
+      for (const r of repos) heuristicLabel(r);
+      console.warn(`  ! ${LLM.label} classification failed (${e.message}) — using heuristic fallback`);
     }
-  }
-  if (!uncertain.length) {
-    // nothing to do
-  } else if (!AI_ENABLED || llmFailed) {
-    for (const r of uncertain) {
-      r.domain = classifyDomain(r.topics, r.language, r.description);
-      r.ecosystem = topicEcosystem(r.topics, r.domain);
+    if (byModel > 0 && byFallback > 0) classifierUsed = `${LLM.label} + heuristic fallback`;
+    console.log(
+      `\nClassified ${repos.length} repos — ${LLM.label}: ${byModel}` +
+        (byFallback ? `, heuristic fallback: ${byFallback}` : "")
+    );
+  } else {
+    // Offline fallback: keep the previous free hybrid behavior for discovered
+    // repos, using seed labels only as graph anchors.
+    const seedLabels = new Map<string, DomainId>();
+    for (const r of repos) if (r.depth === 0) seedLabels.set(r.id, r.domain);
+    const affinity: AffinityEdge[] = [
+      ...depEdges.map(([a, b]) => ({ a, b, w: 1 })),
+      ...simPairs.map(([a, b]) => ({ a, b, w: 3 })), // shared-topic ties are strong
+    ];
+    const graphCls = classifyGraph(repos.map((r) => r.id), seedLabels, affinity);
+
+    const discovered = repos.filter((r) => r.depth > 0);
+    const CONF = 0.6;
+    let byGraph = 0;
+    let byHeuristic = 0;
+    for (const r of discovered) {
+      const gc = graphCls.get(r.id);
+      const textDom = classifyDomain(r.topics, r.language, r.description);
+      if (gc && gc.confidence >= CONF && gc.domain === textDom) {
+        r.domain = gc.domain;
+        r.ecosystem = topicEcosystem(r.topics, gc.domain);
+        byGraph++;
+      } else {
+        heuristicLabel(r);
+        byHeuristic++;
+      }
     }
+    console.log(
+      `\nClassified ${discovered.length} discovered repos — ` +
+        `graph: ${byGraph}, heuristic: ${byHeuristic}`
+    );
   }
-  console.log(
-    `\nClassified ${discovered.length} discovered repos — ` +
-      `graph: ${byGraph}, ${AI_ENABLED && !llmFailed ? `LLM: ${byLLM}` : `heuristic: ${uncertain.length}`}`
-  );
+
+  scoreRepos(repos);
 
   // ---- metrics ----
-  const spd = repos.map((r) => r.starsPerDay);
-  const spdMin = Math.min(...spd);
-  const spdMax = Math.max(...spd);
   const pr = pageRank(repos.map((r) => r.id), depEdges);
   const prMin = Math.min(...pr.values());
   const prMax = Math.max(...pr.values());
@@ -331,7 +587,18 @@ async function main() {
       domain: r.domain,
       stars: Math.round(r.stars / 1000),
       pagerank: Number(clamp01(norm(pr.get(r.id) ?? 0, prMin, prMax)).toFixed(2)),
-      momentum: Number(clamp01(norm(r.starsPerDay, spdMin, spdMax)).toFixed(2)),
+      momentum: r.trendScore,
+      trendScore: r.trendScore,
+      newScore: r.newScore,
+      contributionScore: r.contributionScore,
+      starsPerDay: Number(r.starsPerDay.toFixed(3)),
+      recentCommits: r.activity ?? 0,
+      discoveredBy: r.discoveredBy,
+      discoverySignals: r.discoverySignals,
+      trendRank: r.trendRank,
+      newRank: r.newRank,
+      contributionRank: r.contributionRank,
+      badges: r.badges,
       activity: r.activity,
       contributors: r.contributors,
       forks: Math.round(r.forks / 1000),
@@ -340,6 +607,7 @@ async function main() {
       language: r.language ?? undefined,
       owner: r.owner,
       url: r.url,
+      github: `https://github.com/${r.full}`,
       lastPush: r.lastPush,
       createdAt: r.createdAt,
       description: r.description,
@@ -382,17 +650,30 @@ async function main() {
     });
   }
 
-  const graph: GVGraph = { nodes, links };
+  const generatedAt = new Date().toISOString();
+  const graph: GVGraph = {
+    nodes,
+    links,
+    generatedAt,
+    summary: {
+      repoCount: repos.length,
+      searchEnabled: SEARCH_ENABLED,
+      classifier: classifierUsed,
+    },
+  };
   mkdirSync(dirname(OUT), { recursive: true });
   writeFileSync(OUT, JSON.stringify(graph, null, 2));
+  writeHistorySnapshot(graph, repos, generatedAt);
 
   const seedCount = repos.filter((r) => r.depth === 0).length;
+  const searchCount = repos.filter((r) => r.discoveredBy === "search").length;
   const depCount = links.filter((l) => l.kind === "depends_on").length;
   console.log(
-    `\nWrote ${OUT}\n  ${repos.length} repos (${seedCount} seeds + ${repos.length - seedCount} discovered) · ` +
+    `\nWrote ${OUT}\n  ${repos.length} repos (${seedCount} frontier, ${searchCount} search-discovered) · ` +
       `${nodes.length} nodes · ${links.length} edges (${depCount} dependency)`
   );
-  if (!AUTHED) console.log("\nNote: set GITHUB_TOKEN to expand beyond the seeds (BFS needs SBOM access).");
+  console.log(`  History snapshot: public/history/${generatedAt.slice(0, 10)}.json`);
+  if (!AUTHED) console.log("\nNote: set GITHUB_TOKEN to enable default Search discovery + BFS enrichment.");
 }
 
 main().catch((e) => {
