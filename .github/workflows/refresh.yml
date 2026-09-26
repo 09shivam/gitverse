@@ -1,0 +1,71 @@
+# Scheduled ingest — refreshes public/graph.json from GitHub on a timer, commits
+# it, and lets the host (Vercel/Netlify/etc.) auto-redeploy on the push. No
+# server: the runner exists only for the ~2 minutes this job runs.
+#
+# Required repo secret:
+#   HF_TOKEN   Hugging Face token (free) — https://huggingface.co/settings/tokens
+#              Used by the hosted Qwen classifier. Add under
+#              Settings → Secrets and variables → Actions → New repository secret.
+#
+# Optional repo secret:
+#   GH_PAT     A GitHub PAT (no scopes needed for public data). Raises the API
+#              rate limit from 1,000/hr (built-in token) to 5,000/hr, so BFS
+#              enrichment doesn't get throttled. Falls back to the built-in
+#              token automatically if you don't set it.
+#
+# To classify with Claude instead of Qwen: add an ANTHROPIC_API_KEY secret, then
+# in the env block below set GV_CLASSIFIER: claude and delete the three GV_LOCAL_*
+# lines (add ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }} in their place).
+
+name: refresh-graph
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # daily at 06:00 UTC
+  workflow_dispatch: {}    # adds a manual "Run workflow" button in the Actions tab
+
+# Never let two refreshes run at once (a slow ingest + the next tick).
+concurrency:
+  group: refresh-graph
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write      # needed to push the updated graph.json back
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Ingest fresh graph from GitHub
+        env:
+          # PAT if provided (higher rate limit), else the built-in Actions token.
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || github.token }}
+          # Classify via the hosted Qwen model on Hugging Face's router.
+          GV_CLASSIFIER: local
+          GV_LOCAL_URL: https://router.huggingface.co/v1
+          GV_LOCAL_MODEL: Qwen/Qwen2.5-3B-Instruct
+          GV_LOCAL_KEY: ${{ secrets.HF_TOKEN }}
+          # Bound the run; raise for a broader graph, lower for a faster job.
+          GV_BUDGET: "240"
+        run: npm run ingest
+
+      - name: Commit refreshed data (if it changed)
+        run: |
+          git config user.name  "gitverse-bot"
+          git config user.email "gitverse-bot@users.noreply.github.com"
+          git add public/graph.json public/history
+          if git diff --cached --quiet; then
+            echo "No data changes — nothing to commit."
+          else
+            git commit -m "chore: refresh graph $(date -u +%F)"
+            git push
+          fi
