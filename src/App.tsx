@@ -27,6 +27,21 @@ const DOMAIN_ANCHOR: Record<DomainId, { x: number; y: number }> = {
   game_dev: { x: 330, y: 245 },
 };
 
+// Google-Maps-style semantic collapse: when zoomed far enough out, the whole
+// galaxy reads as a single "GitVerse" star instead of overlapping labels.
+// EXPAND_SCALE = fully detailed; COLLAPSE_SCALE = fully collapsed; the band
+// between the two cross-fades so the transition never pops.
+const COLLAPSE_SCALE = 0.62;
+const EXPAND_SCALE = 0.95;
+function expandFactor(k: number): number {
+  return Math.max(0, Math.min(1, (k - COLLAPSE_SCALE) / (EXPAND_SCALE - COLLAPSE_SCALE)));
+}
+// Center of mass of the domain anchors — where the collapsed star sits.
+const GALAXY_CENTER = {
+  x: Object.values(DOMAIN_ANCHOR).reduce((s, a) => s + a.x, 0) / 9,
+  y: Object.values(DOMAIN_ANCHOR).reduce((s, a) => s + a.y, 0) / 9,
+};
+
 const EDGE_COLOR: Record<GVEdge["kind"], string> = {
   contains: "148,154,196",
   depends_on: "180,156,232",
@@ -621,6 +636,68 @@ export default function App() {
           ctx.globalAlpha = 1;
           ctx.restore();
         }}
+        onRenderFramePost={(ctx: CanvasRenderingContext2D, globalScale: number) => {
+          // The collapsed single-star view. Fully opaque when zoomed all the way
+          // out, fading to nothing as the individual stars fade in.
+          const ef = expandFactor(globalScale);
+          if (ef >= 1) return;
+          const a = 1 - ef;
+          const t = performance.now() / 1000;
+          const cx = GALAXY_CENTER.x;
+          const cy = GALAXY_CENTER.y;
+          const pulse = 0.9 + 0.1 * Math.sin(t * 1.8);
+          // Sizes are divided by globalScale so the star holds a constant
+          // on-screen size no matter how far out the user has zoomed.
+          const halo = (58 / globalScale) * pulse;
+          const core = 4.5 / globalScale;
+
+          ctx.save();
+          ctx.globalCompositeOperation = "lighter";
+          const glow = ctx.createRadialGradient(cx, cy, 0, cx, cy, halo);
+          glow.addColorStop(0, `rgba(255,255,255,${0.5 * a})`);
+          glow.addColorStop(0.25, `rgba(214,180,255,${0.22 * a})`);
+          glow.addColorStop(0.6, `rgba(140,120,255,${0.08 * a})`);
+          glow.addColorStop(1, "rgba(140,120,255,0)");
+          ctx.fillStyle = glow;
+          ctx.beginPath();
+          ctx.arc(cx, cy, halo, 0, 2 * Math.PI);
+          ctx.fill();
+
+          const hot = ctx.createRadialGradient(cx, cy, 0, cx, cy, core);
+          hot.addColorStop(0, `rgba(255,255,255,${0.98 * a})`);
+          hot.addColorStop(0.5, `rgba(240,235,255,${0.8 * a})`);
+          hot.addColorStop(1, `rgba(190,170,255,${0.2 * a})`);
+          ctx.fillStyle = hot;
+          ctx.beginPath();
+          ctx.arc(cx, cy, core, 0, 2 * Math.PI);
+          ctx.fill();
+
+          const ray = (24 / globalScale) * pulse;
+          ctx.lineWidth = 1.1 / globalScale;
+          ctx.strokeStyle = `rgba(245,240,255,${0.7 * a})`;
+          ctx.beginPath();
+          ctx.moveTo(cx - ray, cy);
+          ctx.lineTo(cx + ray, cy);
+          ctx.moveTo(cx, cy - ray);
+          ctx.lineTo(cx, cy + ray);
+          ctx.stroke();
+          ctx.restore();
+
+          const fs = 15 / globalScale;
+          ctx.save();
+          ctx.textAlign = "center";
+          ctx.textBaseline = "middle";
+          ctx.shadowColor = "rgba(0,0,0,0.85)";
+          ctx.shadowBlur = 6 / globalScale;
+          ctx.font = `700 ${fs}px Inter, sans-serif`;
+          ctx.fillStyle = `rgba(245,242,255,${0.96 * a})`;
+          ctx.fillText("GitVerse", cx, cy + core + fs * 1.4);
+          const repoCount = universeStats?.repos ?? source.nodes.filter((nn) => nn.kind === "repo").length;
+          ctx.font = `500 ${9 / globalScale}px Inter, sans-serif`;
+          ctx.fillStyle = `rgba(190,196,224,${0.85 * a})`;
+          ctx.fillText(`${fmt(repoCount)} repositories`, cx, cy + core + fs * 1.4 + 12 / globalScale);
+          ctx.restore();
+        }}
         nodePointerAreaPaint={(node: any, color, ctx) => {
           if (!born(node.createdAt)) return;
           ctx.fillStyle = color;
@@ -632,12 +709,16 @@ export default function App() {
           // Positions are undefined/NaN until the force layout runs its first ticks.
           if (!Number.isFinite(node.x) || !Number.isFinite(node.y)) return;
           const n = node as GVNode;
+          // Below the collapse threshold the galaxy is drawn as one "GitVerse"
+          // star (in onRenderFramePost) — skip the individual stars entirely.
+          const ef = expandFactor(globalScale);
+          if (ef <= 0) return;
           const isBorn = born(n.createdAt);
           const color = DOMAIN_META[n.domain].color;
           const r = nodeRadius(n);
           const isSel = selected?.id === n.id;
           const isHover = hoverId === n.id;
-          const alpha = isBorn ? 1 : 0.08;
+          const alpha = (isBorn ? 1 : 0.08) * ef;
           const badges = n.badges ?? [];
           const t = performance.now() / 1000;
 
