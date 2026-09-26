@@ -14,16 +14,15 @@ const cache = new Map<string, string | null>();
 /** Parse a Package URL like pkg:npm/@scope/name@1.2.3 into its parts. */
 export function parsePurl(locator: string): Purl | null {
   if (!locator.startsWith("pkg:")) return null;
-  let body = locator.slice(4).split("@").slice(0, -1).join("@") || locator.slice(4);
-  // strip version (last @segment) if present without breaking npm scopes
-  const at = locator.lastIndexOf("@");
-  if (at > 4) body = locator.slice(4, at);
-  const [typeAndPath, ...rest] = body.split("?");
-  const parts = typeAndPath.split("/").map(decodeURIComponent);
+  // drop qualifiers (?...) and subpath (#...)
+  const parts = locator.slice(4).split(/[?#]/)[0].split("/");
   const type = parts.shift() ?? "";
   if (!type || parts.length === 0) return null;
-  const name = parts.pop()!;
-  const namespace = parts.length ? parts.join("/") : null;
+  // the version is an @suffix on the name segment only, so an npm scope in
+  // the namespace (@scope/name, no version) is never mistaken for one
+  const name = decodeURIComponent(parts.pop()!.split("@")[0]);
+  if (!name) return null;
+  const namespace = parts.length ? parts.map(decodeURIComponent).join("/") : null;
   return { type, namespace, name };
 }
 
