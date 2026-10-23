@@ -1,0 +1,4120 @@
+{
+  "generatedAt": "2026-10-23T10:58:12.162Z",
+  "repoCount": 240,
+  "repos": [
+    {
+      "full": "pytorch/pytorch",
+      "domain": "ai",
+      "ecosystem": "Deep Learning",
+      "stars": 105000,
+      "forks": 32519,
+      "contributors": 7206,
+      "recentCommits": 5082,
+      "trendScore": 0.428,
+      "newScore": 0.074,
+      "contributionScore": 0.706,
+      "createdAt": "2016-08-13T05:26:41Z",
+      "pushedAt": "2026-10-23T10:32:11Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "tensorflow/tensorflow",
+      "domain": "ai",
+      "ecosystem": "Deep Learning",
+      "stars": 201190,
+      "forks": 79386,
+      "contributors": 5398,
+      "recentCommits": 4565,
+      "trendScore": 0.469,
+      "newScore": 0.141,
+      "contributionScore": 0.607,
+      "createdAt": "2015-11-07T01:19:20Z",
+      "pushedAt": "2026-10-23T10:34:29Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "huggingface/transformers",
+      "domain": "ai",
+      "ecosystem": "Deep Learning",
+      "stars": 168019,
+      "forks": 34948,
+      "contributors": 4200,
+      "recentCommits": 1271,
+      "trendScore": 0.334,
+      "newScore": 0.12,
+      "contributionScore": 0.335,
+      "createdAt": "2018-10-29T13:56:00Z",
+      "pushedAt": "2026-10-23T09:40:43Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "vllm-project/vllm",
+      "domain": "ai",
+      "ecosystem": "Deepseek V3",
+      "stars": 95206,
+      "forks": 23836,
+      "contributors": 3862,
+      "recentCommits": 8649,
+      "trendScore": 0.524,
+      "newScore": 0.072,
+      "contributionScore": 0.84,
+      "createdAt": "2023-02-09T11:23:20Z",
+      "pushedAt": "2026-10-23T10:35:15Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "langchain-ai/langchain",
+      "domain": "ai",
+      "ecosystem": "Ai Agents",
+      "stars": 148313,
+      "forks": 24894,
+      "contributors": 3746,
+      "recentCommits": 714,
+      "trendScore": 0.317,
+      "newScore": 0.111,
+      "contributionScore": 0.28,
+      "createdAt": "2022-10-17T02:58:36Z",
+      "pushedAt": "2026-10-23T08:59:26Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "facebook/react",
+      "domain": "web",
+      "ecosystem": "Declarative",
+      "stars": 251708,
+      "forks": 51568,
+      "contributors": 2025,
+      "recentCommits": 165,
+      "trendScore": 0.32,
+      "newScore": 0.176,
+      "contributionScore": 0.181,
+      "createdAt": "2013-05-24T16:15:54Z",
+      "pushedAt": "2026-10-23T00:44:47Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "vuejs/core",
+      "domain": "web",
+      "ecosystem": "Web Libraries",
+      "stars": 54785,
+      "forks": 9265,
+      "contributors": 662,
+      "recentCommits": 107,
+      "trendScore": 0.266,
+      "newScore": 0.039,
+      "contributionScore": 0.13,
+      "createdAt": "2018-06-12T13:49:36Z",
+      "pushedAt": "2026-10-23T07:56:00Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "vercel/next.js",
+      "domain": "web",
+      "ecosystem": "Server Rendering",
+      "stars": 143191,
+      "forks": 34882,
+      "contributors": 4176,
+      "recentCommits": 1938,
+      "trendScore": 0.348,
+      "newScore": 0.101,
+      "contributionScore": 0.381,
+      "createdAt": "2016-10-05T23:32:51Z",
+      "pushedAt": "2026-10-23T10:38:21Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "nodejs/node",
+      "domain": "web",
+      "ecosystem": "Js",
+      "stars": 122578,
+      "forks": 39932,
+      "contributors": 4531,
+      "recentCommits": 1497,
+      "trendScore": 0.339,
+      "newScore": 0.086,
+      "contributionScore": 0.362,
+      "createdAt": "2014-11-26T19:57:11Z",
+      "pushedAt": "2026-10-23T10:35:37Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "expressjs/express",
+      "domain": "web",
+      "ecosystem": "Express",
+      "stars": 69577,
+      "forks": 25247,
+      "contributors": 395,
+      "recentCommits": 25,
+      "trendScore": 0.265,
+      "newScore": 0.048,
+      "contributionScore": 0.109,
+      "createdAt": "2009-06-26T18:56:01Z",
+      "pushedAt": "2026-10-17T19:45:35Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "kubernetes/kubernetes",
+      "domain": "cloud",
+      "ecosystem": "Cncf",
+      "stars": 128569,
+      "forks": 47097,
+      "contributors": 5968,
+      "recentCommits": 1593,
+      "trendScore": 0.35,
+      "newScore": 0.09,
+      "contributionScore": 0.419,
+      "createdAt": "2014-06-06T22:56:04Z",
+      "pushedAt": "2026-10-23T10:39:54Z",
+      "discoverySignals": [
+        "seed",
+        "cloud:active",
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "moby/moby",
+      "domain": "cloud",
+      "ecosystem": "Containers",
+      "stars": 72201,
+      "forks": 19193,
+      "contributors": 2627,
+      "recentCommits": 1098,
+      "trendScore": 0.3,
+      "newScore": 0.05,
+      "contributionScore": 0.267,
+      "createdAt": "2013-01-18T18:10:57Z",
+      "pushedAt": "2026-10-22T09:41:14Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "istio/istio",
+      "domain": "cloud",
+      "ecosystem": "Api Management",
+      "stars": 38467,
+      "forks": 8399,
+      "contributors": 1476,
+      "recentCommits": 371,
+      "trendScore": 0.27,
+      "newScore": 0.027,
+      "contributionScore": 0.177,
+      "createdAt": "2016-11-18T23:57:21Z",
+      "pushedAt": "2026-10-23T04:02:43Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "envoyproxy/envoy",
+      "domain": "cloud",
+      "ecosystem": "Cats Over Dogs",
+      "stars": 29111,
+      "forks": 5673,
+      "contributors": 1772,
+      "recentCommits": 1259,
+      "trendScore": 0.292,
+      "newScore": 0.02,
+      "contributionScore": 0.25,
+      "createdAt": "2016-08-08T15:07:24Z",
+      "pushedAt": "2026-10-23T09:46:02Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "hashicorp/terraform",
+      "domain": "devops",
+      "ecosystem": "Cloud Management",
+      "stars": 50078,
+      "forks": 10596,
+      "contributors": 2340,
+      "recentCommits": 353,
+      "trendScore": 0.273,
+      "newScore": 0.035,
+      "contributionScore": 0.206,
+      "createdAt": "2014-03-13T22:25:48Z",
+      "pushedAt": "2026-10-23T10:32:00Z",
+      "discoverySignals": [
+        "seed",
+        "devops:popular"
+      ]
+    },
+    {
+      "full": "opentofu/opentofu",
+      "domain": "devops",
+      "ecosystem": "DevOps Libraries",
+      "stars": 30586,
+      "forks": 1404,
+      "contributors": 2363,
+      "recentCommits": 214,
+      "trendScore": 0.261,
+      "newScore": 0.023,
+      "contributionScore": 0.196,
+      "createdAt": "2023-08-16T20:01:36Z",
+      "pushedAt": "2026-10-22T20:12:35Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "ansible/ansible",
+      "domain": "devops",
+      "ecosystem": "Ansible",
+      "stars": 71071,
+      "forks": 24318,
+      "contributors": 6959,
+      "recentCommits": 105,
+      "trendScore": 0.28,
+      "newScore": 0.049,
+      "contributionScore": 0.348,
+      "createdAt": "2012-03-06T14:58:02Z",
+      "pushedAt": "2026-10-22T20:08:37Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "jenkinsci/jenkins",
+      "domain": "devops",
+      "ecosystem": "Continuous Delivery",
+      "stars": 26678,
+      "forks": 9802,
+      "contributors": 1223,
+      "recentCommits": 314,
+      "trendScore": 0.269,
+      "newScore": 0.018,
+      "contributionScore": 0.164,
+      "createdAt": "2010-11-22T21:21:23Z",
+      "pushedAt": "2026-10-23T00:44:17Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "apache/spark",
+      "domain": "data_engineering",
+      "ecosystem": "Big Data",
+      "stars": 44286,
+      "forks": 29467,
+      "contributors": 3642,
+      "recentCommits": 1471,
+      "trendScore": 0.323,
+      "newScore": 0.031,
+      "contributionScore": 0.329,
+      "createdAt": "2014-02-25T08:00:08Z",
+      "pushedAt": "2026-10-23T09:24:11Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "apache/airflow",
+      "domain": "data_engineering",
+      "ecosystem": "Apache Airflow",
+      "stars": 47268,
+      "forks": 18111,
+      "contributors": 4735,
+      "recentCommits": 2515,
+      "trendScore": 0.34,
+      "newScore": 0.033,
+      "contributionScore": 0.441,
+      "createdAt": "2015-04-13T18:04:58Z",
+      "pushedAt": "2026-10-23T10:32:06Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "apache/kafka",
+      "domain": "data_engineering",
+      "ecosystem": "Kafka",
+      "stars": 34104,
+      "forks": 15619,
+      "contributors": 1780,
+      "recentCommits": 612,
+      "trendScore": 0.285,
+      "newScore": 0.024,
+      "contributionScore": 0.205,
+      "createdAt": "2011-08-15T18:06:16Z",
+      "pushedAt": "2026-10-23T10:02:21Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "dbt-labs/dbt-core",
+      "domain": "data_engineering",
+      "ecosystem": "Business Intelligence",
+      "stars": 14067,
+      "forks": 2643,
+      "contributors": 458,
+      "recentCommits": 1457,
+      "trendScore": 0.293,
+      "newScore": 0.01,
+      "contributionScore": 0.218,
+      "createdAt": "2016-03-10T02:38:00Z",
+      "pushedAt": "2026-10-23T10:16:09Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "postgres/postgres",
+      "domain": "databases",
+      "ecosystem": "Databases Libraries",
+      "stars": 22515,
+      "forks": 5979,
+      "contributors": 58,
+      "recentCommits": 786,
+      "trendScore": 0.278,
+      "newScore": 0.016,
+      "contributionScore": 0.157,
+      "createdAt": "2010-09-21T11:35:45Z",
+      "pushedAt": "2026-10-23T07:24:18Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "redis/redis",
+      "domain": "databases",
+      "ecosystem": "Distributed Systems",
+      "stars": 77054,
+      "forks": 24883,
+      "contributors": 965,
+      "recentCommits": 219,
+      "trendScore": 0.285,
+      "newScore": 0.053,
+      "contributionScore": 0.149,
+      "createdAt": "2009-03-21T22:32:25Z",
+      "pushedAt": "2026-10-23T04:49:21Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "duckdb/duckdb",
+      "domain": "databases",
+      "ecosystem": "Embedded Database",
+      "stars": 42435,
+      "forks": 3999,
+      "contributors": 964,
+      "recentCommits": 8769,
+      "trendScore": 0.494,
+      "newScore": 0.03,
+      "contributionScore": 0.748,
+      "createdAt": "2018-06-26T15:04:45Z",
+      "pushedAt": "2026-10-23T10:35:48Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "pgvector/pgvector",
+      "domain": "databases",
+      "ecosystem": "Approximate Nearest Neighbor Search",
+      "stars": 23449,
+      "forks": 1361,
+      "contributors": 27,
+      "recentCommits": 131,
+      "trendScore": 0.257,
+      "newScore": 0.017,
+      "contributionScore": 0.11,
+      "createdAt": "2021-04-20T21:13:52Z",
+      "pushedAt": "2026-10-23T10:10:27Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "aquasecurity/trivy",
+      "domain": "cloud",
+      "ecosystem": "Infrastructure As Code",
+      "stars": 38648,
+      "forks": 793,
+      "contributors": 561,
+      "recentCommits": 0,
+      "trendScore": 0.254,
+      "newScore": 0.028,
+      "contributionScore": 0.119,
+      "createdAt": "2019-04-11T01:01:07Z",
+      "pushedAt": "2026-10-23T10:26:42Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "semgrep/semgrep",
+      "domain": "web",
+      "ecosystem": "Static Analysis",
+      "stars": 17195,
+      "forks": 1118,
+      "contributors": 245,
+      "recentCommits": 178,
+      "trendScore": 0.256,
+      "newScore": 0.012,
+      "contributionScore": 0.12,
+      "createdAt": "2019-12-13T09:29:54Z",
+      "pushedAt": "2026-10-23T00:04:10Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "zaproxy/zaproxy",
+      "domain": "security",
+      "ecosystem": "Security Scanner",
+      "stars": 16008,
+      "forks": 2672,
+      "contributors": 279,
+      "recentCommits": 94,
+      "trendScore": 0.256,
+      "newScore": 0.011,
+      "contributionScore": 0.116,
+      "createdAt": "2015-06-03T16:55:01Z",
+      "pushedAt": "2026-10-23T10:15:49Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "gitleaks/gitleaks",
+      "domain": "ai",
+      "ecosystem": "Ai Powered",
+      "stars": 30254,
+      "forks": 2311,
+      "contributors": 234,
+      "recentCommits": 0,
+      "trendScore": 0.19,
+      "newScore": 0.021,
+      "contributionScore": 0.082,
+      "createdAt": "2018-01-27T18:19:31Z",
+      "pushedAt": "2026-09-30T04:14:02Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "bitcoin/bitcoin",
+      "domain": "blockchain",
+      "ecosystem": "C Plus Plus",
+      "stars": 90468,
+      "forks": 39398,
+      "contributors": 1370,
+      "recentCommits": 967,
+      "trendScore": 0.32,
+      "newScore": 0.063,
+      "contributionScore": 0.214,
+      "createdAt": "2010-12-19T15:16:43Z",
+      "pushedAt": "2026-10-22T17:01:17Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "ethereum/go-ethereum",
+      "domain": "blockchain",
+      "ecosystem": "Blockchain",
+      "stars": 51407,
+      "forks": 22112,
+      "contributors": 1292,
+      "recentCommits": 268,
+      "trendScore": 0.283,
+      "newScore": 0.036,
+      "contributionScore": 0.164,
+      "createdAt": "2013-12-26T13:05:46Z",
+      "pushedAt": "2026-10-23T09:36:17Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "hyperledger/fabric",
+      "domain": "blockchain",
+      "ecosystem": "Distributed Ledger",
+      "stars": 16748,
+      "forks": 9100,
+      "contributors": 585,
+      "recentCommits": 66,
+      "trendScore": 0.262,
+      "newScore": 0.012,
+      "contributionScore": 0.125,
+      "createdAt": "2016-08-25T16:05:27Z",
+      "pushedAt": "2026-10-23T07:32:54Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "foundry-rs/foundry",
+      "domain": "blockchain",
+      "ecosystem": "Smart Contracts",
+      "stars": 10688,
+      "forks": 2689,
+      "contributors": 757,
+      "recentCommits": 1392,
+      "trendScore": 0.292,
+      "newScore": 0.008,
+      "contributionScore": 0.224,
+      "createdAt": "2021-09-08T11:23:11Z",
+      "pushedAt": "2026-10-23T10:28:28Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "godotengine/godot",
+      "domain": "game_dev",
+      "ecosystem": "Game Development",
+      "stars": 118933,
+      "forks": 27171,
+      "contributors": 3983,
+      "recentCommits": 1893,
+      "trendScore": 0.335,
+      "newScore": 0.083,
+      "contributionScore": 0.371,
+      "createdAt": "2014-01-04T16:05:36Z",
+      "pushedAt": "2026-10-23T08:04:35Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "bevyengine/bevy",
+      "domain": "game_dev",
+      "ecosystem": "Game Development",
+      "stars": 49222,
+      "forks": 4961,
+      "contributors": 1698,
+      "recentCommits": 744,
+      "trendScore": 0.279,
+      "newScore": 0.035,
+      "contributionScore": 0.211,
+      "createdAt": "2020-01-18T21:13:55Z",
+      "pushedAt": "2026-10-23T06:57:16Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "cocos/cocos-engine",
+      "domain": "game_dev",
+      "ecosystem": "Game Development",
+      "stars": 9882,
+      "forks": 2145,
+      "contributors": 225,
+      "recentCommits": 27,
+      "trendScore": 0.253,
+      "newScore": 0.007,
+      "contributionScore": 0.109,
+      "createdAt": "2015-12-05T03:28:59Z",
+      "pushedAt": "2026-10-23T07:08:47Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "libsdl-org/SDL",
+      "domain": "game_dev",
+      "ecosystem": "Sdl",
+      "stars": 16861,
+      "forks": 3093,
+      "contributors": 980,
+      "recentCommits": 385,
+      "trendScore": 0.263,
+      "newScore": 0.012,
+      "contributionScore": 0.16,
+      "createdAt": "2021-01-15T19:55:54Z",
+      "pushedAt": "2026-10-22T18:13:49Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "deepseek-ai/DeepSeek-R1",
+      "domain": "ai",
+      "ecosystem": "AI Libraries",
+      "stars": 91943,
+      "forks": 11655,
+      "contributors": 12,
+      "recentCommits": 0,
+      "trendScore": 0.042,
+      "newScore": 0.077,
+      "contributionScore": 0,
+      "createdAt": "2025-01-20T11:57:28Z",
+      "pushedAt": "2025-06-27T08:35:54Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "deepseek-ai/DeepSeek-V3",
+      "domain": "ai",
+      "ecosystem": "AI Libraries",
+      "stars": 104585,
+      "forks": 16712,
+      "contributors": 26,
+      "recentCommits": 0,
+      "trendScore": 0.051,
+      "newScore": 0.087,
+      "contributionScore": 0.001,
+      "createdAt": "2024-12-26T09:52:40Z",
+      "pushedAt": "2025-08-28T03:24:37Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "openai/codex",
+      "domain": "ai",
+      "ecosystem": "AI Libraries",
+      "stars": 130560,
+      "forks": 20580,
+      "contributors": 680,
+      "recentCommits": 3745,
+      "trendScore": 0.422,
+      "newScore": 0.113,
+      "contributionScore": 0.386,
+      "createdAt": "2025-04-13T05:37:54Z",
+      "pushedAt": "2026-10-23T09:06:30Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "anthropics/claude-code",
+      "domain": "ai",
+      "ecosystem": "AI Libraries",
+      "stars": 152964,
+      "forks": 26775,
+      "contributors": 59,
+      "recentCommits": 211,
+      "trendScore": 0.336,
+      "newScore": 0.13,
+      "contributionScore": 0.116,
+      "createdAt": "2025-02-22T17:41:21Z",
+      "pushedAt": "2026-10-22T22:18:56Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "browser-use/browser-use",
+      "domain": "web",
+      "ecosystem": "Ai Agents",
+      "stars": 118939,
+      "forks": 13207,
+      "contributors": 383,
+      "recentCommits": 497,
+      "trendScore": 0.311,
+      "newScore": 0.098,
+      "contributionScore": 0.148,
+      "createdAt": "2024-10-31T16:00:56Z",
+      "pushedAt": "2026-10-23T00:56:16Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "microsoft/markitdown",
+      "domain": "ai",
+      "ecosystem": "Autogen Extension",
+      "stars": 191737,
+      "forks": 14293,
+      "contributors": 135,
+      "recentCommits": 112,
+      "trendScore": 0.323,
+      "newScore": 0.158,
+      "contributionScore": 0.112,
+      "createdAt": "2024-11-13T19:56:40Z",
+      "pushedAt": "2026-10-22T22:31:47Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "huggingface/smolagents",
+      "domain": "ai",
+      "ecosystem": "AI Libraries",
+      "stars": 30006,
+      "forks": 3130,
+      "contributors": 208,
+      "recentCommits": 7,
+      "trendScore": 0.26,
+      "newScore": 0.025,
+      "contributionScore": 0.107,
+      "createdAt": "2024-12-05T11:28:04Z",
+      "pushedAt": "2026-10-22T13:55:07Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "electric-sql/pglite",
+      "domain": "databases",
+      "ecosystem": "Database",
+      "stars": 16184,
+      "forks": 460,
+      "contributors": 82,
+      "recentCommits": 41,
+      "trendScore": 0.25,
+      "newScore": 0.013,
+      "contributionScore": 0.104,
+      "createdAt": "2024-02-19T14:37:38Z",
+      "pushedAt": "2026-10-21T18:31:14Z",
+      "discoverySignals": [
+        "seed"
+      ]
+    },
+    {
+      "full": "morluto/rea",
+      "domain": "ai",
+      "ecosystem": "Agent Skills",
+      "stars": 369741,
+      "forks": 92586,
+      "contributors": 322,
+      "recentCommits": 0,
+      "trendScore": 0.75,
+      "newScore": 0.71,
+      "contributionScore": 0.111,
+      "createdAt": "2026-04-14T00:51:32Z",
+      "pushedAt": "2026-10-23T10:44:16Z",
+      "discoverySignals": [
+        "ai:new",
+        "ai:active",
+        "ai:popular"
+      ]
+    },
+    {
+      "full": "affaan-m/ECC",
+      "domain": "ai",
+      "ecosystem": "Ai Agents",
+      "stars": 286871,
+      "forks": 42548,
+      "contributors": 450,
+      "recentCommits": 1176,
+      "trendScore": 0.535,
+      "newScore": 0.432,
+      "contributionScore": 0.195,
+      "createdAt": "2026-01-18T00:51:51Z",
+      "pushedAt": "2026-10-20T23:08:28Z",
+      "discoverySignals": [
+        "ai:new",
+        "ai:popular"
+      ]
+    },
+    {
+      "full": "multica-ai/andrej-karpathy-skills",
+      "domain": "ai",
+      "ecosystem": "AI Libraries",
+      "stars": 222706,
+      "forks": 22327,
+      "contributors": 7,
+      "recentCommits": 0,
+      "trendScore": 0.196,
+      "newScore": 0.381,
+      "contributionScore": 0,
+      "createdAt": "2026-01-27T03:53:13Z",
+      "pushedAt": "2026-04-20T10:05:04Z",
+      "discoverySignals": [
+        "ai:new",
+        "ai:popular"
+      ]
+    },
+    {
+      "full": "DietrichGebert/ponytail",
+      "domain": "ai",
+      "ecosystem": "Agent Skills",
+      "stars": 174295,
+      "forks": 9491,
+      "contributors": 130,
+      "recentCommits": 157,
+      "trendScore": 0.521,
+      "newScore": 0.603,
+      "contributionScore": 0.11,
+      "createdAt": "2026-06-12T00:52:37Z",
+      "pushedAt": "2026-10-18T01:55:14Z",
+      "discoverySignals": [
+        "ai:new",
+        "ai:popular"
+      ]
+    },
+    {
+      "full": "Graphify-Labs/graphify",
+      "domain": "ai",
+      "ecosystem": "Ai Agents",
+      "stars": 133514,
+      "forks": 12756,
+      "contributors": 355,
+      "recentCommits": 1227,
+      "trendScore": 0.432,
+      "newScore": 0.403,
+      "contributionScore": 0.197,
+      "createdAt": "2026-04-03T15:49:07Z",
+      "pushedAt": "2026-10-22T16:19:38Z",
+      "discoverySignals": [
+        "ai:new"
+      ]
+    },
+    {
+      "full": "JuliusBrussee/caveman",
+      "domain": "ai",
+      "ecosystem": "Claude Code",
+      "stars": 114505,
+      "forks": 6598,
+      "contributors": 94,
+      "recentCommits": 1375,
+      "trendScore": 0.412,
+      "newScore": 0.382,
+      "contributionScore": 0.199,
+      "createdAt": "2026-04-04T10:03:00Z",
+      "pushedAt": "2026-10-23T07:21:57Z",
+      "discoverySignals": [
+        "ai:new"
+      ]
+    },
+    {
+      "full": "paperclipai/paperclip",
+      "domain": "ai",
+      "ecosystem": "Agent Orchestration",
+      "stars": 106379,
+      "forks": 17685,
+      "contributors": 235,
+      "recentCommits": 2269,
+      "trendScore": 0.425,
+      "newScore": 0.315,
+      "contributionScore": 0.267,
+      "createdAt": "2026-03-02T15:01:51Z",
+      "pushedAt": "2026-10-23T10:45:16Z",
+      "discoverySignals": [
+        "ai:new"
+      ]
+    },
+    {
+      "full": "tt-a1i/archify",
+      "domain": "ai",
+      "ecosystem": "Agent Skills",
+      "stars": 88061,
+      "forks": 5931,
+      "contributors": 93,
+      "recentCommits": 1084,
+      "trendScore": 0.381,
+      "newScore": 0.369,
+      "contributionScore": 0.179,
+      "createdAt": "2026-04-15T05:27:37Z",
+      "pushedAt": "2026-10-23T03:36:31Z",
+      "discoverySignals": [
+        "ai:new"
+      ]
+    },
+    {
+      "full": "openaccountants/openaccountants",
+      "domain": "ai",
+      "ecosystem": "Agentic Tax",
+      "stars": 458,
+      "forks": 63,
+      "contributors": 31,
+      "recentCommits": 446,
+      "trendScore": 0.263,
+      "newScore": 0.254,
+      "contributionScore": 0.132,
+      "createdAt": "2026-04-09T14:03:07Z",
+      "pushedAt": "2026-10-23T10:45:34Z",
+      "discoverySignals": [
+        "ai:active"
+      ]
+    },
+    {
+      "full": "tuya/TuyaOpen",
+      "domain": "ai",
+      "ecosystem": "Agentic Ai",
+      "stars": 1893,
+      "forks": 314,
+      "contributors": 23,
+      "recentCommits": 60,
+      "trendScore": 0.252,
+      "newScore": 0.001,
+      "contributionScore": 0.105,
+      "createdAt": "2023-12-25T03:45:10Z",
+      "pushedAt": "2026-10-23T10:42:52Z",
+      "discoverySignals": [
+        "ai:active"
+      ]
+    },
+    {
+      "full": "smg-project/smg",
+      "domain": "ai",
+      "ecosystem": "Anthropic Api",
+      "stars": 665,
+      "forks": 199,
+      "contributors": 163,
+      "recentCommits": 1866,
+      "trendScore": 0.301,
+      "newScore": 0.045,
+      "contributionScore": 0.236,
+      "createdAt": "2025-11-22T05:17:14Z",
+      "pushedAt": "2026-10-23T10:45:08Z",
+      "discoverySignals": [
+        "ai:active"
+      ]
+    },
+    {
+      "full": "rohitg00/ai-engineering-from-scratch",
+      "domain": "ai",
+      "ecosystem": "Ai Agents",
+      "stars": 72614,
+      "forks": 12769,
+      "contributors": 29,
+      "recentCommits": 895,
+      "trendScore": 0.357,
+      "newScore": 0.304,
+      "contributionScore": 0.164,
+      "createdAt": "2026-03-18T18:38:02Z",
+      "pushedAt": "2026-10-23T10:42:43Z",
+      "discoverySignals": [
+        "ai:active"
+      ]
+    },
+    {
+      "full": "helixml/helix",
+      "domain": "ai",
+      "ecosystem": "Llm Agent",
+      "stars": 822,
+      "forks": 87,
+      "contributors": 34,
+      "recentCommits": 1416,
+      "trendScore": 0.288,
+      "newScore": 0.001,
+      "contributionScore": 0.2,
+      "createdAt": "2023-10-17T07:11:12Z",
+      "pushedAt": "2026-10-23T10:41:57Z",
+      "discoverySignals": [
+        "ai:active"
+      ]
+    },
+    {
+      "full": "unslothai/unsloth",
+      "domain": "ai",
+      "ecosystem": "Fine Tuning",
+      "stars": 78461,
+      "forks": 7269,
+      "contributors": 427,
+      "recentCommits": 9273,
+      "trendScore": 0.523,
+      "newScore": 0.061,
+      "contributionScore": 0.765,
+      "createdAt": "2023-11-29T16:50:09Z",
+      "pushedAt": "2026-10-23T10:43:37Z",
+      "discoverySignals": [
+        "ai:active"
+      ]
+    },
+    {
+      "full": "summarizepaper/summarizepaper",
+      "domain": "ai",
+      "ecosystem": "Arxiv Papers",
+      "stars": 311,
+      "forks": 46,
+      "contributors": 4,
+      "recentCommits": 125,
+      "trendScore": 0.253,
+      "newScore": 0,
+      "contributionScore": 0.109,
+      "createdAt": "2023-03-16T09:32:53Z",
+      "pushedAt": "2026-10-23T10:41:06Z",
+      "discoverySignals": [
+        "ai:active"
+      ]
+    },
+    {
+      "full": "NousResearch/hermes-agent",
+      "domain": "ai",
+      "ecosystem": "Ai Agent",
+      "stars": 256382,
+      "forks": 56024,
+      "contributors": 4685,
+      "recentCommits": 0,
+      "trendScore": 0.427,
+      "newScore": 0.232,
+      "contributionScore": 0.263,
+      "createdAt": "2025-07-22T22:22:28Z",
+      "pushedAt": "2026-10-23T10:45:23Z",
+      "discoverySignals": [
+        "ai:popular"
+      ]
+    },
+    {
+      "full": "firecrawl/firecrawl",
+      "domain": "ai",
+      "ecosystem": "Ai Agents",
+      "stars": 194462,
+      "forks": 10262,
+      "contributors": 176,
+      "recentCommits": 695,
+      "trendScore": 0.324,
+      "newScore": 0.153,
+      "contributionScore": 0.155,
+      "createdAt": "2024-04-15T21:02:29Z",
+      "pushedAt": "2026-10-23T09:12:26Z",
+      "discoverySignals": [
+        "ai:popular"
+      ]
+    },
+    {
+      "full": "Significant-Gravitas/AutoGPT",
+      "domain": "ai",
+      "ecosystem": "Agentic Ai",
+      "stars": 187715,
+      "forks": 45905,
+      "contributors": 867,
+      "recentCommits": 2274,
+      "trendScore": 0.391,
+      "newScore": 0.142,
+      "contributionScore": 0.289,
+      "createdAt": "2023-03-16T09:21:07Z",
+      "pushedAt": "2026-10-23T10:37:34Z",
+      "discoverySignals": [
+        "ai:popular"
+      ]
+    },
+    {
+      "full": "ollama/ollama",
+      "domain": "ai",
+      "ecosystem": "Gpt Oss",
+      "stars": 184409,
+      "forks": 18489,
+      "contributors": 626,
+      "recentCommits": 338,
+      "trendScore": 0.31,
+      "newScore": 0.14,
+      "contributionScore": 0.145,
+      "createdAt": "2023-06-26T19:39:32Z",
+      "pushedAt": "2026-10-23T08:04:06Z",
+      "discoverySignals": [
+        "ai:popular"
+      ]
+    },
+    {
+      "full": "addyosmani/agent-skills",
+      "domain": "ai",
+      "ecosystem": "Agent Skills",
+      "stars": 109787,
+      "forks": 11450,
+      "contributors": 93,
+      "recentCommits": 183,
+      "trendScore": 0.332,
+      "newScore": 0.294,
+      "contributionScore": 0.105,
+      "createdAt": "2026-02-15T20:20:26Z",
+      "pushedAt": "2026-10-13T20:24:07Z",
+      "discoverySignals": [
+        "ai:new"
+      ]
+    },
+    {
+      "full": "nexu-io/open-design",
+      "domain": "ai",
+      "ecosystem": "Agent Skills",
+      "stars": 103482,
+      "forks": 11848,
+      "contributors": 450,
+      "recentCommits": 799,
+      "trendScore": 0.405,
+      "newScore": 0.412,
+      "contributionScore": 0.171,
+      "createdAt": "2026-04-28T04:25:20Z",
+      "pushedAt": "2026-10-23T08:31:41Z",
+      "discoverySignals": [
+        "ai:new"
+      ]
+    },
+    {
+      "full": "Leonxlnx/taste-skill",
+      "domain": "web",
+      "ecosystem": "Agent Skills",
+      "stars": 101365,
+      "forks": 6846,
+      "contributors": 21,
+      "recentCommits": 65,
+      "trendScore": 0.338,
+      "newScore": 0.291,
+      "contributionScore": 0.102,
+      "createdAt": "2026-02-19T21:44:05Z",
+      "pushedAt": "2026-10-20T22:04:30Z",
+      "discoverySignals": [
+        "ai:new",
+        "web:new",
+        "web:popular"
+      ]
+    },
+    {
+      "full": "Panniantong/Agent-Reach",
+      "domain": "ai",
+      "ecosystem": "Agent Infrastructure",
+      "stars": 101183,
+      "forks": 8919,
+      "contributors": 39,
+      "recentCommits": 99,
+      "trendScore": 0.349,
+      "newScore": 0.298,
+      "contributionScore": 0.108,
+      "createdAt": "2026-02-24T02:10:24Z",
+      "pushedAt": "2026-10-23T06:44:33Z",
+      "discoverySignals": [
+        "ai:new"
+      ]
+    },
+    {
+      "full": "karpathy/autoresearch",
+      "domain": "ai",
+      "ecosystem": "AI Libraries",
+      "stars": 98448,
+      "forks": 13610,
+      "contributors": 9,
+      "recentCommits": 0,
+      "trendScore": 0.104,
+      "newScore": 0.314,
+      "contributionScore": 0,
+      "createdAt": "2026-03-06T22:00:43Z",
+      "pushedAt": "2026-03-26T00:07:37Z",
+      "discoverySignals": [
+        "ai:new"
+      ]
+    },
+    {
+      "full": "koala73/worldmonitor",
+      "domain": "devops",
+      "ecosystem": "Mcp Server",
+      "stars": 89287,
+      "forks": 13704,
+      "contributors": 167,
+      "recentCommits": 3240,
+      "trendScore": 0.417,
+      "newScore": 0.209,
+      "contributionScore": 0.333,
+      "createdAt": "2026-01-08T17:26:06Z",
+      "pushedAt": "2026-10-23T10:44:21Z",
+      "discoverySignals": [
+        "ai:new"
+      ]
+    },
+    {
+      "full": "juspay/xyne-spaces",
+      "domain": "ai",
+      "ecosystem": "Ai Agents",
+      "stars": 820,
+      "forks": 575,
+      "contributors": 126,
+      "recentCommits": 2328,
+      "trendScore": 0.315,
+      "newScore": 0.428,
+      "contributionScore": 0.268,
+      "createdAt": "2026-08-02T09:37:59Z",
+      "pushedAt": "2026-10-23T10:45:26Z",
+      "discoverySignals": [
+        "ai:active"
+      ]
+    },
+    {
+      "full": "homarr-labs/dashboard-icons",
+      "domain": "ai",
+      "ecosystem": "Ai Agents",
+      "stars": 8916,
+      "forks": 723,
+      "contributors": 189,
+      "recentCommits": 0,
+      "trendScore": 0.252,
+      "newScore": 0.007,
+      "contributionScore": 0.107,
+      "createdAt": "2022-08-16T15:41:54Z",
+      "pushedAt": "2026-10-23T10:42:34Z",
+      "discoverySignals": [
+        "ai:active"
+      ]
+    },
+    {
+      "full": "bex-co/beancount-io",
+      "domain": "web",
+      "ecosystem": "Double Entry",
+      "stars": 312,
+      "forks": 39,
+      "contributors": 8,
+      "recentCommits": 7217,
+      "trendScore": 0.445,
+      "newScore": 0,
+      "contributionScore": 0.606,
+      "createdAt": "2020-10-02T07:00:24Z",
+      "pushedAt": "2026-10-23T10:42:26Z",
+      "discoverySignals": [
+        "ai:active"
+      ]
+    },
+    {
+      "full": "AnalyseDeCircuit/oxideterm",
+      "domain": "ai",
+      "ecosystem": "Ai Terminal",
+      "stars": 1721,
+      "forks": 142,
+      "contributors": 11,
+      "recentCommits": 896,
+      "trendScore": 0.276,
+      "newScore": 0.137,
+      "contributionScore": 0.163,
+      "createdAt": "2026-01-21T07:30:14Z",
+      "pushedAt": "2026-10-23T10:40:42Z",
+      "discoverySignals": [
+        "ai:active"
+      ]
+    },
+    {
+      "full": "Cotal-AI/Cotal",
+      "domain": "ai",
+      "ecosystem": "Agent Communication",
+      "stars": 338,
+      "forks": 43,
+      "contributors": 32,
+      "recentCommits": 5777,
+      "trendScore": 0.406,
+      "newScore": 0.334,
+      "contributionScore": 0.506,
+      "createdAt": "2026-06-02T02:52:25Z",
+      "pushedAt": "2026-10-23T10:47:20Z",
+      "discoverySignals": [
+        "ai:active"
+      ]
+    },
+    {
+      "full": "obra/superpowers",
+      "domain": "ai",
+      "ecosystem": "Subagent Driven Development",
+      "stars": 303963,
+      "forks": 27072,
+      "contributors": 44,
+      "recentCommits": 7,
+      "trendScore": 0.446,
+      "newScore": 0.289,
+      "contributionScore": 0.102,
+      "createdAt": "2025-10-09T19:45:18Z",
+      "pushedAt": "2026-10-23T03:48:57Z",
+      "discoverySignals": [
+        "ai:popular"
+      ]
+    },
+    {
+      "full": "msitarzewski/agency-agents",
+      "domain": "ai",
+      "ecosystem": "AI Libraries",
+      "stars": 163394,
+      "forks": 26372,
+      "contributors": 108,
+      "recentCommits": 249,
+      "trendScore": 0.365,
+      "newScore": 0.156,
+      "contributionScore": 0.117,
+      "createdAt": "2025-10-13T12:12:29Z",
+      "pushedAt": "2026-10-19T16:48:24Z",
+      "discoverySignals": [
+        "ai:popular",
+        "web:popular"
+      ]
+    },
+    {
+      "full": "langgenius/dify",
+      "domain": "ai",
+      "ecosystem": "Agentic Ai",
+      "stars": 159335,
+      "forks": 25168,
+      "contributors": 1569,
+      "recentCommits": 2918,
+      "trendScore": 0.382,
+      "newScore": 0.121,
+      "contributionScore": 0.359,
+      "createdAt": "2023-04-12T07:40:24Z",
+      "pushedAt": "2026-10-23T10:44:35Z",
+      "discoverySignals": [
+        "ai:popular"
+      ]
+    },
+    {
+      "full": "Snailclimb/JavaGuide",
+      "domain": "databases",
+      "ecosystem": "Context Engineering",
+      "stars": 159220,
+      "forks": 46125,
+      "contributors": 754,
+      "recentCommits": 60,
+      "trendScore": 0.292,
+      "newScore": 0.113,
+      "contributionScore": 0.122,
+      "createdAt": "2018-05-07T13:27:00Z",
+      "pushedAt": "2026-10-16T06:30:59Z",
+      "discoverySignals": [
+        "ai:popular"
+      ]
+    },
+    {
+      "full": "langflow-ai/langflow",
+      "domain": "ai",
+      "ecosystem": "Generative Ai",
+      "stars": 155953,
+      "forks": 10242,
+      "contributors": 400,
+      "recentCommits": 1544,
+      "trendScore": 0.326,
+      "newScore": 0.117,
+      "contributionScore": 0.222,
+      "createdAt": "2023-02-08T22:28:03Z",
+      "pushedAt": "2026-10-23T02:35:15Z",
+      "discoverySignals": [
+        "ai:popular"
+      ]
+    },
+    {
+      "full": "tester-army/e2e",
+      "domain": "web",
+      "ecosystem": "E2e Testing",
+      "stars": 11764,
+      "forks": 613,
+      "contributors": 58,
+      "recentCommits": 912,
+      "trendScore": 0.301,
+      "newScore": 0.431,
+      "contributionScore": 0.166,
+      "createdAt": "2026-07-22T09:29:04Z",
+      "pushedAt": "2026-10-23T10:09:46Z",
+      "discoverySignals": [
+        "web:new"
+      ]
+    },
+    {
+      "full": "tokio-rs/topcoat",
+      "domain": "web",
+      "ecosystem": "Web Libraries",
+      "stars": 6175,
+      "forks": 217,
+      "contributors": 36,
+      "recentCommits": 220,
+      "trendScore": 0.258,
+      "newScore": 0.252,
+      "contributionScore": 0.115,
+      "createdAt": "2026-04-03T14:27:27Z",
+      "pushedAt": "2026-10-21T19:51:31Z",
+      "discoverySignals": [
+        "web:new"
+      ]
+    },
+    {
+      "full": "ultimo-rs/ultimo",
+      "domain": "web",
+      "ecosystem": "Api Framework",
+      "stars": 822,
+      "forks": 11,
+      "contributors": 3,
+      "recentCommits": 38,
+      "trendScore": 0.239,
+      "newScore": 0.045,
+      "contributionScore": 0.098,
+      "createdAt": "2025-11-21T18:35:45Z",
+      "pushedAt": "2026-10-18T20:32:22Z",
+      "discoverySignals": [
+        "web:new"
+      ]
+    },
+    {
+      "full": "Aejkatappaja/phantom-ui",
+      "domain": "web",
+      "ecosystem": "Custom Element",
+      "stars": 808,
+      "forks": 31,
+      "contributors": 3,
+      "recentCommits": 31,
+      "trendScore": 0.251,
+      "newScore": 0.239,
+      "contributionScore": 0.102,
+      "createdAt": "2026-03-30T15:23:54Z",
+      "pushedAt": "2026-10-23T08:53:23Z",
+      "discoverySignals": [
+        "web:new"
+      ]
+    },
+    {
+      "full": "h5i-dev/h5i",
+      "domain": "ai",
+      "ecosystem": "Ai Hacking",
+      "stars": 805,
+      "forks": 74,
+      "contributors": 22,
+      "recentCommits": 429,
+      "trendScore": 0.261,
+      "newScore": 0.21,
+      "contributionScore": 0.13,
+      "createdAt": "2026-03-11T04:30:52Z",
+      "pushedAt": "2026-10-23T02:25:28Z",
+      "discoverySignals": [
+        "web:new",
+        "devops:new"
+      ]
+    },
+    {
+      "full": "mental-os/Aurora-OS.js",
+      "domain": "web",
+      "ecosystem": "Browser Game",
+      "stars": 746,
+      "forks": 102,
+      "contributors": 10,
+      "recentCommits": 0,
+      "trendScore": 0.001,
+      "newScore": 0.065,
+      "contributionScore": 0,
+      "createdAt": "2025-12-04T18:50:38Z",
+      "pushedAt": "2026-03-13T21:07:26Z",
+      "discoverySignals": [
+        "web:new"
+      ]
+    },
+    {
+      "full": "jaylfc/taOS",
+      "domain": "ai",
+      "ecosystem": "Agent Framework",
+      "stars": 577,
+      "forks": 43,
+      "contributors": 7,
+      "recentCommits": 1447,
+      "trendScore": 0.29,
+      "newScore": 0.248,
+      "contributionScore": 0.202,
+      "createdAt": "2026-04-05T15:33:40Z",
+      "pushedAt": "2026-10-23T10:19:06Z",
+      "discoverySignals": [
+        "web:new"
+      ]
+    },
+    {
+      "full": "microsoft/Resource2Skill",
+      "domain": "web",
+      "ecosystem": "Web Libraries",
+      "stars": 539,
+      "forks": 60,
+      "contributors": 3,
+      "recentCommits": 0,
+      "trendScore": 0.001,
+      "newScore": 0.304,
+      "contributionScore": 0,
+      "createdAt": "2026-05-12T18:31:15Z",
+      "pushedAt": "2026-07-17T16:38:13Z",
+      "discoverySignals": [
+        "web:new"
+      ]
+    },
+    {
+      "full": "salvo-rs/salvo",
+      "domain": "web",
+      "ecosystem": "Http Server",
+      "stars": 4452,
+      "forks": 275,
+      "contributors": 101,
+      "recentCommits": 60,
+      "trendScore": 0.252,
+      "newScore": 0.003,
+      "contributionScore": 0.108,
+      "createdAt": "2019-11-07T08:18:29Z",
+      "pushedAt": "2026-10-23T10:45:17Z",
+      "discoverySignals": [
+        "web:active"
+      ]
+    },
+    {
+      "full": "devcodex-labs/vextjs",
+      "domain": "web",
+      "ecosystem": "Hot Reload",
+      "stars": 411,
+      "forks": 41,
+      "contributors": 2,
+      "recentCommits": 168,
+      "trendScore": 0.255,
+      "newScore": 0,
+      "contributionScore": 0.112,
+      "createdAt": "2025-04-22T03:57:35Z",
+      "pushedAt": "2026-10-23T10:38:54Z",
+      "discoverySignals": [
+        "web:active"
+      ]
+    },
+    {
+      "full": "actix/actix-web",
+      "domain": "web",
+      "ecosystem": "Actix Web",
+      "stars": 24877,
+      "forks": 1898,
+      "contributors": 424,
+      "recentCommits": 160,
+      "trendScore": 0.258,
+      "newScore": 0.018,
+      "contributionScore": 0.126,
+      "createdAt": "2017-09-30T15:30:02Z",
+      "pushedAt": "2026-10-23T10:38:19Z",
+      "discoverySignals": [
+        "web:active"
+      ]
+    },
+    {
+      "full": "webdriverio/webdriverio",
+      "domain": "web",
+      "ecosystem": "Performance Test",
+      "stars": 9855,
+      "forks": 2707,
+      "contributors": 763,
+      "recentCommits": 0,
+      "trendScore": 0.253,
+      "newScore": 0.007,
+      "contributionScore": 0.126,
+      "createdAt": "2011-08-30T19:02:35Z",
+      "pushedAt": "2026-10-23T10:37:46Z",
+      "discoverySignals": [
+        "web:active"
+      ]
+    },
+    {
+      "full": "expo/expo",
+      "domain": "web",
+      "ecosystem": "App Framework",
+      "stars": 53028,
+      "forks": 14732,
+      "contributors": 2260,
+      "recentCommits": 2498,
+      "trendScore": 0.336,
+      "newScore": 0.037,
+      "contributionScore": 0.353,
+      "createdAt": "2016-08-15T17:14:25Z",
+      "pushedAt": "2026-10-23T10:49:20Z",
+      "discoverySignals": [
+        "web:active"
+      ]
+    },
+    {
+      "full": "ShaftHQ/SHAFT_ENGINE",
+      "domain": "web",
+      "ecosystem": "Automation Engine",
+      "stars": 417,
+      "forks": 155,
+      "contributors": 63,
+      "recentCommits": 2997,
+      "trendScore": 0.331,
+      "newScore": 0,
+      "contributionScore": 0.312,
+      "createdAt": "2018-07-15T07:02:02Z",
+      "pushedAt": "2026-10-23T10:29:15Z",
+      "discoverySignals": [
+        "web:active"
+      ]
+    },
+    {
+      "full": "walkor/webman",
+      "domain": "web",
+      "ecosystem": "High Performance",
+      "stars": 2695,
+      "forks": 249,
+      "contributors": 33,
+      "recentCommits": 5,
+      "trendScore": 0.251,
+      "newScore": 0.002,
+      "contributionScore": 0.101,
+      "createdAt": "2020-04-26T15:40:35Z",
+      "pushedAt": "2026-10-23T10:25:09Z",
+      "discoverySignals": [
+        "web:active"
+      ]
+    },
+    {
+      "full": "rage-rb/rage",
+      "domain": "web",
+      "ecosystem": "Web Libraries",
+      "stars": 1445,
+      "forks": 43,
+      "contributors": 26,
+      "recentCommits": 0,
+      "trendScore": 0.25,
+      "newScore": 0.001,
+      "contributionScore": 0.101,
+      "createdAt": "2023-09-15T15:33:26Z",
+      "pushedAt": "2026-10-23T10:28:40Z",
+      "discoverySignals": [
+        "web:active"
+      ]
+    },
+    {
+      "full": "twbs/bootstrap",
+      "domain": "web",
+      "ecosystem": "Css Framework",
+      "stars": 175008,
+      "forks": 78523,
+      "contributors": 1670,
+      "recentCommits": 300,
+      "trendScore": 0.348,
+      "newScore": 0.122,
+      "contributionScore": 0.178,
+      "createdAt": "2011-07-29T21:19:00Z",
+      "pushedAt": "2026-10-22T18:55:10Z",
+      "discoverySignals": [
+        "web:popular"
+      ]
+    },
+    {
+      "full": "fastapi/fastapi",
+      "domain": "web",
+      "ecosystem": "Json Schema",
+      "stars": 104030,
+      "forks": 10105,
+      "contributors": 907,
+      "recentCommits": 404,
+      "trendScore": 0.278,
+      "newScore": 0.074,
+      "contributionScore": 0.159,
+      "createdAt": "2018-12-08T08:21:47Z",
+      "pushedAt": "2026-10-22T22:21:50Z",
+      "discoverySignals": [
+        "web:popular"
+      ]
+    },
+    {
+      "full": "microsoft/playwright",
+      "domain": "web",
+      "ecosystem": "E2e Testing",
+      "stars": 98346,
+      "forks": 6674,
+      "contributors": 823,
+      "recentCommits": 640,
+      "trendScore": 0.281,
+      "newScore": 0.071,
+      "contributionScore": 0.173,
+      "createdAt": "2019-11-15T18:32:42Z",
+      "pushedAt": "2026-10-22T23:29:21Z",
+      "discoverySignals": [
+        "web:popular"
+      ]
+    },
+    {
+      "full": "django/django",
+      "domain": "web",
+      "ecosystem": "Apps",
+      "stars": 91560,
+      "forks": 37215,
+      "contributors": 3512,
+      "recentCommits": 205,
+      "trendScore": 0.297,
+      "newScore": 0.064,
+      "contributionScore": 0.235,
+      "createdAt": "2012-04-28T02:47:18Z",
+      "pushedAt": "2026-10-22T17:46:07Z",
+      "discoverySignals": [
+        "web:popular"
+      ]
+    },
+    {
+      "full": "gin-gonic/gin",
+      "domain": "web",
+      "ecosystem": "Gin",
+      "stars": 89419,
+      "forks": 8766,
+      "contributors": 543,
+      "recentCommits": 19,
+      "trendScore": 0.227,
+      "newScore": 0.063,
+      "contributionScore": 0.105,
+      "createdAt": "2014-06-16T23:57:25Z",
+      "pushedAt": "2026-10-10T04:20:35Z",
+      "discoverySignals": [
+        "web:popular"
+      ]
+    },
+    {
+      "full": "D4Vinci/Scrapling",
+      "domain": "web",
+      "ecosystem": "Ai Scraping",
+      "stars": 89279,
+      "forks": 9207,
+      "contributors": 42,
+      "recentCommits": 210,
+      "trendScore": 0.289,
+      "newScore": 0.073,
+      "contributionScore": 0.115,
+      "createdAt": "2024-10-13T20:29:53Z",
+      "pushedAt": "2026-10-22T20:43:49Z",
+      "discoverySignals": [
+        "web:popular"
+      ]
+    },
+    {
+      "full": "laravel/laravel",
+      "domain": "web",
+      "ecosystem": "Laravel",
+      "stars": 85249,
+      "forks": 27635,
+      "contributors": 864,
+      "recentCommits": 14,
+      "trendScore": 0.259,
+      "newScore": 0.059,
+      "contributionScore": 0.121,
+      "createdAt": "2011-06-08T03:06:08Z",
+      "pushedAt": "2026-10-14T17:43:05Z",
+      "discoverySignals": [
+        "web:popular"
+      ]
+    },
+    {
+      "full": "pallets/flask",
+      "domain": "web",
+      "ecosystem": "Web Framework",
+      "stars": 75009,
+      "forks": 17112,
+      "contributors": 864,
+      "recentCommits": 13,
+      "trendScore": 0.227,
+      "newScore": 0.052,
+      "contributionScore": 0.113,
+      "createdAt": "2010-04-06T11:11:59Z",
+      "pushedAt": "2026-10-07T14:02:59Z",
+      "discoverySignals": [
+        "web:popular"
+      ]
+    },
+    {
+      "full": "zarazhangrui/frontend-slides",
+      "domain": "web",
+      "ecosystem": "Ai Slides",
+      "stars": 31126,
+      "forks": 2398,
+      "contributors": 9,
+      "recentCommits": 0,
+      "trendScore": 0.027,
+      "newScore": 0.179,
+      "contributionScore": 0,
+      "createdAt": "2026-01-28T00:42:34Z",
+      "pushedAt": "2026-06-23T20:08:19Z",
+      "discoverySignals": [
+        "web:new"
+      ]
+    },
+    {
+      "full": "francescopace/espectre",
+      "domain": "web",
+      "ecosystem": "Esp 32",
+      "stars": 9675,
+      "forks": 734,
+      "contributors": 10,
+      "recentCommits": 469,
+      "trendScore": 0.265,
+      "newScore": 0.014,
+      "contributionScore": 0.132,
+      "createdAt": "2025-10-26T10:41:51Z",
+      "pushedAt": "2026-10-21T23:10:20Z",
+      "discoverySignals": [
+        "web:new"
+      ]
+    },
+    {
+      "full": "DavidHDev/canvas-ui",
+      "domain": "web",
+      "ecosystem": "Component Library",
+      "stars": 5065,
+      "forks": 255,
+      "contributors": 18,
+      "recentCommits": 94,
+      "trendScore": 0.208,
+      "newScore": 0.41,
+      "contributionScore": 0.085,
+      "createdAt": "2026-07-16T13:38:20Z",
+      "pushedAt": "2026-10-03T14:24:52Z",
+      "discoverySignals": [
+        "web:new"
+      ]
+    },
+    {
+      "full": "nateherkai/scroll-craft",
+      "domain": "web",
+      "ecosystem": "Agent Skills",
+      "stars": 3907,
+      "forks": 568,
+      "contributors": 1,
+      "recentCommits": 16,
+      "trendScore": 0.201,
+      "newScore": 0.466,
+      "contributionScore": 0.076,
+      "createdAt": "2026-08-22T15:25:08Z",
+      "pushedAt": "2026-09-30T13:31:42Z",
+      "discoverySignals": [
+        "web:new"
+      ]
+    },
+    {
+      "full": "oil-oil/oil-motion",
+      "domain": "web",
+      "ecosystem": "Agent Skill",
+      "stars": 2667,
+      "forks": 197,
+      "contributors": 2,
+      "recentCommits": 25,
+      "trendScore": 0.206,
+      "newScore": 0.439,
+      "contributionScore": 0.081,
+      "createdAt": "2026-08-07T12:36:33Z",
+      "pushedAt": "2026-10-04T14:54:13Z",
+      "discoverySignals": [
+        "web:new"
+      ]
+    },
+    {
+      "full": "egoist/mygo",
+      "domain": "web",
+      "ecosystem": "Web Libraries",
+      "stars": 2660,
+      "forks": 146,
+      "contributors": 40,
+      "recentCommits": 687,
+      "trendScore": 0.289,
+      "newScore": 0.522,
+      "contributionScore": 0.149,
+      "createdAt": "2026-09-26T15:21:37Z",
+      "pushedAt": "2026-10-23T04:38:36Z",
+      "discoverySignals": [
+        "web:new"
+      ]
+    },
+    {
+      "full": "flyfish-dev/file-viewer",
+      "domain": "web",
+      "ecosystem": "3d Viewer",
+      "stars": 2610,
+      "forks": 268,
+      "contributors": 9,
+      "recentCommits": 424,
+      "trendScore": 0.265,
+      "newScore": 0.315,
+      "contributionScore": 0.13,
+      "createdAt": "2026-05-18T08:59:25Z",
+      "pushedAt": "2026-10-23T10:08:44Z",
+      "discoverySignals": [
+        "web:new"
+      ]
+    },
+    {
+      "full": "siemens/ix",
+      "domain": "web",
+      "ecosystem": "Design System",
+      "stars": 385,
+      "forks": 150,
+      "contributors": 73,
+      "recentCommits": 236,
+      "trendScore": 0.257,
+      "newScore": 0,
+      "contributionScore": 0.119,
+      "createdAt": "2022-09-19T18:04:00Z",
+      "pushedAt": "2026-10-23T10:45:52Z",
+      "discoverySignals": [
+        "web:active"
+      ]
+    },
+    {
+      "full": "NVIDIA/cudnn-frontend",
+      "domain": "ai",
+      "ecosystem": "Cuda Kernels",
+      "stars": 981,
+      "forks": 323,
+      "contributors": 107,
+      "recentCommits": 0,
+      "trendScore": 0.25,
+      "newScore": 0.001,
+      "contributionScore": 0.104,
+      "createdAt": "2021-01-22T16:16:29Z",
+      "pushedAt": "2026-10-23T10:36:46Z",
+      "discoverySignals": [
+        "web:active"
+      ]
+    },
+    {
+      "full": "libretro/RetroArch",
+      "domain": "web",
+      "ecosystem": "Libretro",
+      "stars": 14402,
+      "forks": 2310,
+      "contributors": 929,
+      "recentCommits": 5455,
+      "trendScore": 0.4,
+      "newScore": 0.01,
+      "contributionScore": 0.515,
+      "createdAt": "2010-05-27T14:47:40Z",
+      "pushedAt": "2026-10-23T10:51:03Z",
+      "discoverySignals": [
+        "web:active"
+      ]
+    },
+    {
+      "full": "ChromeDevTools/devtools-frontend",
+      "domain": "web",
+      "ecosystem": "Chrome Devtools",
+      "stars": 4083,
+      "forks": 731,
+      "contributors": 620,
+      "recentCommits": 1970,
+      "trendScore": 0.304,
+      "newScore": 0.003,
+      "contributionScore": 0.26,
+      "createdAt": "2015-02-27T06:32:33Z",
+      "pushedAt": "2026-10-23T10:35:02Z",
+      "discoverySignals": [
+        "web:active"
+      ]
+    },
+    {
+      "full": "WeAreAthlon/frontend-webpack-boilerplate",
+      "domain": "web",
+      "ecosystem": "Browser Syncing",
+      "stars": 732,
+      "forks": 194,
+      "contributors": 9,
+      "recentCommits": 49,
+      "trendScore": 0.252,
+      "newScore": 0,
+      "contributionScore": 0.104,
+      "createdAt": "2017-07-03T11:07:35Z",
+      "pushedAt": "2026-10-23T10:34:51Z",
+      "discoverySignals": [
+        "web:active"
+      ]
+    },
+    {
+      "full": "ag-ui-protocol/ag-ui",
+      "domain": "web",
+      "ecosystem": "Ag Ui Protocol",
+      "stars": 16778,
+      "forks": 1532,
+      "contributors": 178,
+      "recentCommits": 1474,
+      "trendScore": 0.298,
+      "newScore": 0.015,
+      "contributionScore": 0.209,
+      "createdAt": "2025-05-07T12:49:37Z",
+      "pushedAt": "2026-10-23T10:35:27Z",
+      "discoverySignals": [
+        "web:active"
+      ]
+    },
+    {
+      "full": "home-assistant/frontend",
+      "domain": "web",
+      "ecosystem": "Home Assistant",
+      "stars": 5741,
+      "forks": 3894,
+      "contributors": 862,
+      "recentCommits": 1596,
+      "trendScore": 0.298,
+      "newScore": 0.004,
+      "contributionScore": 0.242,
+      "createdAt": "2015-07-12T23:58:06Z",
+      "pushedAt": "2026-10-23T10:50:25Z",
+      "discoverySignals": [
+        "web:active"
+      ]
+    },
+    {
+      "full": "react/react",
+      "domain": "web",
+      "ecosystem": "Declarative",
+      "stars": 251709,
+      "forks": 51569,
+      "contributors": 2025,
+      "recentCommits": 165,
+      "trendScore": 0.32,
+      "newScore": 0.176,
+      "contributionScore": 0.181,
+      "createdAt": "2013-05-24T16:15:54Z",
+      "pushedAt": "2026-10-23T00:44:47Z",
+      "discoverySignals": [
+        "web:popular"
+      ]
+    },
+    {
+      "full": "vuejs/vue",
+      "domain": "web",
+      "ecosystem": "Frontend",
+      "stars": 212628,
+      "forks": 33616,
+      "contributors": 381,
+      "recentCommits": 0,
+      "trendScore": 0.045,
+      "newScore": 0.148,
+      "contributionScore": 0.013,
+      "createdAt": "2013-07-29T03:24:51Z",
+      "pushedAt": "2024-10-10T07:24:15Z",
+      "discoverySignals": [
+        "web:popular"
+      ]
+    },
+    {
+      "full": "tauri-apps/tauri",
+      "domain": "web",
+      "ecosystem": "Desktop App",
+      "stars": 112137,
+      "forks": 4108,
+      "contributors": 616,
+      "recentCommits": 274,
+      "trendScore": 0.27,
+      "newScore": 0.08,
+      "contributionScore": 0.14,
+      "createdAt": "2019-07-13T09:09:37Z",
+      "pushedAt": "2026-10-23T04:47:08Z",
+      "discoverySignals": [
+        "web:popular"
+      ]
+    },
+    {
+      "full": "vitejs/vite",
+      "domain": "web",
+      "ecosystem": "Build Tool",
+      "stars": 83476,
+      "forks": 8872,
+      "contributors": 1380,
+      "recentCommits": 334,
+      "trendScore": 0.276,
+      "newScore": 0.06,
+      "contributionScore": 0.171,
+      "createdAt": "2020-04-21T05:03:57Z",
+      "pushedAt": "2026-10-23T08:34:07Z",
+      "discoverySignals": [
+        "web:popular"
+      ]
+    },
+    {
+      "full": "typicode/json-server",
+      "domain": "web",
+      "ecosystem": "Fake",
+      "stars": 75734,
+      "forks": 7261,
+      "contributors": 96,
+      "recentCommits": 0,
+      "trendScore": 0.011,
+      "newScore": 0.053,
+      "contributionScore": 0.003,
+      "createdAt": "2013-11-27T13:21:13Z",
+      "pushedAt": "2026-03-23T19:40:00Z",
+      "discoverySignals": [
+        "web:popular"
+      ]
+    },
+    {
+      "full": "thedaviddias/Front-End-Checklist",
+      "domain": "web",
+      "ecosystem": "Ai Agent",
+      "stars": 74549,
+      "forks": 6755,
+      "contributors": 124,
+      "recentCommits": 44,
+      "trendScore": 0.216,
+      "newScore": 0.053,
+      "contributionScore": 0.089,
+      "createdAt": "2017-10-16T10:12:36Z",
+      "pushedAt": "2026-10-06T12:58:18Z",
+      "discoverySignals": [
+        "web:popular"
+      ]
+    },
+    {
+      "full": "opengeos/GeoLibre",
+      "domain": "ai",
+      "ecosystem": "Data Science",
+      "stars": 8109,
+      "forks": 912,
+      "contributors": 75,
+      "recentCommits": 1160,
+      "trendScore": 0.292,
+      "newScore": 0.337,
+      "contributionScore": 0.183,
+      "createdAt": "2026-05-27T19:34:31Z",
+      "pushedAt": "2026-10-22T22:13:09Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "mizorewww/laya-mlx",
+      "domain": "ai",
+      "ecosystem": "Apple Silicon",
+      "stars": 7009,
+      "forks": 569,
+      "contributors": 1,
+      "recentCommits": 20,
+      "trendScore": 0.286,
+      "newScore": 0.525,
+      "contributionScore": 0.098,
+      "createdAt": "2026-09-19T13:50:26Z",
+      "pushedAt": "2026-10-20T08:21:35Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "KartikLabhshetwar/better-shot",
+      "domain": "cloud",
+      "ecosystem": "Annotation Tool",
+      "stars": 2409,
+      "forks": 147,
+      "contributors": 11,
+      "recentCommits": 243,
+      "trendScore": 0.225,
+      "newScore": 0.123,
+      "contributionScore": 0.104,
+      "createdAt": "2026-01-11T09:39:37Z",
+      "pushedAt": "2026-10-11T13:54:28Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "missuo/kumone",
+      "domain": "cloud",
+      "ecosystem": "Cloud Libraries",
+      "stars": 1198,
+      "forks": 99,
+      "contributors": 18,
+      "recentCommits": 282,
+      "trendScore": 0.25,
+      "newScore": 0.45,
+      "contributionScore": 0.116,
+      "createdAt": "2026-08-16T10:01:52Z",
+      "pushedAt": "2026-10-19T09:57:19Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "jwuthri-cloud/Tracely-ai",
+      "domain": "devops",
+      "ecosystem": "Agent Evaluation",
+      "stars": 1154,
+      "forks": 140,
+      "contributors": 1,
+      "recentCommits": 17,
+      "trendScore": 0.261,
+      "newScore": 0.543,
+      "contributionScore": 0.097,
+      "createdAt": "2026-10-11T15:38:03Z",
+      "pushedAt": "2026-10-19T18:08:39Z",
+      "discoverySignals": [
+        "cloud:new",
+        "devops:new"
+      ]
+    },
+    {
+      "full": "xataio/xata",
+      "domain": "cloud",
+      "ecosystem": "Scale To Zero",
+      "stars": 1093,
+      "forks": 62,
+      "contributors": 19,
+      "recentCommits": 370,
+      "trendScore": 0.261,
+      "newScore": 0.263,
+      "contributionScore": 0.126,
+      "createdAt": "2026-04-15T08:49:42Z",
+      "pushedAt": "2026-10-23T09:33:37Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "riponcm/projectmem",
+      "domain": "ai",
+      "ecosystem": "Agent Memory",
+      "stars": 868,
+      "forks": 52,
+      "contributors": 7,
+      "recentCommits": 84,
+      "trendScore": 0.197,
+      "newScore": 0.3,
+      "contributionScore": 0.083,
+      "createdAt": "2026-05-09T20:28:36Z",
+      "pushedAt": "2026-10-03T00:01:18Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "artokun/comfyui-mcp",
+      "domain": "ai",
+      "ecosystem": "Agent Skills",
+      "stars": 859,
+      "forks": 138,
+      "contributors": 21,
+      "recentCommits": 2004,
+      "trendScore": 0.294,
+      "newScore": 0.175,
+      "contributionScore": 0.237,
+      "createdAt": "2026-02-15T17:08:48Z",
+      "pushedAt": "2026-10-19T09:31:42Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "yugabyte/yugabyte-db",
+      "domain": "cloud",
+      "ecosystem": "Cloud Native",
+      "stars": 10619,
+      "forks": 1359,
+      "contributors": 1209,
+      "recentCommits": 1541,
+      "trendScore": 0.294,
+      "newScore": 0.007,
+      "contributionScore": 0.25,
+      "createdAt": "2017-10-05T21:56:00Z",
+      "pushedAt": "2026-10-23T10:45:35Z",
+      "discoverySignals": [
+        "cloud:active"
+      ]
+    },
+    {
+      "full": "n8n-io/n8n",
+      "domain": "web",
+      "ecosystem": "Data Flow",
+      "stars": 208374,
+      "forks": 61217,
+      "contributors": 836,
+      "recentCommits": 5636,
+      "trendScore": 0.484,
+      "newScore": 0.149,
+      "contributionScore": 0.524,
+      "createdAt": "2019-06-22T09:24:21Z",
+      "pushedAt": "2026-10-23T10:51:43Z",
+      "discoverySignals": [
+        "cloud:active",
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "stacklok/mecatl",
+      "domain": "cloud",
+      "ecosystem": "Cloud Libraries",
+      "stars": 290,
+      "forks": 26,
+      "contributors": 25,
+      "recentCommits": 1163,
+      "trendScore": 0.282,
+      "newScore": 0.329,
+      "contributionScore": 0.182,
+      "createdAt": "2026-05-29T13:45:10Z",
+      "pushedAt": "2026-10-23T10:49:17Z",
+      "discoverySignals": [
+        "cloud:active"
+      ]
+    },
+    {
+      "full": "lakesoul-io/LakeSoul",
+      "domain": "data_engineering",
+      "ecosystem": "Vector Search",
+      "stars": 3258,
+      "forks": 428,
+      "contributors": 32,
+      "recentCommits": 0,
+      "trendScore": 0.251,
+      "newScore": 0.002,
+      "contributionScore": 0.101,
+      "createdAt": "2021-12-28T08:53:11Z",
+      "pushedAt": "2026-10-23T10:24:01Z",
+      "discoverySignals": [
+        "cloud:active"
+      ]
+    },
+    {
+      "full": "milvus-io/milvus",
+      "domain": "ai",
+      "ecosystem": "Cloud Native",
+      "stars": 46460,
+      "forks": 4309,
+      "contributors": 390,
+      "recentCommits": 924,
+      "trendScore": 0.283,
+      "newScore": 0.033,
+      "contributionScore": 0.178,
+      "createdAt": "2019-09-16T06:43:43Z",
+      "pushedAt": "2026-10-23T10:49:54Z",
+      "discoverySignals": [
+        "cloud:active",
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "goharbor/harbor",
+      "domain": "cloud",
+      "ecosystem": "Cloud Native",
+      "stars": 29600,
+      "forks": 5392,
+      "contributors": 499,
+      "recentCommits": 226,
+      "trendScore": 0.263,
+      "newScore": 0.021,
+      "contributionScore": 0.133,
+      "createdAt": "2016-01-28T21:10:28Z",
+      "pushedAt": "2026-10-23T10:21:38Z",
+      "discoverySignals": [
+        "cloud:active",
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "aserto-dev/topaz",
+      "domain": "cloud",
+      "ecosystem": "Access Control",
+      "stars": 1365,
+      "forks": 48,
+      "contributors": 25,
+      "recentCommits": 23,
+      "trendScore": 0.251,
+      "newScore": 0.001,
+      "contributionScore": 0.102,
+      "createdAt": "2022-10-23T15:54:10Z",
+      "pushedAt": "2026-10-23T10:27:51Z",
+      "discoverySignals": [
+        "cloud:active"
+      ]
+    },
+    {
+      "full": "meshery/meshery",
+      "domain": "cloud",
+      "ecosystem": "Cloud Native",
+      "stars": 12043,
+      "forks": 3991,
+      "contributors": 2247,
+      "recentCommits": 3146,
+      "trendScore": 0.34,
+      "newScore": 0.009,
+      "contributionScore": 0.398,
+      "createdAt": "2018-11-14T13:41:00Z",
+      "pushedAt": "2026-10-23T10:08:48Z",
+      "discoverySignals": [
+        "cloud:active"
+      ]
+    },
+    {
+      "full": "traefik/traefik",
+      "domain": "cloud",
+      "ecosystem": "Ingress Nginx",
+      "stars": 65331,
+      "forks": 6259,
+      "contributors": 1141,
+      "recentCommits": 218,
+      "trendScore": 0.266,
+      "newScore": 0.046,
+      "contributionScore": 0.155,
+      "createdAt": "2015-09-13T19:04:02Z",
+      "pushedAt": "2026-10-23T08:34:06Z",
+      "discoverySignals": [
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "alibaba/nacos",
+      "domain": "cloud",
+      "ecosystem": "A2a Registry",
+      "stars": 33471,
+      "forks": 13282,
+      "contributors": 550,
+      "recentCommits": 144,
+      "trendScore": 0.27,
+      "newScore": 0.024,
+      "contributionScore": 0.129,
+      "createdAt": "2018-06-15T06:49:27Z",
+      "pushedAt": "2026-10-23T08:29:04Z",
+      "discoverySignals": [
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "zeromicro/go-zero",
+      "domain": "web",
+      "ecosystem": "Ai Native",
+      "stars": 33401,
+      "forks": 4332,
+      "contributors": 342,
+      "recentCommits": 67,
+      "trendScore": 0.254,
+      "newScore": 0.024,
+      "contributionScore": 0.114,
+      "createdAt": "2020-08-07T15:37:57Z",
+      "pushedAt": "2026-10-21T12:45:33Z",
+      "discoverySignals": [
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "cockroachdb/cockroach",
+      "domain": "databases",
+      "ecosystem": "Distributed Database",
+      "stars": 32575,
+      "forks": 4141,
+      "contributors": 1123,
+      "recentCommits": 39,
+      "trendScore": 0.253,
+      "newScore": 0.023,
+      "contributionScore": 0.14,
+      "createdAt": "2014-02-06T00:18:47Z",
+      "pushedAt": "2026-10-21T21:32:37Z",
+      "discoverySignals": [
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "SigNoz/signoz",
+      "domain": "devops",
+      "ecosystem": "Application Monitoring",
+      "stars": 32427,
+      "forks": 2549,
+      "contributors": 219,
+      "recentCommits": 501,
+      "trendScore": 0.269,
+      "newScore": 0.023,
+      "contributionScore": 0.143,
+      "createdAt": "2021-01-03T12:44:36Z",
+      "pushedAt": "2026-10-23T10:52:30Z",
+      "discoverySignals": [
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "pranshuparmar/witr",
+      "domain": "cloud",
+      "ecosystem": "Incident Response",
+      "stars": 22770,
+      "forks": 799,
+      "contributors": 48,
+      "recentCommits": 49,
+      "trendScore": 0.267,
+      "newScore": 0.111,
+      "contributionScore": 0.105,
+      "createdAt": "2025-12-20T17:26:59Z",
+      "pushedAt": "2026-10-23T03:02:05Z",
+      "discoverySignals": [
+        "cloud:new",
+        "devops:new"
+      ]
+    },
+    {
+      "full": "opensandbox-group/OpenSandbox",
+      "domain": "ai",
+      "ecosystem": "Ai Agent",
+      "stars": 16087,
+      "forks": 1493,
+      "contributors": 164,
+      "recentCommits": 1429,
+      "trendScore": 0.301,
+      "newScore": 0.099,
+      "contributionScore": 0.206,
+      "createdAt": "2025-12-17T08:41:09Z",
+      "pushedAt": "2026-10-23T09:04:31Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "Agents365-ai/drawio-skill",
+      "domain": "web",
+      "ecosystem": "Agent Skills",
+      "stars": 10316,
+      "forks": 712,
+      "contributors": 16,
+      "recentCommits": 51,
+      "trendScore": 0.228,
+      "newScore": 0.209,
+      "contributionScore": 0.091,
+      "createdAt": "2026-03-03T16:54:59Z",
+      "pushedAt": "2026-10-11T11:22:56Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "iflytek/skillhub",
+      "domain": "cloud",
+      "ecosystem": "Agent Framework",
+      "stars": 5274,
+      "forks": 808,
+      "contributors": 54,
+      "recentCommits": 522,
+      "trendScore": 0.269,
+      "newScore": 0.216,
+      "contributionScore": 0.138,
+      "createdAt": "2026-03-11T12:17:05Z",
+      "pushedAt": "2026-10-23T03:17:36Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "productdevbook/port-killer",
+      "domain": "cloud",
+      "ecosystem": "Developer Tools",
+      "stars": 5136,
+      "forks": 207,
+      "contributors": 18,
+      "recentCommits": 11,
+      "trendScore": 0.231,
+      "newScore": 0.086,
+      "contributionScore": 0.092,
+      "createdAt": "2025-12-16T01:44:50Z",
+      "pushedAt": "2026-10-15T08:39:51Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "skyhook-io/radar",
+      "domain": "cloud",
+      "ecosystem": "Ai Agents",
+      "stars": 3902,
+      "forks": 252,
+      "contributors": 73,
+      "recentCommits": 728,
+      "trendScore": 0.273,
+      "newScore": 0.138,
+      "contributionScore": 0.153,
+      "createdAt": "2026-01-20T00:09:40Z",
+      "pushedAt": "2026-10-23T08:56:49Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "Agent-Field/agentfield",
+      "domain": "cloud",
+      "ecosystem": "Agent Auth",
+      "stars": 2616,
+      "forks": 433,
+      "contributors": 71,
+      "recentCommits": 410,
+      "trendScore": 0.261,
+      "newScore": 0.022,
+      "contributionScore": 0.13,
+      "createdAt": "2025-11-05T02:04:44Z",
+      "pushedAt": "2026-10-22T14:01:38Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "Yuan-lab-LLM/ClawManager",
+      "domain": "cloud",
+      "ecosystem": "Hermes",
+      "stars": 1887,
+      "forks": 158,
+      "contributors": 18,
+      "recentCommits": 30,
+      "trendScore": 0.252,
+      "newScore": 0.225,
+      "contributionScore": 0.102,
+      "createdAt": "2026-03-20T10:43:22Z",
+      "pushedAt": "2026-10-23T06:25:47Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "element-hq/ess-helm",
+      "domain": "cloud",
+      "ecosystem": "Helm Chart",
+      "stars": 982,
+      "forks": 156,
+      "contributors": 36,
+      "recentCommits": 380,
+      "trendScore": 0.261,
+      "newScore": 0.001,
+      "contributionScore": 0.128,
+      "createdAt": "2024-10-22T07:49:53Z",
+      "pushedAt": "2026-10-23T10:48:42Z",
+      "discoverySignals": [
+        "cloud:active"
+      ]
+    },
+    {
+      "full": "cloudnative-pg/cloudnative-pg",
+      "domain": "databases",
+      "ecosystem": "Automated Failover",
+      "stars": 9483,
+      "forks": 802,
+      "contributors": 251,
+      "recentCommits": 201,
+      "trendScore": 0.257,
+      "newScore": 0.007,
+      "contributionScore": 0.123,
+      "createdAt": "2022-03-10T11:21:32Z",
+      "pushedAt": "2026-10-23T10:42:55Z",
+      "discoverySignals": [
+        "cloud:active",
+        "devops:active"
+      ]
+    },
+    {
+      "full": "podman-desktop/podman-desktop",
+      "domain": "cloud",
+      "ecosystem": "Podman Desktop",
+      "stars": 8106,
+      "forks": 583,
+      "contributors": 238,
+      "recentCommits": 1362,
+      "trendScore": 0.288,
+      "newScore": 0.006,
+      "contributionScore": 0.204,
+      "createdAt": "2022-03-03T18:45:51Z",
+      "pushedAt": "2026-10-23T10:47:34Z",
+      "discoverySignals": [
+        "cloud:active"
+      ]
+    },
+    {
+      "full": "cilium/tetragon",
+      "domain": "cloud",
+      "ecosystem": "Bpf",
+      "stars": 5100,
+      "forks": 632,
+      "contributors": 207,
+      "recentCommits": 609,
+      "trendScore": 0.268,
+      "newScore": 0.004,
+      "contributionScore": 0.15,
+      "createdAt": "2022-03-23T10:25:36Z",
+      "pushedAt": "2026-10-23T10:40:35Z",
+      "discoverySignals": [
+        "cloud:active"
+      ]
+    },
+    {
+      "full": "siderolabs/talos",
+      "domain": "cloud",
+      "ecosystem": "Cloud Native",
+      "stars": 11394,
+      "forks": 936,
+      "contributors": 397,
+      "recentCommits": 393,
+      "trendScore": 0.262,
+      "newScore": 0.008,
+      "contributionScore": 0.141,
+      "createdAt": "2017-11-03T23:19:12Z",
+      "pushedAt": "2026-10-23T10:39:43Z",
+      "discoverySignals": [
+        "cloud:active"
+      ]
+    },
+    {
+      "full": "apache/camel",
+      "domain": "web",
+      "ecosystem": "Cloud Native",
+      "stars": 6377,
+      "forks": 5173,
+      "contributors": 1599,
+      "recentCommits": 4080,
+      "trendScore": 0.366,
+      "newScore": 0.004,
+      "contributionScore": 0.441,
+      "createdAt": "2009-05-21T00:25:36Z",
+      "pushedAt": "2026-10-23T10:51:41Z",
+      "discoverySignals": [
+        "cloud:active"
+      ]
+    },
+    {
+      "full": "bregman-arie/devops-exercises",
+      "domain": "cloud",
+      "ecosystem": "Interview Questions",
+      "stars": 84931,
+      "forks": 20403,
+      "contributors": 220,
+      "recentCommits": 0,
+      "trendScore": 0.029,
+      "newScore": 0.061,
+      "contributionScore": 0.008,
+      "createdAt": "2019-10-03T17:31:21Z",
+      "pushedAt": "2025-12-27T14:22:30Z",
+      "discoverySignals": [
+        "cloud:popular",
+        "devops:popular"
+      ]
+    },
+    {
+      "full": "netdata/netdata",
+      "domain": "devops",
+      "ecosystem": "Data Visualization",
+      "stars": 81100,
+      "forks": 6687,
+      "contributors": 695,
+      "recentCommits": 1046,
+      "trendScore": 0.289,
+      "newScore": 0.057,
+      "contributionScore": 0.197,
+      "createdAt": "2013-06-17T18:39:10Z",
+      "pushedAt": "2026-10-23T09:27:20Z",
+      "discoverySignals": [
+        "cloud:popular",
+        "devops:popular"
+      ]
+    },
+    {
+      "full": "etcd-io/etcd",
+      "domain": "cloud",
+      "ecosystem": "Distributed Database",
+      "stars": 52422,
+      "forks": 10550,
+      "contributors": 1209,
+      "recentCommits": 243,
+      "trendScore": 0.27,
+      "newScore": 0.037,
+      "contributionScore": 0.159,
+      "createdAt": "2013-07-06T21:57:21Z",
+      "pushedAt": "2026-10-23T05:17:56Z",
+      "discoverySignals": [
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "kelseyhightower/kubernetes-the-hard-way",
+      "domain": "cloud",
+      "ecosystem": "Cloud Libraries",
+      "stars": 50452,
+      "forks": 15926,
+      "contributors": 61,
+      "recentCommits": 0,
+      "trendScore": 0.02,
+      "newScore": 0.035,
+      "contributionScore": 0.002,
+      "createdAt": "2016-07-07T14:15:27Z",
+      "pushedAt": "2025-04-10T06:11:47Z",
+      "discoverySignals": [
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "GitHubDaily/GitHubDaily",
+      "domain": "web",
+      "ecosystem": "Algorithms And Data Structures",
+      "stars": 48272,
+      "forks": 4714,
+      "contributors": 6,
+      "recentCommits": 0,
+      "trendScore": 0.009,
+      "newScore": 0.034,
+      "contributionScore": 0,
+      "createdAt": "2018-12-30T13:56:58Z",
+      "pushedAt": "2025-12-31T18:59:20Z",
+      "discoverySignals": [
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "LeCoupa/awesome-cheatsheets",
+      "domain": "web",
+      "ecosystem": "Programming Language",
+      "stars": 46574,
+      "forks": 6689,
+      "contributors": 153,
+      "recentCommits": 3,
+      "trendScore": 0.244,
+      "newScore": 0.033,
+      "contributionScore": 0.099,
+      "createdAt": "2017-11-09T02:47:15Z",
+      "pushedAt": "2026-10-17T14:11:21Z",
+      "discoverySignals": [
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "zhaoxuya520/MeshLAN",
+      "domain": "cloud",
+      "ecosystem": "Mesh Network",
+      "stars": 235,
+      "forks": 36,
+      "contributors": 1,
+      "recentCommits": 17,
+      "trendScore": 0.102,
+      "newScore": 0.457,
+      "contributionScore": 0.042,
+      "createdAt": "2026-08-22T10:30:10Z",
+      "pushedAt": "2026-08-30T21:11:01Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "getknit/knit",
+      "domain": "cloud",
+      "ecosystem": "Bluetooth Le",
+      "stars": 153,
+      "forks": 12,
+      "contributors": 1,
+      "recentCommits": 882,
+      "trendScore": 0.273,
+      "newScore": 0.405,
+      "contributionScore": 0.161,
+      "createdAt": "2026-07-19T05:36:22Z",
+      "pushedAt": "2026-10-23T03:28:37Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "calabinet/calabi",
+      "domain": "cloud",
+      "ecosystem": "Developer Tools",
+      "stars": 116,
+      "forks": 5,
+      "contributors": 1,
+      "recentCommits": 41,
+      "trendScore": 0.237,
+      "newScore": 0.351,
+      "contributionScore": 0.097,
+      "createdAt": "2026-06-13T11:10:21Z",
+      "pushedAt": "2026-10-18T08:43:55Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "Dicklesworthstone/flywheel_connectors",
+      "domain": "cloud",
+      "ecosystem": "Ai Agents",
+      "stars": 95,
+      "forks": 11,
+      "contributors": 10,
+      "recentCommits": 307,
+      "trendScore": 0.257,
+      "newScore": 0.12,
+      "contributionScore": 0.121,
+      "createdAt": "2026-01-11T07:07:47Z",
+      "pushedAt": "2026-10-23T02:02:36Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "Yundera/mesh-router-root",
+      "domain": "cloud",
+      "ecosystem": "Self Hosted",
+      "stars": 55,
+      "forks": 6,
+      "contributors": 2,
+      "recentCommits": 7,
+      "trendScore": 0.223,
+      "newScore": 0.144,
+      "contributionScore": 0.089,
+      "createdAt": "2026-01-26T18:14:18Z",
+      "pushedAt": "2026-10-13T12:17:00Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "thatSFguy/reticulum-mobile-app",
+      "domain": "cloud",
+      "ecosystem": "Encrypted Messaging",
+      "stars": 51,
+      "forks": 5,
+      "contributors": 3,
+      "recentCommits": 158,
+      "trendScore": 0.188,
+      "newScore": 0.258,
+      "contributionScore": 0.084,
+      "createdAt": "2026-04-12T09:49:01Z",
+      "pushedAt": "2026-09-29T10:28:45Z",
+      "discoverySignals": [
+        "cloud:new"
+      ]
+    },
+    {
+      "full": "kumahq/kuma",
+      "domain": "cloud",
+      "ecosystem": "Cloud Native",
+      "stars": 4016,
+      "forks": 375,
+      "contributors": 132,
+      "recentCommits": 858,
+      "trendScore": 0.274,
+      "newScore": 0.003,
+      "contributionScore": 0.165,
+      "createdAt": "2019-03-13T13:20:13Z",
+      "pushedAt": "2026-10-23T10:50:49Z",
+      "discoverySignals": [
+        "cloud:active",
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "hashicorp/consul-k8s",
+      "domain": "cloud",
+      "ecosystem": "Gateway Api",
+      "stars": 710,
+      "forks": 348,
+      "contributors": 213,
+      "recentCommits": 62,
+      "trendScore": 0.252,
+      "newScore": 0,
+      "contributionScore": 0.112,
+      "createdAt": "2018-07-03T16:43:37Z",
+      "pushedAt": "2026-10-23T10:12:10Z",
+      "discoverySignals": [
+        "cloud:active"
+      ]
+    },
+    {
+      "full": "kiali/kiali",
+      "domain": "cloud",
+      "ecosystem": "Service Mesh",
+      "stars": 3646,
+      "forks": 571,
+      "contributors": 156,
+      "recentCommits": 132,
+      "trendScore": 0.254,
+      "newScore": 0.003,
+      "contributionScore": 0.115,
+      "createdAt": "2018-02-04T12:11:57Z",
+      "pushedAt": "2026-10-23T08:27:48Z",
+      "discoverySignals": [
+        "cloud:active",
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "linkerd/linkerd2",
+      "domain": "cloud",
+      "ecosystem": "Cloud Native",
+      "stars": 11520,
+      "forks": 1387,
+      "contributors": 409,
+      "recentCommits": 126,
+      "trendScore": 0.254,
+      "newScore": 0.008,
+      "contributionScore": 0.122,
+      "createdAt": "2017-12-04T23:16:56Z",
+      "pushedAt": "2026-10-22T22:29:31Z",
+      "discoverySignals": [
+        "cloud:active",
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "ardatan/graphql-mesh",
+      "domain": "web",
+      "ecosystem": "Grpc Gateway",
+      "stars": 3513,
+      "forks": 361,
+      "contributors": 153,
+      "recentCommits": 108,
+      "trendScore": 0.247,
+      "newScore": 0.002,
+      "contributionScore": 0.11,
+      "createdAt": "2020-01-13T13:06:15Z",
+      "pushedAt": "2026-10-21T00:25:12Z",
+      "discoverySignals": [
+        "cloud:active",
+        "cloud:popular"
+      ]
+    },
+    {
+      "full": "linkerd/linkerd2-proxy",
+      "domain": "cloud",
+      "ecosystem": "Service Mesh",
+      "stars": 2148,
+      "forks": 303,
+      "contributors": 63,
+      "recentCommits": 26,
+      "trendScore": 0.251,
+      "newScore": 0.002,
+      "contributionScore": 0.104,
+      "createdAt": "2018-07-07T22:40:57Z",
+      "pushedAt": "2026-10-23T10:02:45Z",
+      "discoverySignals": [
+        "cloud:active"
+      ]
+    },
+    {
+      "full": "floci-io/floci",
+      "domain": "cloud",
+      "ecosystem": "Aws Emulation",
+      "stars": 27034,
+      "forks": 2965,
+      "contributors": 350,
+      "recentCommits": 2840,
+      "trendScore": 0.353,
+      "newScore": 0.207,
+      "contributionScore": 0.311,
+      "createdAt": "2026-02-18T02:28:29Z",
+      "pushedAt": "2026-10-23T10:52:15Z",
+      "discoverySignals": [
+        "devops:new",
+        "devops:active"
+      ]
+    },
+    {
+      "full": "rorkai/App-Store-Connect-CLI",
+      "domain": "devops",
+      "ecosystem": "App Store Connect",
+      "stars": 8018,
+      "forks": 687,
+      "contributors": 371,
+      "recentCommits": 5620,
+      "trendScore": 0.408,
+      "newScore": 0.143,
+      "contributionScore": 0.506,
+      "createdAt": "2026-01-20T11:17:23Z",
+      "pushedAt": "2026-10-23T04:29:44Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "pshenok/server-survival",
+      "domain": "cloud",
+      "ecosystem": "Tower Defense",
+      "stars": 6467,
+      "forks": 715,
+      "contributors": 30,
+      "recentCommits": 88,
+      "trendScore": 0.251,
+      "newScore": 0.05,
+      "contributionScore": 0.105,
+      "createdAt": "2025-11-21T02:36:29Z",
+      "pushedAt": "2026-10-21T04:56:10Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "AlexAnys/awesome-openclaw-usecases-zh",
+      "domain": "ai",
+      "ecosystem": "Ai Agent",
+      "stars": 4450,
+      "forks": 467,
+      "contributors": 3,
+      "recentCommits": 0,
+      "trendScore": 0.004,
+      "newScore": 0.19,
+      "contributionScore": 0,
+      "createdAt": "2026-02-23T02:20:51Z",
+      "pushedAt": "2026-07-12T10:14:25Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "DaKheera47/job-ops",
+      "domain": "devops",
+      "ecosystem": "Job Search",
+      "stars": 4066,
+      "forks": 544,
+      "contributors": 52,
+      "recentCommits": 50,
+      "trendScore": 0.244,
+      "newScore": 0.079,
+      "contributionScore": 0.101,
+      "createdAt": "2025-12-11T23:57:21Z",
+      "pushedAt": "2026-10-19T15:53:44Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "openocta/openocta",
+      "domain": "devops",
+      "ecosystem": "Aiops Agent",
+      "stars": 3216,
+      "forks": 402,
+      "contributors": 12,
+      "recentCommits": 16,
+      "trendScore": 0.15,
+      "newScore": 0.193,
+      "contributionScore": 0.06,
+      "createdAt": "2026-02-26T09:12:26Z",
+      "pushedAt": "2026-09-16T07:28:57Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "antonbabenko/terraform-skill",
+      "domain": "devops",
+      "ecosystem": "Agent Skills",
+      "stars": 2422,
+      "forks": 220,
+      "contributors": 8,
+      "recentCommits": 0,
+      "trendScore": 0.002,
+      "newScore": 0.13,
+      "contributionScore": 0,
+      "createdAt": "2026-01-15T18:26:37Z",
+      "pushedAt": "2026-07-03T05:56:41Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "getsentry/sentry",
+      "domain": "devops",
+      "ecosystem": "Crash Reporting",
+      "stars": 45631,
+      "forks": 4947,
+      "contributors": 1104,
+      "recentCommits": 6404,
+      "trendScore": 0.43,
+      "newScore": 0.032,
+      "contributionScore": 0.587,
+      "createdAt": "2010-08-30T22:06:41Z",
+      "pushedAt": "2026-10-23T10:54:48Z",
+      "discoverySignals": [
+        "devops:active",
+        "devops:popular"
+      ]
+    },
+    {
+      "full": "dagger/dagger",
+      "domain": "devops",
+      "ecosystem": "Ci Cd",
+      "stars": 16380,
+      "forks": 936,
+      "contributors": 329,
+      "recentCommits": 3420,
+      "trendScore": 0.345,
+      "newScore": 0.012,
+      "contributionScore": 0.351,
+      "createdAt": "2019-11-20T01:31:51Z",
+      "pushedAt": "2026-10-23T10:40:59Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "kestra-io/kestra",
+      "domain": "devops",
+      "ecosystem": "Ai Agents",
+      "stars": 29956,
+      "forks": 3466,
+      "contributors": 786,
+      "recentCommits": 2201,
+      "trendScore": 0.315,
+      "newScore": 0.021,
+      "contributionScore": 0.282,
+      "createdAt": "2019-08-24T13:56:15Z",
+      "pushedAt": "2026-10-23T10:44:50Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "finos/architecture-as-code",
+      "domain": "devops",
+      "ecosystem": "Architecture",
+      "stars": 427,
+      "forks": 158,
+      "contributors": 67,
+      "recentCommits": 690,
+      "trendScore": 0.269,
+      "newScore": 0,
+      "contributionScore": 0.151,
+      "createdAt": "2023-11-28T11:20:26Z",
+      "pushedAt": "2026-10-23T10:38:59Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "openspug/spug",
+      "domain": "devops",
+      "ecosystem": "Django Ops",
+      "stars": 11093,
+      "forks": 2198,
+      "contributors": 13,
+      "recentCommits": 45,
+      "trendScore": 0.254,
+      "newScore": 0.008,
+      "contributionScore": 0.104,
+      "createdAt": "2018-01-31T15:52:53Z",
+      "pushedAt": "2026-10-23T10:36:02Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "rssh-org/rssh",
+      "domain": "ai",
+      "ecosystem": "Ai Agent",
+      "stars": 523,
+      "forks": 49,
+      "contributors": 12,
+      "recentCommits": 44,
+      "trendScore": 0.252,
+      "newScore": 0.257,
+      "contributionScore": 0.103,
+      "createdAt": "2026-04-11T08:18:53Z",
+      "pushedAt": "2026-10-23T10:32:35Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "trimstray/the-book-of-secret-knowledge",
+      "domain": "devops",
+      "ecosystem": "Awesome List",
+      "stars": 252521,
+      "forks": 14604,
+      "contributors": 108,
+      "recentCommits": 0,
+      "trendScore": 0.033,
+      "newScore": 0.179,
+      "contributionScore": 0.004,
+      "createdAt": "2018-06-23T10:43:14Z",
+      "pushedAt": "2024-11-19T14:00:38Z",
+      "discoverySignals": [
+        "devops:popular"
+      ]
+    },
+    {
+      "full": "ripienaar/free-for-dev",
+      "domain": "devops",
+      "ecosystem": "Awesome List",
+      "stars": 139953,
+      "forks": 14841,
+      "contributors": 2341,
+      "recentCommits": 176,
+      "trendScore": 0.276,
+      "newScore": 0.098,
+      "contributionScore": 0.193,
+      "createdAt": "2015-03-18T21:06:26Z",
+      "pushedAt": "2026-10-22T19:25:58Z",
+      "discoverySignals": [
+        "devops:popular"
+      ]
+    },
+    {
+      "full": "binhnguyennus/awesome-scalability",
+      "domain": "ai",
+      "ecosystem": "Awesome List",
+      "stars": 74999,
+      "forks": 7191,
+      "contributors": 29,
+      "recentCommits": 0,
+      "trendScore": 0.013,
+      "newScore": 0.053,
+      "contributionScore": 0.001,
+      "createdAt": "2017-12-27T03:46:40Z",
+      "pushedAt": "2026-01-04T03:51:47Z",
+      "discoverySignals": [
+        "devops:popular"
+      ]
+    },
+    {
+      "full": "nektos/act",
+      "domain": "devops",
+      "ecosystem": "Github Actions",
+      "stars": 72434,
+      "forks": 2070,
+      "contributors": 214,
+      "recentCommits": 0,
+      "trendScore": 0.051,
+      "newScore": 0.052,
+      "contributionScore": 0.025,
+      "createdAt": "2019-01-02T19:53:43Z",
+      "pushedAt": "2026-08-09T22:50:11Z",
+      "discoverySignals": [
+        "devops:popular"
+      ]
+    },
+    {
+      "full": "go-gitea/gitea",
+      "domain": "web",
+      "ecosystem": "Docker Registry V2",
+      "stars": 58648,
+      "forks": 7299,
+      "contributors": 1889,
+      "recentCommits": 1010,
+      "trendScore": 0.288,
+      "newScore": 0.041,
+      "contributionScore": 0.236,
+      "createdAt": "2016-11-01T02:13:26Z",
+      "pushedAt": "2026-10-23T09:36:44Z",
+      "discoverySignals": [
+        "devops:popular",
+        "devops:active"
+      ]
+    },
+    {
+      "full": "SivaSaiKrishnaSuryadevara/devops-infra-toolkit",
+      "domain": "devops",
+      "ecosystem": "DevOps Libraries",
+      "stars": 108,
+      "forks": 103,
+      "contributors": 1,
+      "recentCommits": 8,
+      "trendScore": 0.232,
+      "newScore": 0.417,
+      "contributionScore": 0.093,
+      "createdAt": "2026-07-26T21:28:18Z",
+      "pushedAt": "2026-10-16T18:35:22Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "nutcas3/the-engine",
+      "domain": "cloud",
+      "ecosystem": "Cloud Management",
+      "stars": 76,
+      "forks": 20,
+      "contributors": 2,
+      "recentCommits": 0,
+      "trendScore": 0,
+      "newScore": 0.282,
+      "contributionScore": 0,
+      "createdAt": "2026-04-28T17:30:34Z",
+      "pushedAt": "2026-07-20T09:20:16Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "ops0-ai/oxid",
+      "domain": "devops",
+      "ecosystem": "Iac Module",
+      "stars": 71,
+      "forks": 5,
+      "contributors": 4,
+      "recentCommits": 0,
+      "trendScore": 0,
+      "newScore": 0.174,
+      "contributionScore": 0,
+      "createdAt": "2026-02-15T17:18:10Z",
+      "pushedAt": "2026-06-12T19:10:01Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "saikiranrallabandi/inframind",
+      "domain": "devops",
+      "ecosystem": "Dapo",
+      "stars": 70,
+      "forks": 17,
+      "contributors": 1,
+      "recentCommits": 0,
+      "trendScore": 0,
+      "newScore": 0.062,
+      "contributionScore": 0,
+      "createdAt": "2025-12-03T12:07:22Z",
+      "pushedAt": "2025-12-15T15:54:14Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "kholidaainur/bedrock-iac-for-roblox",
+      "domain": "cloud",
+      "ecosystem": "Open Cloud",
+      "stars": 68,
+      "forks": 0,
+      "contributors": 2,
+      "recentCommits": 171,
+      "trendScore": 0.255,
+      "newScore": 0.504,
+      "contributionScore": 0.112,
+      "createdAt": "2026-09-22T19:20:34Z",
+      "pushedAt": "2026-10-23T08:01:27Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "R0kshan/cairn",
+      "domain": "devops",
+      "ecosystem": "Diagramming Tool",
+      "stars": 51,
+      "forks": 4,
+      "contributors": 3,
+      "recentCommits": 121,
+      "trendScore": 0.246,
+      "newScore": 0.399,
+      "contributionScore": 0.106,
+      "createdAt": "2026-07-14T22:41:39Z",
+      "pushedAt": "2026-10-20T19:53:56Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "bjw-s-labs/home-ops",
+      "domain": "cloud",
+      "ecosystem": "K8s At Home",
+      "stars": 865,
+      "forks": 43,
+      "contributors": 19,
+      "recentCommits": 221,
+      "trendScore": 0.256,
+      "newScore": 0.001,
+      "contributionScore": 0.116,
+      "createdAt": "2020-08-14T09:52:47Z",
+      "pushedAt": "2026-10-23T10:29:13Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "pulumi/pulumi",
+      "domain": "cloud",
+      "ecosystem": "Cloud Computing",
+      "stars": 25810,
+      "forks": 1464,
+      "contributors": 413,
+      "recentCommits": 860,
+      "trendScore": 0.276,
+      "newScore": 0.018,
+      "contributionScore": 0.175,
+      "createdAt": "2016-10-31T21:02:47Z",
+      "pushedAt": "2026-10-23T10:53:57Z",
+      "discoverySignals": [
+        "devops:active",
+        "devops:popular"
+      ]
+    },
+    {
+      "full": "mortennordbye/homelab",
+      "domain": "devops",
+      "ecosystem": "Cert Manager",
+      "stars": 324,
+      "forks": 15,
+      "contributors": 5,
+      "recentCommits": 1443,
+      "trendScore": 0.289,
+      "newScore": 0,
+      "contributionScore": 0.201,
+      "createdAt": "2025-03-06T19:29:47Z",
+      "pushedAt": "2026-10-23T09:09:38Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "gruntwork-io/terragrunt",
+      "domain": "devops",
+      "ecosystem": "Developer Tools",
+      "stars": 9895,
+      "forks": 1244,
+      "contributors": 371,
+      "recentCommits": 426,
+      "trendScore": 0.263,
+      "newScore": 0.007,
+      "contributionScore": 0.143,
+      "createdAt": "2016-05-23T22:17:48Z",
+      "pushedAt": "2026-10-23T09:04:24Z",
+      "discoverySignals": [
+        "devops:active",
+        "devops:popular"
+      ]
+    },
+    {
+      "full": "mongodb/terraform-provider-mongodbatlas",
+      "domain": "devops",
+      "ecosystem": "Mongodb Atlas Provider",
+      "stars": 274,
+      "forks": 214,
+      "contributors": 120,
+      "recentCommits": 228,
+      "trendScore": 0.256,
+      "newScore": 0,
+      "contributionScore": 0.12,
+      "createdAt": "2019-08-15T15:55:57Z",
+      "pushedAt": "2026-10-23T10:48:26Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "chainloop-dev/chainloop",
+      "domain": "devops",
+      "ecosystem": "Agentic Sdlc",
+      "stars": 604,
+      "forks": 65,
+      "contributors": 40,
+      "recentCommits": 288,
+      "trendScore": 0.258,
+      "newScore": 0,
+      "contributionScore": 0.121,
+      "createdAt": "2023-03-06T14:30:50Z",
+      "pushedAt": "2026-10-23T07:33:55Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "NixOS/infra",
+      "domain": "devops",
+      "ecosystem": "DevOps Libraries",
+      "stars": 386,
+      "forks": 156,
+      "contributors": 115,
+      "recentCommits": 121,
+      "trendScore": 0.253,
+      "newScore": 0,
+      "contributionScore": 0.112,
+      "createdAt": "2013-05-31T13:39:21Z",
+      "pushedAt": "2026-10-23T05:08:17Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "hashicorp/terraform-mcp-server",
+      "domain": "devops",
+      "ecosystem": "DevOps Libraries",
+      "stars": 1553,
+      "forks": 200,
+      "contributors": 33,
+      "recentCommits": 94,
+      "trendScore": 0.252,
+      "newScore": 0.001,
+      "contributionScore": 0.107,
+      "createdAt": "2025-04-19T19:49:09Z",
+      "pushedAt": "2026-10-23T00:35:32Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "bridgecrewio/checkov",
+      "domain": "cloud",
+      "ecosystem": "Aws Security",
+      "stars": 9097,
+      "forks": 1447,
+      "contributors": 447,
+      "recentCommits": 77,
+      "trendScore": 0.252,
+      "newScore": 0.007,
+      "contributionScore": 0.12,
+      "createdAt": "2019-11-27T08:55:14Z",
+      "pushedAt": "2026-10-22T15:12:39Z",
+      "discoverySignals": [
+        "devops:popular"
+      ]
+    },
+    {
+      "full": "DNSControl/dnscontrol",
+      "domain": "devops",
+      "ecosystem": "Infrastructure As Code",
+      "stars": 3980,
+      "forks": 550,
+      "contributors": 342,
+      "recentCommits": 324,
+      "trendScore": 0.254,
+      "newScore": 0.003,
+      "contributionScore": 0.132,
+      "createdAt": "2016-08-30T17:42:30Z",
+      "pushedAt": "2026-10-21T13:17:04Z",
+      "discoverySignals": [
+        "devops:popular"
+      ]
+    },
+    {
+      "full": "gofireflyio/aiac",
+      "domain": "ai",
+      "ecosystem": "Amazon Bedrock",
+      "stars": 3787,
+      "forks": 294,
+      "contributors": 12,
+      "recentCommits": 0,
+      "trendScore": 0.001,
+      "newScore": 0.003,
+      "contributionScore": 0,
+      "createdAt": "2022-12-07T07:29:50Z",
+      "pushedAt": "2026-03-24T10:56:24Z",
+      "discoverySignals": [
+        "devops:popular"
+      ]
+    },
+    {
+      "full": "terramate-io/terramate",
+      "domain": "devops",
+      "ecosystem": "DevOps Libraries",
+      "stars": 3639,
+      "forks": 131,
+      "contributors": 34,
+      "recentCommits": 17,
+      "trendScore": 0.232,
+      "newScore": 0.003,
+      "contributionScore": 0.095,
+      "createdAt": "2021-09-29T10:33:53Z",
+      "pushedAt": "2026-10-16T12:20:18Z",
+      "discoverySignals": [
+        "devops:popular"
+      ]
+    },
+    {
+      "full": "dnshe/DNSHE-FreeDomains",
+      "domain": "web",
+      "ecosystem": "Web Libraries",
+      "stars": 20606,
+      "forks": 461,
+      "contributors": 1,
+      "recentCommits": 4,
+      "trendScore": 0.23,
+      "newScore": 0.305,
+      "contributionScore": 0.082,
+      "createdAt": "2026-04-26T10:27:09Z",
+      "pushedAt": "2026-10-07T09:25:48Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "hcavarsan/pipedash",
+      "domain": "devops",
+      "ecosystem": "Buildkite",
+      "stars": 1103,
+      "forks": 70,
+      "contributors": 4,
+      "recentCommits": 55,
+      "trendScore": 0.252,
+      "newScore": 0.012,
+      "contributionScore": 0.104,
+      "createdAt": "2025-10-31T00:02:21Z",
+      "pushedAt": "2026-10-23T09:11:09Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "getplumber/plumber",
+      "domain": "devops",
+      "ecosystem": "Cicd",
+      "stars": 829,
+      "forks": 35,
+      "contributors": 24,
+      "recentCommits": 419,
+      "trendScore": 0.262,
+      "newScore": 0.133,
+      "contributionScore": 0.13,
+      "createdAt": "2026-01-19T08:20:05Z",
+      "pushedAt": "2026-10-23T07:36:43Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "prod-forge/backend",
+      "domain": "web",
+      "ecosystem": "Architecture Api",
+      "stars": 520,
+      "forks": 18,
+      "contributors": 1,
+      "recentCommits": 8,
+      "trendScore": 0.177,
+      "newScore": 0.201,
+      "contributionScore": 0.071,
+      "createdAt": "2026-03-05T12:44:10Z",
+      "pushedAt": "2026-09-26T18:44:05Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "TangSY/edge-next-starter",
+      "domain": "devops",
+      "ecosystem": "DevOps Libraries",
+      "stars": 475,
+      "forks": 101,
+      "contributors": 4,
+      "recentCommits": 0,
+      "trendScore": 0,
+      "newScore": 0.004,
+      "contributionScore": 0,
+      "createdAt": "2025-10-26T03:09:36Z",
+      "pushedAt": "2026-02-27T05:58:32Z",
+      "discoverySignals": [
+        "devops:new"
+      ]
+    },
+    {
+      "full": "JetBrains/junie",
+      "domain": "devops",
+      "ecosystem": "DevOps Libraries",
+      "stars": 493,
+      "forks": 37,
+      "contributors": 11,
+      "recentCommits": 2085,
+      "trendScore": 0.306,
+      "newScore": 0,
+      "contributionScore": 0.246,
+      "createdAt": "2025-04-07T16:40:43Z",
+      "pushedAt": "2026-10-23T10:27:47Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "argoproj/argoproj-deployments",
+      "domain": "devops",
+      "ecosystem": "DevOps Libraries",
+      "stars": 309,
+      "forks": 155,
+      "contributors": 18,
+      "recentCommits": 381,
+      "trendScore": 0.26,
+      "newScore": 0,
+      "contributionScore": 0.127,
+      "createdAt": "2018-10-24T17:39:27Z",
+      "pushedAt": "2026-10-23T09:45:51Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "patrickchugh/terravision",
+      "domain": "cloud",
+      "ecosystem": "Agent Skill",
+      "stars": 1660,
+      "forks": 178,
+      "contributors": 28,
+      "recentCommits": 291,
+      "trendScore": 0.258,
+      "newScore": 0.001,
+      "contributionScore": 0.121,
+      "createdAt": "2022-03-13T04:47:49Z",
+      "pushedAt": "2026-10-23T09:32:29Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "woodpecker-ci/woodpecker",
+      "domain": "devops",
+      "ecosystem": "Automation",
+      "stars": 8037,
+      "forks": 720,
+      "contributors": 686,
+      "recentCommits": 360,
+      "trendScore": 0.261,
+      "newScore": 0.006,
+      "contributionScore": 0.149,
+      "createdAt": "2019-04-03T18:06:38Z",
+      "pushedAt": "2026-10-23T09:32:04Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "cdxgen/cdxgen",
+      "domain": "cloud",
+      "ecosystem": "Package Url",
+      "stars": 1092,
+      "forks": 267,
+      "contributors": 144,
+      "recentCommits": 813,
+      "trendScore": 0.272,
+      "newScore": 0.001,
+      "contributionScore": 0.162,
+      "createdAt": "2019-12-30T13:55:18Z",
+      "pushedAt": "2026-10-23T10:45:38Z",
+      "discoverySignals": [
+        "devops:active"
+      ]
+    },
+    {
+      "full": "dofuuz/python-soxr",
+      "domain": "ai",
+      "ecosystem": "Audio Processing",
+      "stars": 115,
+      "forks": 14,
+      "contributors": 1,
+      "recentCommits": 2,
+      "trendScore": 0.175,
+      "newScore": 0,
+      "contributionScore": 0.07,
+      "createdAt": "2021-04-28T13:16:50Z",
+      "pushedAt": "2026-09-26T10:19:42Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    },
+    {
+      "full": "patrick-kidger/jaxtyping",
+      "domain": "ai",
+      "ecosystem": "Python Typing",
+      "stars": 1879,
+      "forks": 100,
+      "contributors": 38,
+      "recentCommits": 0,
+      "trendScore": 0.113,
+      "newScore": 0.001,
+      "contributionScore": 0.046,
+      "createdAt": "2022-06-23T13:35:25Z",
+      "pushedAt": "2026-09-04T00:44:53Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    },
+    {
+      "full": "pypa/setuptools",
+      "domain": "devops",
+      "ecosystem": "DevOps Libraries",
+      "stars": 2870,
+      "forks": 1451,
+      "contributors": 656,
+      "recentCommits": 150,
+      "trendScore": 0.249,
+      "newScore": 0.002,
+      "contributionScore": 0.13,
+      "createdAt": "2016-03-29T14:02:33Z",
+      "pushedAt": "2026-10-20T22:22:00Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    },
+    {
+      "full": "AI-Hypercomputer/cloud-accelerator-diagnostics",
+      "domain": "ai",
+      "ecosystem": "AI Libraries",
+      "stars": 33,
+      "forks": 16,
+      "contributors": 7,
+      "recentCommits": 8,
+      "trendScore": 0.2,
+      "newScore": 0,
+      "contributionScore": 0.081,
+      "createdAt": "2024-03-04T21:45:13Z",
+      "pushedAt": "2026-10-05T13:03:42Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    },
+    {
+      "full": "jax-ml/jax",
+      "domain": "ai",
+      "ecosystem": "Jax",
+      "stars": 36488,
+      "forks": 3882,
+      "contributors": 1164,
+      "recentCommits": 1905,
+      "trendScore": 0.308,
+      "newScore": 0.026,
+      "contributionScore": 0.274,
+      "createdAt": "2018-10-25T21:25:02Z",
+      "pushedAt": "2026-10-23T09:25:01Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    },
+    {
+      "full": "python/mypy",
+      "domain": "ai",
+      "ecosystem": "Linter",
+      "stars": 20699,
+      "forks": 3347,
+      "contributors": 875,
+      "recentCommits": 235,
+      "trendScore": 0.26,
+      "newScore": 0.014,
+      "contributionScore": 0.146,
+      "createdAt": "2012-12-07T13:30:23Z",
+      "pushedAt": "2026-10-23T00:30:21Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    },
+    {
+      "full": "lark-parser/lark",
+      "domain": "game_dev",
+      "ecosystem": "Parser Library",
+      "stars": 6014,
+      "forks": 538,
+      "contributors": 145,
+      "recentCommits": 6,
+      "trendScore": 0.093,
+      "newScore": 0.004,
+      "contributionScore": 0.042,
+      "createdAt": "2017-02-04T20:38:59Z",
+      "pushedAt": "2026-08-27T13:41:32Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    },
+    {
+      "full": "astanin/python-tabulate",
+      "domain": "ai",
+      "ecosystem": "AI Libraries",
+      "stars": 2587,
+      "forks": 232,
+      "contributors": 108,
+      "recentCommits": 0,
+      "trendScore": 0,
+      "newScore": 0.002,
+      "contributionScore": 0.004,
+      "createdAt": "2019-09-02T14:34:19Z",
+      "pushedAt": "2026-03-11T08:45:56Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    },
+    {
+      "full": "microsoft/onnxscript",
+      "domain": "ai",
+      "ecosystem": "AI Libraries",
+      "stars": 456,
+      "forks": 146,
+      "contributors": 85,
+      "recentCommits": 60,
+      "trendScore": 0.251,
+      "newScore": 0,
+      "contributionScore": 0.107,
+      "createdAt": "2022-02-28T17:23:33Z",
+      "pushedAt": "2026-10-23T00:54:05Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    },
+    {
+      "full": "aio-libs/aiohttp",
+      "domain": "web",
+      "ecosystem": "Http Client",
+      "stars": 16588,
+      "forks": 2480,
+      "contributors": 877,
+      "recentCommits": 783,
+      "trendScore": 0.274,
+      "newScore": 0.012,
+      "contributionScore": 0.185,
+      "createdAt": "2013-10-01T23:04:01Z",
+      "pushedAt": "2026-10-23T10:43:56Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    },
+    {
+      "full": "pytest-dev/pytest-xdist",
+      "domain": "ai",
+      "ecosystem": "Pytest Plugin",
+      "stars": 1924,
+      "forks": 293,
+      "contributors": 123,
+      "recentCommits": 14,
+      "trendScore": 0.248,
+      "newScore": 0.001,
+      "contributionScore": 0.104,
+      "createdAt": "2015-09-01T18:51:45Z",
+      "pushedAt": "2026-10-22T13:53:30Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    },
+    {
+      "full": "Erotemic/xdoctest",
+      "domain": "ai",
+      "ecosystem": "Pytest Plugin",
+      "stars": 221,
+      "forks": 18,
+      "contributors": 14,
+      "recentCommits": 1,
+      "trendScore": 0.126,
+      "newScore": 0,
+      "contributionScore": 0.051,
+      "createdAt": "2017-09-24T01:59:02Z",
+      "pushedAt": "2026-09-08T20:33:32Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    },
+    {
+      "full": "dolfinus/setuptools-git-versioning",
+      "domain": "devops",
+      "ecosystem": "Pep 440",
+      "stars": 71,
+      "forks": 24,
+      "contributors": 21,
+      "recentCommits": 28,
+      "trendScore": 0.201,
+      "newScore": 0,
+      "contributionScore": 0.083,
+      "createdAt": "2020-07-29T16:05:34Z",
+      "pushedAt": "2026-10-05T10:31:41Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    },
+    {
+      "full": "wolever/parameterized",
+      "domain": "web",
+      "ecosystem": "Web Libraries",
+      "stars": 857,
+      "forks": 109,
+      "contributors": 30,
+      "recentCommits": 0,
+      "trendScore": 0,
+      "newScore": 0.001,
+      "contributionScore": 0.001,
+      "createdAt": "2012-03-10T04:56:31Z",
+      "pushedAt": "2024-08-18T23:02:13Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    },
+    {
+      "full": "Rogdham/pyzstd",
+      "domain": "web",
+      "ecosystem": "Compress",
+      "stars": 47,
+      "forks": 7,
+      "contributors": 6,
+      "recentCommits": 7,
+      "trendScore": 0.24,
+      "newScore": 0,
+      "contributionScore": 0.097,
+      "createdAt": "2024-03-19T17:52:18Z",
+      "pushedAt": "2026-10-19T17:47:10Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    },
+    {
+      "full": "pypa/packaging",
+      "domain": "ai",
+      "ecosystem": "AI Libraries",
+      "stars": 752,
+      "forks": 360,
+      "contributors": 158,
+      "recentCommits": 65,
+      "trendScore": 0.25,
+      "newScore": 0.001,
+      "contributionScore": 0.109,
+      "createdAt": "2014-05-15T22:49:43Z",
+      "pushedAt": "2026-10-22T19:12:06Z",
+      "discoverySignals": [
+        "dependency:pytorch/pytorch"
+      ]
+    }
+  ],
+  "summary": {
+    "repoCount": 240,
+    "searchEnabled": true,
+    "classifier": "heuristic fallback"
+  }
+}
